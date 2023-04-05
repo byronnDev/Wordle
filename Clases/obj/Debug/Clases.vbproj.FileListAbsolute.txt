@@ -8,3 +8,13 @@ C:\Users\Mikel\source\repos\Clases\obj\Debug\Clases.vbproj.CoreCompileInputs.cac
 C:\Users\Mikel\source\repos\Clases\obj\Debug\Clases.dll
 C:\Users\Mikel\source\repos\Clases\obj\Debug\Clases.xml
 C:\Users\Mikel\source\repos\Clases\obj\Debug\Clases.pdb
+C:\Users\Mikel\Source\Repos\Wordle\Clases\bin\Debug\Clases.dll
+C:\Users\Mikel\Source\Repos\Wordle\Clases\bin\Debug\Clases.pdb
+C:\Users\Mikel\Source\Repos\Wordle\Clases\bin\Debug\Clases.xml
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.vbproj.AssemblyReference.cache
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.Resources.resources
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.vbproj.GenerateResource.cache
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.vbproj.CoreCompileInputs.cache
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.dll
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.xml
+C:\Users\Mikel\Source\Repos\Wordle\Clases\obj\Debug\Clases.pdb
