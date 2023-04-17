@@ -1,3 +1,6 @@
 ﻿Module Module1
-    Public palabra As String = "AVION"
+    Public palabraAdivinar As String = "AVION"
+    Public posRecuadro As Integer = 0
+    Public listChar As New List(Of TextBox)
+    Public palabra As String
 End Module
