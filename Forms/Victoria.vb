@@ -4,9 +4,10 @@
         If resultado = DialogResult.No Then
             Principal.Close()
         ElseIf resultado = DialogResult.Cancel Then
+
+            ReiniciarJuego()
             e.Cancel = True
         End If
-        ReiniciarJuego()
     End Sub
 
     Private Sub ReiniciarJuego()
@@ -14,7 +15,6 @@
         palabra = ""
         posRecuadro = 0
         Principal.Limpieza()
-        Principal.txtPrueba.Clear()
         Principal.txtP1.Select()
     End Sub
 End Class
