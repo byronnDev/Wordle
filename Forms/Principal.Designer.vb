@@ -54,14 +54,33 @@ Partial Class Principal
         Me.txtP3 = New System.Windows.Forms.TextBox()
         Me.txtP4 = New System.Windows.Forms.TextBox()
         Me.txtP5 = New System.Windows.Forms.TextBox()
-        Me.txtPrueba = New System.Windows.Forms.TextBox()
         Me.btnEnviar = New System.Windows.Forms.Button()
         Me.btnBorrar = New System.Windows.Forms.Button()
+        Me.txtP10 = New System.Windows.Forms.TextBox()
+        Me.txtP9 = New System.Windows.Forms.TextBox()
+        Me.txtP8 = New System.Windows.Forms.TextBox()
+        Me.txtP7 = New System.Windows.Forms.TextBox()
+        Me.txtP6 = New System.Windows.Forms.TextBox()
+        Me.txtP15 = New System.Windows.Forms.TextBox()
+        Me.txtP14 = New System.Windows.Forms.TextBox()
+        Me.txtP13 = New System.Windows.Forms.TextBox()
+        Me.txtP12 = New System.Windows.Forms.TextBox()
+        Me.txtP11 = New System.Windows.Forms.TextBox()
+        Me.txtP20 = New System.Windows.Forms.TextBox()
+        Me.txtP19 = New System.Windows.Forms.TextBox()
+        Me.txtP18 = New System.Windows.Forms.TextBox()
+        Me.txtP17 = New System.Windows.Forms.TextBox()
+        Me.txtP16 = New System.Windows.Forms.TextBox()
+        Me.txtP25 = New System.Windows.Forms.TextBox()
+        Me.txtP24 = New System.Windows.Forms.TextBox()
+        Me.txtP23 = New System.Windows.Forms.TextBox()
+        Me.txtP22 = New System.Windows.Forms.TextBox()
+        Me.txtP21 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnA
         '
-        Me.btnA.Location = New System.Drawing.Point(117, 392)
+        Me.btnA.Location = New System.Drawing.Point(77, 559)
         Me.btnA.Name = "btnA"
         Me.btnA.Size = New System.Drawing.Size(58, 43)
         Me.btnA.TabIndex = 0
@@ -70,7 +89,7 @@ Partial Class Principal
         '
         'btnB
         '
-        Me.btnB.Location = New System.Drawing.Point(197, 392)
+        Me.btnB.Location = New System.Drawing.Point(447, 608)
         Me.btnB.Name = "btnB"
         Me.btnB.Size = New System.Drawing.Size(58, 43)
         Me.btnB.TabIndex = 1
@@ -79,7 +98,7 @@ Partial Class Principal
         '
         'btnC
         '
-        Me.btnC.Location = New System.Drawing.Point(279, 392)
+        Me.btnC.Location = New System.Drawing.Point(319, 608)
         Me.btnC.Name = "btnC"
         Me.btnC.Size = New System.Drawing.Size(58, 43)
         Me.btnC.TabIndex = 2
@@ -88,7 +107,7 @@ Partial Class Principal
         '
         'btnD
         '
-        Me.btnD.Location = New System.Drawing.Point(356, 392)
+        Me.btnD.Location = New System.Drawing.Point(205, 559)
         Me.btnD.Name = "btnD"
         Me.btnD.Size = New System.Drawing.Size(58, 43)
         Me.btnD.TabIndex = 3
@@ -97,7 +116,7 @@ Partial Class Principal
         '
         'btnE
         '
-        Me.btnE.Location = New System.Drawing.Point(441, 392)
+        Me.btnE.Location = New System.Drawing.Point(205, 510)
         Me.btnE.Name = "btnE"
         Me.btnE.Size = New System.Drawing.Size(58, 43)
         Me.btnE.TabIndex = 4
@@ -106,7 +125,7 @@ Partial Class Principal
         '
         'btnF
         '
-        Me.btnF.Location = New System.Drawing.Point(520, 392)
+        Me.btnF.Location = New System.Drawing.Point(269, 559)
         Me.btnF.Name = "btnF"
         Me.btnF.Size = New System.Drawing.Size(58, 43)
         Me.btnF.TabIndex = 5
@@ -115,7 +134,7 @@ Partial Class Principal
         '
         'btnG
         '
-        Me.btnG.Location = New System.Drawing.Point(605, 392)
+        Me.btnG.Location = New System.Drawing.Point(333, 559)
         Me.btnG.Name = "btnG"
         Me.btnG.Size = New System.Drawing.Size(58, 43)
         Me.btnG.TabIndex = 6
@@ -124,7 +143,7 @@ Partial Class Principal
         '
         'btnH
         '
-        Me.btnH.Location = New System.Drawing.Point(117, 475)
+        Me.btnH.Location = New System.Drawing.Point(397, 559)
         Me.btnH.Name = "btnH"
         Me.btnH.Size = New System.Drawing.Size(58, 43)
         Me.btnH.TabIndex = 7
@@ -133,7 +152,7 @@ Partial Class Principal
         '
         'btnI
         '
-        Me.btnI.Location = New System.Drawing.Point(197, 475)
+        Me.btnI.Location = New System.Drawing.Point(525, 510)
         Me.btnI.Name = "btnI"
         Me.btnI.Size = New System.Drawing.Size(58, 43)
         Me.btnI.TabIndex = 8
@@ -142,7 +161,7 @@ Partial Class Principal
         '
         'btnJ
         '
-        Me.btnJ.Location = New System.Drawing.Point(279, 475)
+        Me.btnJ.Location = New System.Drawing.Point(461, 559)
         Me.btnJ.Name = "btnJ"
         Me.btnJ.Size = New System.Drawing.Size(58, 43)
         Me.btnJ.TabIndex = 9
@@ -151,7 +170,7 @@ Partial Class Principal
         '
         'btnK
         '
-        Me.btnK.Location = New System.Drawing.Point(356, 475)
+        Me.btnK.Location = New System.Drawing.Point(525, 559)
         Me.btnK.Name = "btnK"
         Me.btnK.Size = New System.Drawing.Size(58, 43)
         Me.btnK.TabIndex = 10
@@ -160,7 +179,7 @@ Partial Class Principal
         '
         'btnL
         '
-        Me.btnL.Location = New System.Drawing.Point(441, 475)
+        Me.btnL.Location = New System.Drawing.Point(589, 559)
         Me.btnL.Name = "btnL"
         Me.btnL.Size = New System.Drawing.Size(58, 43)
         Me.btnL.TabIndex = 11
@@ -169,7 +188,7 @@ Partial Class Principal
         '
         'btnM
         '
-        Me.btnM.Location = New System.Drawing.Point(520, 475)
+        Me.btnM.Location = New System.Drawing.Point(575, 608)
         Me.btnM.Name = "btnM"
         Me.btnM.Size = New System.Drawing.Size(58, 43)
         Me.btnM.TabIndex = 12
@@ -178,7 +197,7 @@ Partial Class Principal
         '
         'btnN
         '
-        Me.btnN.Location = New System.Drawing.Point(605, 475)
+        Me.btnN.Location = New System.Drawing.Point(511, 608)
         Me.btnN.Name = "btnN"
         Me.btnN.Size = New System.Drawing.Size(58, 43)
         Me.btnN.TabIndex = 13
@@ -187,7 +206,7 @@ Partial Class Principal
         '
         'btnÑ
         '
-        Me.btnÑ.Location = New System.Drawing.Point(117, 555)
+        Me.btnÑ.Location = New System.Drawing.Point(653, 559)
         Me.btnÑ.Name = "btnÑ"
         Me.btnÑ.Size = New System.Drawing.Size(58, 43)
         Me.btnÑ.TabIndex = 14
@@ -196,7 +215,7 @@ Partial Class Principal
         '
         'btnO
         '
-        Me.btnO.Location = New System.Drawing.Point(197, 555)
+        Me.btnO.Location = New System.Drawing.Point(589, 510)
         Me.btnO.Name = "btnO"
         Me.btnO.Size = New System.Drawing.Size(58, 43)
         Me.btnO.TabIndex = 15
@@ -205,7 +224,7 @@ Partial Class Principal
         '
         'btnP
         '
-        Me.btnP.Location = New System.Drawing.Point(279, 555)
+        Me.btnP.Location = New System.Drawing.Point(653, 510)
         Me.btnP.Name = "btnP"
         Me.btnP.Size = New System.Drawing.Size(58, 43)
         Me.btnP.TabIndex = 16
@@ -214,7 +233,7 @@ Partial Class Principal
         '
         'btnQ
         '
-        Me.btnQ.Location = New System.Drawing.Point(356, 555)
+        Me.btnQ.Location = New System.Drawing.Point(77, 510)
         Me.btnQ.Name = "btnQ"
         Me.btnQ.Size = New System.Drawing.Size(58, 43)
         Me.btnQ.TabIndex = 17
@@ -223,7 +242,7 @@ Partial Class Principal
         '
         'btnR
         '
-        Me.btnR.Location = New System.Drawing.Point(441, 555)
+        Me.btnR.Location = New System.Drawing.Point(269, 510)
         Me.btnR.Name = "btnR"
         Me.btnR.Size = New System.Drawing.Size(58, 43)
         Me.btnR.TabIndex = 18
@@ -232,7 +251,7 @@ Partial Class Principal
         '
         'btnS
         '
-        Me.btnS.Location = New System.Drawing.Point(520, 555)
+        Me.btnS.Location = New System.Drawing.Point(141, 559)
         Me.btnS.Name = "btnS"
         Me.btnS.Size = New System.Drawing.Size(58, 43)
         Me.btnS.TabIndex = 19
@@ -241,7 +260,7 @@ Partial Class Principal
         '
         'btnT
         '
-        Me.btnT.Location = New System.Drawing.Point(605, 555)
+        Me.btnT.Location = New System.Drawing.Point(333, 510)
         Me.btnT.Name = "btnT"
         Me.btnT.Size = New System.Drawing.Size(58, 43)
         Me.btnT.TabIndex = 20
@@ -250,7 +269,7 @@ Partial Class Principal
         '
         'btnU
         '
-        Me.btnU.Location = New System.Drawing.Point(117, 638)
+        Me.btnU.Location = New System.Drawing.Point(461, 510)
         Me.btnU.Name = "btnU"
         Me.btnU.Size = New System.Drawing.Size(58, 43)
         Me.btnU.TabIndex = 21
@@ -259,7 +278,7 @@ Partial Class Principal
         '
         'btnV
         '
-        Me.btnV.Location = New System.Drawing.Point(197, 638)
+        Me.btnV.Location = New System.Drawing.Point(383, 608)
         Me.btnV.Name = "btnV"
         Me.btnV.Size = New System.Drawing.Size(58, 43)
         Me.btnV.TabIndex = 22
@@ -268,7 +287,7 @@ Partial Class Principal
         '
         'btnW
         '
-        Me.btnW.Location = New System.Drawing.Point(279, 638)
+        Me.btnW.Location = New System.Drawing.Point(141, 510)
         Me.btnW.Name = "btnW"
         Me.btnW.Size = New System.Drawing.Size(58, 43)
         Me.btnW.TabIndex = 23
@@ -277,7 +296,7 @@ Partial Class Principal
         '
         'btnX
         '
-        Me.btnX.Location = New System.Drawing.Point(356, 638)
+        Me.btnX.Location = New System.Drawing.Point(255, 608)
         Me.btnX.Name = "btnX"
         Me.btnX.Size = New System.Drawing.Size(58, 43)
         Me.btnX.TabIndex = 24
@@ -286,7 +305,7 @@ Partial Class Principal
         '
         'btnY
         '
-        Me.btnY.Location = New System.Drawing.Point(441, 638)
+        Me.btnY.Location = New System.Drawing.Point(397, 510)
         Me.btnY.Name = "btnY"
         Me.btnY.Size = New System.Drawing.Size(58, 43)
         Me.btnY.TabIndex = 25
@@ -295,7 +314,7 @@ Partial Class Principal
         '
         'btnZ
         '
-        Me.btnZ.Location = New System.Drawing.Point(520, 638)
+        Me.btnZ.Location = New System.Drawing.Point(191, 608)
         Me.btnZ.Name = "btnZ"
         Me.btnZ.Size = New System.Drawing.Size(58, 43)
         Me.btnZ.TabIndex = 26
@@ -304,93 +323,105 @@ Partial Class Principal
         '
         'txtP1
         '
-        Me.txtP1.BackColor = System.Drawing.SystemColors.Window
-        Me.txtP1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtP1.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP1.BackColor = System.Drawing.Color.Silver
+        Me.txtP1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtP1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP1.Enabled = False
         Me.txtP1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtP1.Location = New System.Drawing.Point(202, 90)
+        Me.txtP1.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP1.HideSelection = False
+        Me.txtP1.Location = New System.Drawing.Point(202, 89)
         Me.txtP1.MaxLength = 1
         Me.txtP1.Name = "txtP1"
-        Me.txtP1.Size = New System.Drawing.Size(71, 62)
+        Me.txtP1.Size = New System.Drawing.Size(71, 55)
         Me.txtP1.TabIndex = 27
         Me.txtP1.Tag = "1"
         Me.txtP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtP2
         '
-        Me.txtP2.BackColor = System.Drawing.SystemColors.Window
-        Me.txtP2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtP2.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP2.BackColor = System.Drawing.Color.Silver
+        Me.txtP2.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtP2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP2.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP2.Enabled = False
         Me.txtP2.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtP2.Location = New System.Drawing.Point(279, 90)
+        Me.txtP2.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP2.HideSelection = False
+        Me.txtP2.Location = New System.Drawing.Point(279, 89)
         Me.txtP2.MaxLength = 1
         Me.txtP2.Name = "txtP2"
-        Me.txtP2.Size = New System.Drawing.Size(71, 62)
+        Me.txtP2.Size = New System.Drawing.Size(71, 55)
         Me.txtP2.TabIndex = 28
         Me.txtP2.Tag = "2"
         Me.txtP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtP3
         '
-        Me.txtP3.BackColor = System.Drawing.SystemColors.Window
-        Me.txtP3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtP3.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP3.BackColor = System.Drawing.Color.Silver
+        Me.txtP3.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtP3.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP3.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP3.Enabled = False
         Me.txtP3.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtP3.Location = New System.Drawing.Point(356, 90)
+        Me.txtP3.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP3.HideSelection = False
+        Me.txtP3.Location = New System.Drawing.Point(356, 89)
         Me.txtP3.MaxLength = 1
         Me.txtP3.Name = "txtP3"
-        Me.txtP3.Size = New System.Drawing.Size(71, 62)
+        Me.txtP3.Size = New System.Drawing.Size(71, 55)
         Me.txtP3.TabIndex = 29
         Me.txtP3.Tag = "3"
         Me.txtP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtP4
         '
-        Me.txtP4.BackColor = System.Drawing.SystemColors.Window
-        Me.txtP4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtP4.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP4.BackColor = System.Drawing.Color.Silver
+        Me.txtP4.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtP4.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP4.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP4.Enabled = False
         Me.txtP4.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtP4.Location = New System.Drawing.Point(433, 90)
+        Me.txtP4.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP4.HideSelection = False
+        Me.txtP4.Location = New System.Drawing.Point(433, 89)
         Me.txtP4.MaxLength = 1
         Me.txtP4.Name = "txtP4"
-        Me.txtP4.Size = New System.Drawing.Size(71, 62)
+        Me.txtP4.Size = New System.Drawing.Size(71, 55)
         Me.txtP4.TabIndex = 30
         Me.txtP4.Tag = "4"
         Me.txtP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'txtP5
         '
-        Me.txtP5.BackColor = System.Drawing.SystemColors.Window
-        Me.txtP5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtP5.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP5.BackColor = System.Drawing.Color.Silver
+        Me.txtP5.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.txtP5.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP5.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP5.Enabled = False
         Me.txtP5.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtP5.Location = New System.Drawing.Point(510, 90)
+        Me.txtP5.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP5.HideSelection = False
+        Me.txtP5.Location = New System.Drawing.Point(510, 89)
         Me.txtP5.MaxLength = 1
         Me.txtP5.Name = "txtP5"
-        Me.txtP5.Size = New System.Drawing.Size(71, 62)
+        Me.txtP5.Size = New System.Drawing.Size(71, 55)
         Me.txtP5.TabIndex = 31
         Me.txtP5.Tag = "5"
         Me.txtP5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'txtPrueba
-        '
-        Me.txtPrueba.BackColor = System.Drawing.SystemColors.Window
-        Me.txtPrueba.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
-        Me.txtPrueba.Enabled = False
-        Me.txtPrueba.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPrueba.Location = New System.Drawing.Point(239, 187)
-        Me.txtPrueba.MaxLength = 5
-        Me.txtPrueba.Name = "txtPrueba"
-        Me.txtPrueba.Size = New System.Drawing.Size(288, 62)
-        Me.txtPrueba.TabIndex = 32
-        Me.txtPrueba.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'btnEnviar
         '
         Me.btnEnviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEnviar.Location = New System.Drawing.Point(686, 638)
+        Me.btnEnviar.Location = New System.Drawing.Point(77, 608)
         Me.btnEnviar.Name = "btnEnviar"
-        Me.btnEnviar.Size = New System.Drawing.Size(58, 43)
+        Me.btnEnviar.Size = New System.Drawing.Size(108, 43)
         Me.btnEnviar.TabIndex = 33
         Me.btnEnviar.Text = "✓"
         Me.btnEnviar.UseVisualStyleBackColor = True
@@ -398,22 +429,421 @@ Partial Class Principal
         'btnBorrar
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.Location = New System.Drawing.Point(605, 638)
+        Me.btnBorrar.Location = New System.Drawing.Point(639, 608)
         Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(58, 43)
+        Me.btnBorrar.Size = New System.Drawing.Size(72, 43)
         Me.btnBorrar.TabIndex = 34
         Me.btnBorrar.Text = "⬅️"
         Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnBorrar.UseVisualStyleBackColor = True
         '
-        'Form1
+        'txtP10
+        '
+        Me.txtP10.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP10.BackColor = System.Drawing.Color.Silver
+        Me.txtP10.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP10.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP10.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP10.Enabled = False
+        Me.txtP10.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP10.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP10.HideSelection = False
+        Me.txtP10.Location = New System.Drawing.Point(510, 154)
+        Me.txtP10.MaxLength = 1
+        Me.txtP10.Name = "txtP10"
+        Me.txtP10.Size = New System.Drawing.Size(71, 55)
+        Me.txtP10.TabIndex = 39
+        Me.txtP10.Tag = "10"
+        Me.txtP10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP9
+        '
+        Me.txtP9.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP9.BackColor = System.Drawing.Color.Silver
+        Me.txtP9.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP9.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP9.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP9.Enabled = False
+        Me.txtP9.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP9.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP9.HideSelection = False
+        Me.txtP9.Location = New System.Drawing.Point(433, 154)
+        Me.txtP9.MaxLength = 1
+        Me.txtP9.Name = "txtP9"
+        Me.txtP9.Size = New System.Drawing.Size(71, 55)
+        Me.txtP9.TabIndex = 38
+        Me.txtP9.Tag = "9"
+        Me.txtP9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP8
+        '
+        Me.txtP8.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP8.BackColor = System.Drawing.Color.Silver
+        Me.txtP8.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP8.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP8.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP8.Enabled = False
+        Me.txtP8.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP8.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP8.HideSelection = False
+        Me.txtP8.Location = New System.Drawing.Point(356, 154)
+        Me.txtP8.MaxLength = 1
+        Me.txtP8.Name = "txtP8"
+        Me.txtP8.Size = New System.Drawing.Size(71, 55)
+        Me.txtP8.TabIndex = 37
+        Me.txtP8.Tag = "8"
+        Me.txtP8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP7
+        '
+        Me.txtP7.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP7.BackColor = System.Drawing.Color.Silver
+        Me.txtP7.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP7.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP7.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP7.Enabled = False
+        Me.txtP7.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP7.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP7.HideSelection = False
+        Me.txtP7.Location = New System.Drawing.Point(279, 154)
+        Me.txtP7.MaxLength = 1
+        Me.txtP7.Name = "txtP7"
+        Me.txtP7.Size = New System.Drawing.Size(71, 55)
+        Me.txtP7.TabIndex = 36
+        Me.txtP7.Tag = "7"
+        Me.txtP7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP6
+        '
+        Me.txtP6.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP6.BackColor = System.Drawing.Color.Silver
+        Me.txtP6.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP6.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP6.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP6.Enabled = False
+        Me.txtP6.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP6.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP6.HideSelection = False
+        Me.txtP6.Location = New System.Drawing.Point(202, 154)
+        Me.txtP6.MaxLength = 1
+        Me.txtP6.Name = "txtP6"
+        Me.txtP6.Size = New System.Drawing.Size(71, 55)
+        Me.txtP6.TabIndex = 35
+        Me.txtP6.Tag = "6"
+        Me.txtP6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP15
+        '
+        Me.txtP15.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP15.BackColor = System.Drawing.Color.Silver
+        Me.txtP15.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP15.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP15.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP15.Enabled = False
+        Me.txtP15.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP15.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP15.HideSelection = False
+        Me.txtP15.Location = New System.Drawing.Point(510, 219)
+        Me.txtP15.MaxLength = 1
+        Me.txtP15.Name = "txtP15"
+        Me.txtP15.Size = New System.Drawing.Size(71, 55)
+        Me.txtP15.TabIndex = 44
+        Me.txtP15.Tag = "15"
+        Me.txtP15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP14
+        '
+        Me.txtP14.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP14.BackColor = System.Drawing.Color.Silver
+        Me.txtP14.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP14.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP14.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP14.Enabled = False
+        Me.txtP14.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP14.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP14.HideSelection = False
+        Me.txtP14.Location = New System.Drawing.Point(433, 219)
+        Me.txtP14.MaxLength = 1
+        Me.txtP14.Name = "txtP14"
+        Me.txtP14.Size = New System.Drawing.Size(71, 55)
+        Me.txtP14.TabIndex = 43
+        Me.txtP14.Tag = "14"
+        Me.txtP14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP13
+        '
+        Me.txtP13.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP13.BackColor = System.Drawing.Color.Silver
+        Me.txtP13.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP13.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP13.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP13.Enabled = False
+        Me.txtP13.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP13.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP13.HideSelection = False
+        Me.txtP13.Location = New System.Drawing.Point(356, 219)
+        Me.txtP13.MaxLength = 1
+        Me.txtP13.Name = "txtP13"
+        Me.txtP13.Size = New System.Drawing.Size(71, 55)
+        Me.txtP13.TabIndex = 42
+        Me.txtP13.Tag = "13"
+        Me.txtP13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP12
+        '
+        Me.txtP12.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP12.BackColor = System.Drawing.Color.Silver
+        Me.txtP12.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP12.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP12.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP12.Enabled = False
+        Me.txtP12.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP12.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP12.HideSelection = False
+        Me.txtP12.Location = New System.Drawing.Point(279, 219)
+        Me.txtP12.MaxLength = 1
+        Me.txtP12.Name = "txtP12"
+        Me.txtP12.Size = New System.Drawing.Size(71, 55)
+        Me.txtP12.TabIndex = 41
+        Me.txtP12.Tag = "12"
+        Me.txtP12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP11
+        '
+        Me.txtP11.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP11.BackColor = System.Drawing.Color.Silver
+        Me.txtP11.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP11.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP11.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP11.Enabled = False
+        Me.txtP11.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP11.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP11.HideSelection = False
+        Me.txtP11.Location = New System.Drawing.Point(202, 219)
+        Me.txtP11.MaxLength = 1
+        Me.txtP11.Name = "txtP11"
+        Me.txtP11.Size = New System.Drawing.Size(71, 55)
+        Me.txtP11.TabIndex = 40
+        Me.txtP11.Tag = "11"
+        Me.txtP11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP20
+        '
+        Me.txtP20.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP20.BackColor = System.Drawing.Color.Silver
+        Me.txtP20.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP20.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP20.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP20.Enabled = False
+        Me.txtP20.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP20.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP20.HideSelection = False
+        Me.txtP20.Location = New System.Drawing.Point(510, 284)
+        Me.txtP20.MaxLength = 1
+        Me.txtP20.Name = "txtP20"
+        Me.txtP20.Size = New System.Drawing.Size(71, 55)
+        Me.txtP20.TabIndex = 49
+        Me.txtP20.Tag = "20"
+        Me.txtP20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP19
+        '
+        Me.txtP19.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP19.BackColor = System.Drawing.Color.Silver
+        Me.txtP19.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP19.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP19.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP19.Enabled = False
+        Me.txtP19.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP19.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP19.HideSelection = False
+        Me.txtP19.Location = New System.Drawing.Point(433, 284)
+        Me.txtP19.MaxLength = 1
+        Me.txtP19.Name = "txtP19"
+        Me.txtP19.Size = New System.Drawing.Size(71, 55)
+        Me.txtP19.TabIndex = 48
+        Me.txtP19.Tag = "19"
+        Me.txtP19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP18
+        '
+        Me.txtP18.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP18.BackColor = System.Drawing.Color.Silver
+        Me.txtP18.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP18.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP18.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP18.Enabled = False
+        Me.txtP18.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP18.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP18.HideSelection = False
+        Me.txtP18.Location = New System.Drawing.Point(356, 284)
+        Me.txtP18.MaxLength = 1
+        Me.txtP18.Name = "txtP18"
+        Me.txtP18.Size = New System.Drawing.Size(71, 55)
+        Me.txtP18.TabIndex = 47
+        Me.txtP18.Tag = "18"
+        Me.txtP18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP17
+        '
+        Me.txtP17.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP17.BackColor = System.Drawing.Color.Silver
+        Me.txtP17.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP17.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP17.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP17.Enabled = False
+        Me.txtP17.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP17.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP17.HideSelection = False
+        Me.txtP17.Location = New System.Drawing.Point(279, 284)
+        Me.txtP17.MaxLength = 1
+        Me.txtP17.Name = "txtP17"
+        Me.txtP17.Size = New System.Drawing.Size(71, 55)
+        Me.txtP17.TabIndex = 46
+        Me.txtP17.Tag = "17"
+        Me.txtP17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP16
+        '
+        Me.txtP16.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP16.BackColor = System.Drawing.Color.Silver
+        Me.txtP16.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP16.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP16.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP16.Enabled = False
+        Me.txtP16.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP16.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP16.HideSelection = False
+        Me.txtP16.Location = New System.Drawing.Point(202, 284)
+        Me.txtP16.MaxLength = 1
+        Me.txtP16.Name = "txtP16"
+        Me.txtP16.Size = New System.Drawing.Size(71, 55)
+        Me.txtP16.TabIndex = 45
+        Me.txtP16.Tag = "16"
+        Me.txtP16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP25
+        '
+        Me.txtP25.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP25.BackColor = System.Drawing.Color.Silver
+        Me.txtP25.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP25.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP25.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP25.Enabled = False
+        Me.txtP25.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP25.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP25.HideSelection = False
+        Me.txtP25.Location = New System.Drawing.Point(510, 349)
+        Me.txtP25.MaxLength = 1
+        Me.txtP25.Name = "txtP25"
+        Me.txtP25.Size = New System.Drawing.Size(71, 55)
+        Me.txtP25.TabIndex = 54
+        Me.txtP25.Tag = "25"
+        Me.txtP25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP24
+        '
+        Me.txtP24.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP24.BackColor = System.Drawing.Color.Silver
+        Me.txtP24.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP24.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP24.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP24.Enabled = False
+        Me.txtP24.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP24.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP24.HideSelection = False
+        Me.txtP24.Location = New System.Drawing.Point(433, 349)
+        Me.txtP24.MaxLength = 1
+        Me.txtP24.Name = "txtP24"
+        Me.txtP24.Size = New System.Drawing.Size(71, 55)
+        Me.txtP24.TabIndex = 53
+        Me.txtP24.Tag = "24"
+        Me.txtP24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP23
+        '
+        Me.txtP23.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP23.BackColor = System.Drawing.Color.Silver
+        Me.txtP23.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP23.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP23.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP23.Enabled = False
+        Me.txtP23.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP23.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP23.HideSelection = False
+        Me.txtP23.Location = New System.Drawing.Point(356, 349)
+        Me.txtP23.MaxLength = 1
+        Me.txtP23.Name = "txtP23"
+        Me.txtP23.Size = New System.Drawing.Size(71, 55)
+        Me.txtP23.TabIndex = 52
+        Me.txtP23.Tag = "23"
+        Me.txtP23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP22
+        '
+        Me.txtP22.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP22.BackColor = System.Drawing.Color.Silver
+        Me.txtP22.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP22.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP22.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP22.Enabled = False
+        Me.txtP22.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP22.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP22.HideSelection = False
+        Me.txtP22.Location = New System.Drawing.Point(279, 349)
+        Me.txtP22.MaxLength = 1
+        Me.txtP22.Name = "txtP22"
+        Me.txtP22.Size = New System.Drawing.Size(71, 55)
+        Me.txtP22.TabIndex = 51
+        Me.txtP22.Tag = "22"
+        Me.txtP22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'txtP21
+        '
+        Me.txtP21.AccessibleRole = System.Windows.Forms.AccessibleRole.None
+        Me.txtP21.BackColor = System.Drawing.Color.Silver
+        Me.txtP21.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.txtP21.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
+        Me.txtP21.Cursor = System.Windows.Forms.Cursors.Default
+        Me.txtP21.Enabled = False
+        Me.txtP21.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtP21.ForeColor = System.Drawing.SystemColors.Window
+        Me.txtP21.HideSelection = False
+        Me.txtP21.Location = New System.Drawing.Point(202, 349)
+        Me.txtP21.MaxLength = 1
+        Me.txtP21.Name = "txtP21"
+        Me.txtP21.Size = New System.Drawing.Size(71, 55)
+        Me.txtP21.TabIndex = 50
+        Me.txtP21.Tag = "21"
+        Me.txtP21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Principal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 706)
+        Me.ClientSize = New System.Drawing.Size(778, 706)
+        Me.Controls.Add(Me.txtP25)
+        Me.Controls.Add(Me.txtP24)
+        Me.Controls.Add(Me.txtP23)
+        Me.Controls.Add(Me.txtP22)
+        Me.Controls.Add(Me.txtP21)
+        Me.Controls.Add(Me.txtP20)
+        Me.Controls.Add(Me.txtP19)
+        Me.Controls.Add(Me.txtP18)
+        Me.Controls.Add(Me.txtP17)
+        Me.Controls.Add(Me.txtP16)
+        Me.Controls.Add(Me.txtP15)
+        Me.Controls.Add(Me.txtP14)
+        Me.Controls.Add(Me.txtP13)
+        Me.Controls.Add(Me.txtP12)
+        Me.Controls.Add(Me.txtP11)
+        Me.Controls.Add(Me.txtP10)
+        Me.Controls.Add(Me.txtP9)
+        Me.Controls.Add(Me.txtP8)
+        Me.Controls.Add(Me.txtP7)
+        Me.Controls.Add(Me.txtP6)
         Me.Controls.Add(Me.btnBorrar)
         Me.Controls.Add(Me.btnEnviar)
-        Me.Controls.Add(Me.txtPrueba)
         Me.Controls.Add(Me.txtP5)
         Me.Controls.Add(Me.txtP4)
         Me.Controls.Add(Me.txtP3)
@@ -446,7 +876,8 @@ Partial Class Principal
         Me.Controls.Add(Me.btnC)
         Me.Controls.Add(Me.btnB)
         Me.Controls.Add(Me.btnA)
-        Me.Name = "Form1"
+        Me.KeyPreview = True
+        Me.Name = "Principal"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -485,7 +916,26 @@ Partial Class Principal
     Friend WithEvents txtP3 As TextBox
     Friend WithEvents txtP4 As TextBox
     Friend WithEvents txtP5 As TextBox
-    Friend WithEvents txtPrueba As TextBox
     Friend WithEvents btnEnviar As Button
     Friend WithEvents btnBorrar As Button
+    Friend WithEvents txtP10 As TextBox
+    Friend WithEvents txtP9 As TextBox
+    Friend WithEvents txtP8 As TextBox
+    Friend WithEvents txtP7 As TextBox
+    Friend WithEvents txtP6 As TextBox
+    Friend WithEvents txtP15 As TextBox
+    Friend WithEvents txtP14 As TextBox
+    Friend WithEvents txtP13 As TextBox
+    Friend WithEvents txtP12 As TextBox
+    Friend WithEvents txtP11 As TextBox
+    Friend WithEvents txtP20 As TextBox
+    Friend WithEvents txtP19 As TextBox
+    Friend WithEvents txtP18 As TextBox
+    Friend WithEvents txtP17 As TextBox
+    Friend WithEvents txtP16 As TextBox
+    Friend WithEvents txtP25 As TextBox
+    Friend WithEvents txtP24 As TextBox
+    Friend WithEvents txtP23 As TextBox
+    Friend WithEvents txtP22 As TextBox
+    Friend WithEvents txtP21 As TextBox
 End Class
