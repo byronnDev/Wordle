@@ -3,13 +3,14 @@
     'toDo Hacer form de victoria
     'toDo Boton para reiniciar el juego
 
+    ' TODO María: Mejor centrar los formularios con StarPosition. 
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
-        If palabra.Length <> 5 Then
+        If palabra.Length <> 5 Then ' TODO María: No trabajar con valores absolutos (estos 5 debería ser una constante, por si luego decidís que sean de otra cantidad) 
             Exit Sub
         End If
         ' Validacion
         If palabraAdivinar.Equals(palabra.ToUpper) Then
-            Me.Enabled = False
+            Me.Enabled = False ' TODO María ¿Por qué lo deshabilitáis? 
             Victoria.ShowDialog()
         End If
         maxPos += 5
@@ -62,7 +63,7 @@
     End Sub
     ' Devuelve el TextBox en el que estamos
     Public Function DondeEstoy() As TextBox
-        For Each caracter In listChar
+        For Each caracter In listChar ' todo María Nombre caracter para realmente hablar de un cuadro de texto???
             If caracter.Tag = posRecuadro Then
                 Return caracter
             End If

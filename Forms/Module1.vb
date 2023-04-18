@@ -1,7 +1,8 @@
 ﻿Module Module1
+    ' todo María Los formularios deben comenzar el nombre con Frm
     Public palabraAdivinar As String = "AVION"
     Public posRecuadro As Integer = 0
-    Public listChar As New List(Of TextBox)
+    Public listChar As New List(Of TextBox) ' todo  María Si son cuadros de texto, el nombre no es muy adecuado
     Public palabra As String
     Public maxPos As Integer = 4
     Public posBorrar As Integer = 0 ' Posicion del recuadro en la que se puede borrar

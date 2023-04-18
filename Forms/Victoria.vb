@@ -2,7 +2,7 @@
     Private Sub Victoria_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Dim resultado As DialogResult = MessageBox.Show("¿Deseas comenzar una nueva partida?", "ATENCION", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning)
         If resultado = DialogResult.No Then
-            Principal.Close()
+            Principal.Close() ' todo María Si ya se estaba cerrando, en este caso no debe hacer nada
         ElseIf resultado = DialogResult.Cancel Then
 
             ReiniciarJuego()
