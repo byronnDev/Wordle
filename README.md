@@ -1,7 +1,7 @@
 # Wordle
 
 Wordle es un juego de palabras que consiste en adivinar una palabra secreta de cinco letras en seis intentos. Cada vez que se introduce una palabra, se muestra si alguna de sus letras coincide con la palabra secreta en posición o en letra.
-
+![image](https://user-images.githubusercontent.com/38868773/232740085-f3b8e937-cf97-4cc5-9121-0fea170154bf.png)
 ## Instalación
 
 Para instalar el repositorio y la aplicación de Wordle, se necesita tener instalado Git y el sistema operativo Windows. Luego, se debe seguir los siguientes pasos:
