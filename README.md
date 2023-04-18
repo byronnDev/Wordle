@@ -4,7 +4,7 @@ Wordle es un juego de palabras que consiste en adivinar una palabra secreta de c
 
 ## Instalación
 
-Para instalar el repositorio y la aplicación de Wordle, se necesita tener instalado Git y Node.js en el sistema. Luego, se debe seguir los siguientes pasos:
+Para instalar el repositorio y la aplicación de Wordle, se necesita tener instalado Git y el sistema operativo Windows. Luego, se debe seguir los siguientes pasos:
 
 - Clonar el repositorio con el comando `git clone https://github.com/byronnYT/Wordle.git`.
 - Entrar en la carpeta del repositorio con el comando `cd Wordle`.
