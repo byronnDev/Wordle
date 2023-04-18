@@ -8,9 +8,7 @@ Para instalar el repositorio y la aplicación de Wordle, se necesita tener insta
 
 - Clonar el repositorio con el comando `git clone https://github.com/byronnYT/Wordle.git`.
 - Entrar en la carpeta del repositorio con el comando `cd Wordle`.
-- Abres el proyecto en Visual Studio.
-- Le das a `Iniciar` y listo.
-
-Ahora disfruta del programa!
+- Entras a la carpeta Clases y dentro en bin con el siguiente comando `cd Clases/bin`.
+- Ejecutas el `Forms.exe` y listo.
 
 Colaboradores: Mikel Echeverria, Juan Hidalgo y Arkaitz Calvo
