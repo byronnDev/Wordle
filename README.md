@@ -12,3 +12,5 @@ Para instalar el repositorio y la aplicación de Wordle, se necesita tener insta
 - Le das a `Iniciar` y listo.
 
 Ahora disfruta del programa!
+
+Colaboradores: Mikel Echeverria, Juan Hidalgo y Arkaitz Calvo
