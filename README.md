@@ -1,7 +1,6 @@
 # Wordle
-![LOGO WORDLE](https://user-images.githubusercontent.com/38868773/233009827-0de774a9-0d53-4565-9b0a-36020755e878.png)
 Wordle es un juego de palabras que consiste en adivinar una palabra secreta de cinco letras en seis intentos. Cada vez que se introduce una palabra, se muestra si alguna de sus letras coincide con la palabra secreta en posición o en letra.
-
+![LOGO WORDLE](https://user-images.githubusercontent.com/38868773/233009827-0de774a9-0d53-4565-9b0a-36020755e878.png)
 ![image](https://user-images.githubusercontent.com/38868773/232740085-f3b8e937-cf97-4cc5-9121-0fea170154bf.png)
 
 ## Instalación
