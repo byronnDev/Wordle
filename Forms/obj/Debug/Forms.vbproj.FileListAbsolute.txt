@@ -37,3 +37,33 @@ C:\Users\Mikel\Source\Repos\Wordle\Forms\bin\Debug\Clases.xml
 C:\Users\Mikel\Source\Repos\Wordle\Forms\obj\Debug\Forms.Form1.resources
 C:\Users\Mikel\Source\Repos\Wordle\Forms\obj\Debug\Forms.vbproj.CopyComplete
 >>>>>>> Stashed changes
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\bin\Debug\Forms.exe.config
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\bin\Debug\Forms.exe
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\bin\Debug\Forms.pdb
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\bin\Debug\Forms.xml
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.vbproj.AssemblyReference.cache
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.vbproj.SuggestedBindingRedirects.cache
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.Principal.resources
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.Resources.resources
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.Victoria.resources
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.vbproj.GenerateResource.cache
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.vbproj.CoreCompileInputs.cache
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.exe
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.xml
+G:\Mi unidad\Modulos\1DamProgramacion\00 Alumnado\Proyectos Finales\G2ArkMikJuan\Wordle\Forms\obj\Debug\Forms.pdb
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\bin\Debug\Forms.exe.config
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\bin\Debug\Forms.exe
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\bin\Debug\Forms.pdb
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\bin\Debug\Forms.xml
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.vbproj.AssemblyReference.cache
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.vbproj.SuggestedBindingRedirects.cache
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.Principal.resources
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.Resources.resources
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.Victoria.resources
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.vbproj.GenerateResource.cache
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.vbproj.CoreCompileInputs.cache
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.exe
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.xml
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.pdb
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.FrmPrincipal.resources
+C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.FrmVictoria.resources
