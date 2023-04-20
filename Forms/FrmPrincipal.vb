@@ -90,7 +90,7 @@
         Return Nothing
     End Function
 
-    ' Limpiar los TextBox
+    ' Limpiar los TextBox TERMINADO
     Public Sub Limpieza()
         For Each textbox In listaRecuadros
             textbox.BackColor = Color.Silver
@@ -101,11 +101,27 @@
         maxPos = 4
         posBorrar = 0
     End Sub
-
+    'Modo Oscuro TERMINADO
     Private Sub btnModoOscuro_Click(sender As Object, e As EventArgs) Handles btnModoOscuro.Click
+        Dim conntrol As Control
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
             Me.BackColor = Color.White
+            For Each conntrol In Me.Controls
+                If TypeOf conntrol Is Button Then
+                    conntrol.BackColor = Color.White
+                    conntrol.ForeColor = Color.Black
+                End If
+            Next
+
+
         Else
+            For Each conntrol In Me.Controls
+                If TypeOf conntrol Is Button Then
+                    conntrol.BackColor = Color.FromArgb(30, 30, 30)
+                    conntrol.ForeColor = Color.White
+                End If
+            Next
+
             Me.BackColor = Color.FromArgb(15, 15, 15)
         End If
 

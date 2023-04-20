@@ -7,5 +7,4 @@
     Public maxPos As Integer = 4
     Public posBorrar As Integer = 0 ' Posicion del recuadro en la que se puede borrar
     Public Const LONGITUDPALABRA = 5 ' La longitud de la palabra
-
 End Module

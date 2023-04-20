@@ -67,3 +67,17 @@ C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.xml
 C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.pdb
 C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.FrmPrincipal.resources
 C:\Users\FenixDC\Desktop\Trabajos\Programacion\Wordle\Forms\obj\Debug\Forms.FrmVictoria.resources
+C:\Users\FenixDC\Downloads\Wordle\Forms\bin\Debug\Forms.exe.config
+C:\Users\FenixDC\Downloads\Wordle\Forms\bin\Debug\Forms.exe
+C:\Users\FenixDC\Downloads\Wordle\Forms\bin\Debug\Forms.pdb
+C:\Users\FenixDC\Downloads\Wordle\Forms\bin\Debug\Forms.xml
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.vbproj.AssemblyReference.cache
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.vbproj.SuggestedBindingRedirects.cache
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.FrmPrincipal.resources
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.Resources.resources
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.FrmVictoria.resources
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.vbproj.GenerateResource.cache
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.vbproj.CoreCompileInputs.cache
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.exe
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.xml
+C:\Users\FenixDC\Downloads\Wordle\Forms\obj\Debug\Forms.pdb
