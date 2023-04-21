@@ -1,5 +1,7 @@
-﻿Module Module1
+﻿Imports Clases
+Module Module1
     'toDo para ficheros usar el metodo split y separar datos mediante*
+    Public manage As New GestionUsuarios
     Public palabraAdivinar As String = "AVION"
     Public posRecuadro As Integer = 0
     Public listaRecuadros As New List(Of TextBox)
