@@ -1,25 +1,18 @@
 ﻿Imports System.IO
-'toDo encriptar contraseñas
-'toDo almacenar puntaje de usuarios
-'toDo crear tabla de puntuaciones
-'toDo getUsuario
-'toDo getUsuarioContraseña
 Public Class GestionUsuarios
-    Private pathUsers As String = "./datos/usuarios.txt"
-    Private users As List(Of Usuario)
+    Private pathUsers As String = "./datos/usuarios.txt" ' Path del fichero donde se almacenan los usuarios
+    Private users As List(Of Usuario) ' Lista de usuarios almacenados en ./datos/usuarios.txt
     Public Sub New()
-        ' Creamos un Array con todos los datos de todos los usuarios
-        Dim tempDatos As String() = File.ReadAllLines(pathUsers)
-        Dim datosSplit As List(Of String) = New List(Of String)
+        ' Inicializamos la lista de usuarios
         users = New List(Of Usuario)
-        For Each datos In tempDatos
-            datos.Split("*")
-            datosSplit.AddRange(datos.Split("*"))
-        Next
-        For i = 0 To datosSplit.ToArray.Length - 1 Step 4
-            ' Agregamos a la lista de usuarios todos lo usuarios almacenados en el documento
-            users.Add(New Usuario(datosSplit(i), datosSplit(i + 1), datosSplit(i + 2), datosSplit(i + 3)))
-        Next
+        ' Si no existe el fichero de usuarios, lo creamos
+        If File.Exists(pathUsers) Then
+            ' Creamos un Array con todos los datos de todos los usuarios
+            Dim tempDatos As String() = File.ReadAllLines(pathUsers)
+            For Each datos In tempDatos
+                users.Add(New Usuario(datos.Split("*")(0), datos.Split("*")(1), datos.Split("*")(2), datos.Split("*")(3)))
+            Next
+        End If
     End Sub
     Public Function RegistrarUsuario(usuario As String, contrasena As String) As String
         Dim tempUser As New Usuario(usuario, contrasena) ' Creamos un usuario auxiliar
@@ -34,9 +27,10 @@ Public Class GestionUsuarios
     End Function
 
     Public Function ListarUsuarios() As List(Of Usuario)
+        'Devuelve la lista de usuarios actual
         Return users
     End Function
-    Public Function GetUser(nombreUsuario As String) As Usuario
+    Public Function BuscarUsuario(nombreUsuario As String) As Usuario
         Dim tempUser As New Usuario(nombreUsuario)
         Dim posicion As Integer = users.IndexOf(tempUser)
         If posicion = -1 Then ' Si no encuentra el usuario
@@ -45,14 +39,11 @@ Public Class GestionUsuarios
         ' Si lo encuentra, lo devuelve
         Return users(posicion)
     End Function
-    Public Function GetScore(nombreUsuario As String) As Integer
-        Dim tempUser As Usuario = New Usuario(nombreUsuario) ' Creo un usuairo temporal
-        Dim position As Integer = users.IndexOf(tempUser) ' Busca al usuario, devuelve -1 si no lo encuentra
-        If position = -1 Then ' Si no encuentra al usuario
-            Return Nothing 'Devuelve nothing
+    Public Function Fallos(nombreUsuario As String) As Integer
+        Dim tempUser As Usuario = BuscarUsuario(nombreUsuario) ' Creo un usuairo temporal
+        If IsNothing(tempUser) Then
+            Return Nothing
         End If
-        Return users(position).Score ' Devuelve la puntuación
+        Return tempUser.Fallos ' Devuelve la cantidad de fallos
     End Function
-
-
 End Class

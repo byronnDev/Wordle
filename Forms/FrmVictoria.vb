@@ -17,4 +17,8 @@
     Private Sub btnCerrar_Click(sender As Object, e As EventArgs) Handles btnCerrar.Click
 
     End Sub
+
+    Private Sub FrmVictoria_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

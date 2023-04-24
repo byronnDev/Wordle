@@ -6,19 +6,19 @@ Public Class Usuario
 
     Public Property Username As String
     Public Property Password As String
-    Public Property Score As Integer
+    Public Property Fallos As Integer
     Public Property Wins As Integer
 
-    Public Sub New(usernme As String, password As String, score As Integer, wins As Integer)
+    Public Sub New(usernme As String, password As String, intentos As Integer, wins As Integer)
         Me._Username = usernme
         Me._Password = Encrypt(password)
-        Me._Score = score
+        Me._Fallos = intentos
         Me._Wins = wins
     End Sub
     Public Sub New(username As String, password As String)
         Me._Username = username
         Me._Password = Encrypt(password)
-        Me._Score = 0
+        Me._Fallos = 0
         Me._Wins = 0
     End Sub
     Public Sub New(username As String)
@@ -43,7 +43,7 @@ Public Class Usuario
     End Function
 
     Public Overrides Function ToString() As String
-        Return _Username + "*" + _Password + "*" + _Score + "*" + _Wins
+        Return _Username + "*" + _Password + "*" + _Fallos + "*" + _Wins ' To String para luego utilizarlo a la hora de agregar al fichero
     End Function
 
     Public Overrides Function Equals(obj As Object) As Boolean

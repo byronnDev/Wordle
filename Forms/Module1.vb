@@ -1,12 +1,18 @@
 ﻿Imports Clases
 Module Module1
-    'toDo para ficheros usar el metodo split y separar datos mediante*
-    Public manage As New GestionUsuarios
-    Public palabraAdivinar As String = "AVION"
+    'toDo crear tabla de puntuaciones
+    'toDo Hacer form de victoria
+    'toDo Boton para reiniciar el juego
+    'toDo clase de palabras con hijos de diferentes tipos y que cuando gane te de tips
+    'toDo Avanzado: Añadir o quitar un boton de tecla en la interfaz grafica y que sin tocar codigo siga funcionando
+    'toDo Avanzado: Hacer que a la hora de cambiar en la interfaz grafica la cantidad de recuadros de 5 a 6 no afecte al codigo
+    Public manage As GestionUsuarios 'Plataforma para gestionar los datos de los usuarios y para agregar estos mismos
+    Public palabraAdivinar As String = "AVION" ' Palabra la cual tienen que adivinar
+    Public usuarioActual As Usuario ' Guarda el usuario actual
     Public posRecuadro As Integer = 0
     Public listaRecuadros As New List(Of TextBox)
     Public palabra As String
     Public maxPos As Integer = 4
-    Public posBorrar As Integer = 0 ' Posicion del recuadro en la que se puede borrar
     Public Const LONGITUDPALABRA = 5 ' La longitud de la palabra
+    Public intentosTotales As Byte = 0
 End Module
