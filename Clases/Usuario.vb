@@ -43,7 +43,7 @@ Public Class Usuario
     End Function
 
     Public Overrides Function ToString() As String
-        Return _Username + "*" + _Password + "*" + _Fallos + "*" + _Wins ' To String para luego utilizarlo a la hora de agregar al fichero
+        Return _Username & "*" & _Password & "*" & _Fallos & "*" & _Wins ' To String para luego utilizarlo a la hora de agregar al fichero
     End Function
 
     Public Overrides Function Equals(obj As Object) As Boolean

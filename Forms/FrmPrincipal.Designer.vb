@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FrmPrincipal
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FrmPrincipal
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnA = New System.Windows.Forms.Button()
         Me.btnB = New System.Windows.Forms.Button()
@@ -77,13 +77,14 @@ Partial Class FrmPrincipal
         Me.txtP22 = New System.Windows.Forms.TextBox()
         Me.txtP21 = New System.Windows.Forms.TextBox()
         Me.btnModoOscuro = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.btnReinicio = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnA
         '
         Me.btnA.Location = New System.Drawing.Point(58, 454)
-        Me.btnA.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnA.Margin = New System.Windows.Forms.Padding(2)
         Me.btnA.Name = "btnA"
         Me.btnA.Size = New System.Drawing.Size(44, 35)
         Me.btnA.TabIndex = 0
@@ -93,7 +94,7 @@ Partial Class FrmPrincipal
         'btnB
         '
         Me.btnB.Location = New System.Drawing.Point(335, 494)
-        Me.btnB.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnB.Margin = New System.Windows.Forms.Padding(2)
         Me.btnB.Name = "btnB"
         Me.btnB.Size = New System.Drawing.Size(44, 35)
         Me.btnB.TabIndex = 1
@@ -103,7 +104,7 @@ Partial Class FrmPrincipal
         'btnC
         '
         Me.btnC.Location = New System.Drawing.Point(239, 494)
-        Me.btnC.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnC.Margin = New System.Windows.Forms.Padding(2)
         Me.btnC.Name = "btnC"
         Me.btnC.Size = New System.Drawing.Size(44, 35)
         Me.btnC.TabIndex = 2
@@ -113,7 +114,7 @@ Partial Class FrmPrincipal
         'btnD
         '
         Me.btnD.Location = New System.Drawing.Point(154, 454)
-        Me.btnD.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnD.Margin = New System.Windows.Forms.Padding(2)
         Me.btnD.Name = "btnD"
         Me.btnD.Size = New System.Drawing.Size(44, 35)
         Me.btnD.TabIndex = 3
@@ -123,7 +124,7 @@ Partial Class FrmPrincipal
         'btnE
         '
         Me.btnE.Location = New System.Drawing.Point(154, 414)
-        Me.btnE.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnE.Margin = New System.Windows.Forms.Padding(2)
         Me.btnE.Name = "btnE"
         Me.btnE.Size = New System.Drawing.Size(44, 35)
         Me.btnE.TabIndex = 4
@@ -133,7 +134,7 @@ Partial Class FrmPrincipal
         'btnF
         '
         Me.btnF.Location = New System.Drawing.Point(202, 454)
-        Me.btnF.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnF.Margin = New System.Windows.Forms.Padding(2)
         Me.btnF.Name = "btnF"
         Me.btnF.Size = New System.Drawing.Size(44, 35)
         Me.btnF.TabIndex = 5
@@ -143,7 +144,7 @@ Partial Class FrmPrincipal
         'btnG
         '
         Me.btnG.Location = New System.Drawing.Point(250, 454)
-        Me.btnG.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnG.Margin = New System.Windows.Forms.Padding(2)
         Me.btnG.Name = "btnG"
         Me.btnG.Size = New System.Drawing.Size(44, 35)
         Me.btnG.TabIndex = 6
@@ -153,7 +154,7 @@ Partial Class FrmPrincipal
         'btnH
         '
         Me.btnH.Location = New System.Drawing.Point(298, 454)
-        Me.btnH.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnH.Margin = New System.Windows.Forms.Padding(2)
         Me.btnH.Name = "btnH"
         Me.btnH.Size = New System.Drawing.Size(44, 35)
         Me.btnH.TabIndex = 7
@@ -163,7 +164,7 @@ Partial Class FrmPrincipal
         'btnI
         '
         Me.btnI.Location = New System.Drawing.Point(394, 414)
-        Me.btnI.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnI.Margin = New System.Windows.Forms.Padding(2)
         Me.btnI.Name = "btnI"
         Me.btnI.Size = New System.Drawing.Size(44, 35)
         Me.btnI.TabIndex = 8
@@ -173,7 +174,7 @@ Partial Class FrmPrincipal
         'btnJ
         '
         Me.btnJ.Location = New System.Drawing.Point(346, 454)
-        Me.btnJ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnJ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnJ.Name = "btnJ"
         Me.btnJ.Size = New System.Drawing.Size(44, 35)
         Me.btnJ.TabIndex = 9
@@ -183,7 +184,7 @@ Partial Class FrmPrincipal
         'btnK
         '
         Me.btnK.Location = New System.Drawing.Point(394, 454)
-        Me.btnK.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnK.Margin = New System.Windows.Forms.Padding(2)
         Me.btnK.Name = "btnK"
         Me.btnK.Size = New System.Drawing.Size(44, 35)
         Me.btnK.TabIndex = 10
@@ -193,7 +194,7 @@ Partial Class FrmPrincipal
         'btnL
         '
         Me.btnL.Location = New System.Drawing.Point(442, 454)
-        Me.btnL.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnL.Margin = New System.Windows.Forms.Padding(2)
         Me.btnL.Name = "btnL"
         Me.btnL.Size = New System.Drawing.Size(44, 35)
         Me.btnL.TabIndex = 11
@@ -203,7 +204,7 @@ Partial Class FrmPrincipal
         'btnM
         '
         Me.btnM.Location = New System.Drawing.Point(431, 494)
-        Me.btnM.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnM.Margin = New System.Windows.Forms.Padding(2)
         Me.btnM.Name = "btnM"
         Me.btnM.Size = New System.Drawing.Size(44, 35)
         Me.btnM.TabIndex = 12
@@ -213,7 +214,7 @@ Partial Class FrmPrincipal
         'btnN
         '
         Me.btnN.Location = New System.Drawing.Point(383, 494)
-        Me.btnN.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnN.Margin = New System.Windows.Forms.Padding(2)
         Me.btnN.Name = "btnN"
         Me.btnN.Size = New System.Drawing.Size(44, 35)
         Me.btnN.TabIndex = 13
@@ -223,7 +224,7 @@ Partial Class FrmPrincipal
         'btnÑ
         '
         Me.btnÑ.Location = New System.Drawing.Point(490, 454)
-        Me.btnÑ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnÑ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnÑ.Name = "btnÑ"
         Me.btnÑ.Size = New System.Drawing.Size(44, 35)
         Me.btnÑ.TabIndex = 14
@@ -233,7 +234,7 @@ Partial Class FrmPrincipal
         'btnO
         '
         Me.btnO.Location = New System.Drawing.Point(442, 414)
-        Me.btnO.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnO.Margin = New System.Windows.Forms.Padding(2)
         Me.btnO.Name = "btnO"
         Me.btnO.Size = New System.Drawing.Size(44, 35)
         Me.btnO.TabIndex = 15
@@ -243,7 +244,7 @@ Partial Class FrmPrincipal
         'btnP
         '
         Me.btnP.Location = New System.Drawing.Point(490, 414)
-        Me.btnP.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnP.Margin = New System.Windows.Forms.Padding(2)
         Me.btnP.Name = "btnP"
         Me.btnP.Size = New System.Drawing.Size(44, 35)
         Me.btnP.TabIndex = 16
@@ -253,7 +254,7 @@ Partial Class FrmPrincipal
         'btnQ
         '
         Me.btnQ.Location = New System.Drawing.Point(58, 414)
-        Me.btnQ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnQ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnQ.Name = "btnQ"
         Me.btnQ.Size = New System.Drawing.Size(44, 35)
         Me.btnQ.TabIndex = 17
@@ -263,7 +264,7 @@ Partial Class FrmPrincipal
         'btnR
         '
         Me.btnR.Location = New System.Drawing.Point(202, 414)
-        Me.btnR.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnR.Margin = New System.Windows.Forms.Padding(2)
         Me.btnR.Name = "btnR"
         Me.btnR.Size = New System.Drawing.Size(44, 35)
         Me.btnR.TabIndex = 18
@@ -273,7 +274,7 @@ Partial Class FrmPrincipal
         'btnS
         '
         Me.btnS.Location = New System.Drawing.Point(106, 454)
-        Me.btnS.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnS.Margin = New System.Windows.Forms.Padding(2)
         Me.btnS.Name = "btnS"
         Me.btnS.Size = New System.Drawing.Size(44, 35)
         Me.btnS.TabIndex = 19
@@ -283,7 +284,7 @@ Partial Class FrmPrincipal
         'btnT
         '
         Me.btnT.Location = New System.Drawing.Point(250, 414)
-        Me.btnT.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnT.Margin = New System.Windows.Forms.Padding(2)
         Me.btnT.Name = "btnT"
         Me.btnT.Size = New System.Drawing.Size(44, 35)
         Me.btnT.TabIndex = 20
@@ -293,7 +294,7 @@ Partial Class FrmPrincipal
         'btnU
         '
         Me.btnU.Location = New System.Drawing.Point(346, 414)
-        Me.btnU.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnU.Margin = New System.Windows.Forms.Padding(2)
         Me.btnU.Name = "btnU"
         Me.btnU.Size = New System.Drawing.Size(44, 35)
         Me.btnU.TabIndex = 21
@@ -303,7 +304,7 @@ Partial Class FrmPrincipal
         'btnV
         '
         Me.btnV.Location = New System.Drawing.Point(287, 494)
-        Me.btnV.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnV.Margin = New System.Windows.Forms.Padding(2)
         Me.btnV.Name = "btnV"
         Me.btnV.Size = New System.Drawing.Size(44, 35)
         Me.btnV.TabIndex = 22
@@ -313,7 +314,7 @@ Partial Class FrmPrincipal
         'btnW
         '
         Me.btnW.Location = New System.Drawing.Point(106, 414)
-        Me.btnW.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnW.Margin = New System.Windows.Forms.Padding(2)
         Me.btnW.Name = "btnW"
         Me.btnW.Size = New System.Drawing.Size(44, 35)
         Me.btnW.TabIndex = 23
@@ -323,7 +324,7 @@ Partial Class FrmPrincipal
         'btnX
         '
         Me.btnX.Location = New System.Drawing.Point(191, 494)
-        Me.btnX.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnX.Margin = New System.Windows.Forms.Padding(2)
         Me.btnX.Name = "btnX"
         Me.btnX.Size = New System.Drawing.Size(44, 35)
         Me.btnX.TabIndex = 24
@@ -333,7 +334,7 @@ Partial Class FrmPrincipal
         'btnY
         '
         Me.btnY.Location = New System.Drawing.Point(298, 414)
-        Me.btnY.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnY.Margin = New System.Windows.Forms.Padding(2)
         Me.btnY.Name = "btnY"
         Me.btnY.Size = New System.Drawing.Size(44, 35)
         Me.btnY.TabIndex = 25
@@ -343,7 +344,7 @@ Partial Class FrmPrincipal
         'btnZ
         '
         Me.btnZ.Location = New System.Drawing.Point(143, 494)
-        Me.btnZ.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnZ.Margin = New System.Windows.Forms.Padding(2)
         Me.btnZ.Name = "btnZ"
         Me.btnZ.Size = New System.Drawing.Size(44, 35)
         Me.btnZ.TabIndex = 26
@@ -362,7 +363,7 @@ Partial Class FrmPrincipal
         Me.txtP1.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP1.HideSelection = False
         Me.txtP1.Location = New System.Drawing.Point(152, 72)
-        Me.txtP1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP1.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP1.MaxLength = 1
         Me.txtP1.Name = "txtP1"
         Me.txtP1.Size = New System.Drawing.Size(53, 43)
@@ -382,7 +383,7 @@ Partial Class FrmPrincipal
         Me.txtP2.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP2.HideSelection = False
         Me.txtP2.Location = New System.Drawing.Point(209, 72)
-        Me.txtP2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP2.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP2.MaxLength = 1
         Me.txtP2.Name = "txtP2"
         Me.txtP2.Size = New System.Drawing.Size(53, 43)
@@ -402,7 +403,7 @@ Partial Class FrmPrincipal
         Me.txtP3.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP3.HideSelection = False
         Me.txtP3.Location = New System.Drawing.Point(267, 72)
-        Me.txtP3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP3.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP3.MaxLength = 1
         Me.txtP3.Name = "txtP3"
         Me.txtP3.Size = New System.Drawing.Size(53, 43)
@@ -422,7 +423,7 @@ Partial Class FrmPrincipal
         Me.txtP4.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP4.HideSelection = False
         Me.txtP4.Location = New System.Drawing.Point(325, 72)
-        Me.txtP4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP4.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP4.MaxLength = 1
         Me.txtP4.Name = "txtP4"
         Me.txtP4.Size = New System.Drawing.Size(53, 43)
@@ -442,7 +443,7 @@ Partial Class FrmPrincipal
         Me.txtP5.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP5.HideSelection = False
         Me.txtP5.Location = New System.Drawing.Point(382, 72)
-        Me.txtP5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP5.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP5.MaxLength = 1
         Me.txtP5.Name = "txtP5"
         Me.txtP5.Size = New System.Drawing.Size(53, 43)
@@ -454,7 +455,7 @@ Partial Class FrmPrincipal
         '
         Me.btnEnviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEnviar.Location = New System.Drawing.Point(58, 494)
-        Me.btnEnviar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnEnviar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnEnviar.Name = "btnEnviar"
         Me.btnEnviar.Size = New System.Drawing.Size(81, 35)
         Me.btnEnviar.TabIndex = 33
@@ -465,7 +466,7 @@ Partial Class FrmPrincipal
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBorrar.Location = New System.Drawing.Point(479, 494)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(54, 35)
         Me.btnBorrar.TabIndex = 34
@@ -485,7 +486,7 @@ Partial Class FrmPrincipal
         Me.txtP10.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP10.HideSelection = False
         Me.txtP10.Location = New System.Drawing.Point(382, 125)
-        Me.txtP10.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP10.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP10.MaxLength = 1
         Me.txtP10.Name = "txtP10"
         Me.txtP10.Size = New System.Drawing.Size(53, 43)
@@ -505,7 +506,7 @@ Partial Class FrmPrincipal
         Me.txtP9.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP9.HideSelection = False
         Me.txtP9.Location = New System.Drawing.Point(325, 125)
-        Me.txtP9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP9.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP9.MaxLength = 1
         Me.txtP9.Name = "txtP9"
         Me.txtP9.Size = New System.Drawing.Size(53, 43)
@@ -525,7 +526,7 @@ Partial Class FrmPrincipal
         Me.txtP8.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP8.HideSelection = False
         Me.txtP8.Location = New System.Drawing.Point(267, 125)
-        Me.txtP8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP8.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP8.MaxLength = 1
         Me.txtP8.Name = "txtP8"
         Me.txtP8.Size = New System.Drawing.Size(53, 43)
@@ -545,7 +546,7 @@ Partial Class FrmPrincipal
         Me.txtP7.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP7.HideSelection = False
         Me.txtP7.Location = New System.Drawing.Point(209, 125)
-        Me.txtP7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP7.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP7.MaxLength = 1
         Me.txtP7.Name = "txtP7"
         Me.txtP7.Size = New System.Drawing.Size(53, 43)
@@ -565,7 +566,7 @@ Partial Class FrmPrincipal
         Me.txtP6.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP6.HideSelection = False
         Me.txtP6.Location = New System.Drawing.Point(152, 125)
-        Me.txtP6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP6.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP6.MaxLength = 1
         Me.txtP6.Name = "txtP6"
         Me.txtP6.Size = New System.Drawing.Size(53, 43)
@@ -585,7 +586,7 @@ Partial Class FrmPrincipal
         Me.txtP15.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP15.HideSelection = False
         Me.txtP15.Location = New System.Drawing.Point(382, 178)
-        Me.txtP15.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP15.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP15.MaxLength = 1
         Me.txtP15.Name = "txtP15"
         Me.txtP15.Size = New System.Drawing.Size(53, 43)
@@ -605,7 +606,7 @@ Partial Class FrmPrincipal
         Me.txtP14.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP14.HideSelection = False
         Me.txtP14.Location = New System.Drawing.Point(325, 178)
-        Me.txtP14.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP14.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP14.MaxLength = 1
         Me.txtP14.Name = "txtP14"
         Me.txtP14.Size = New System.Drawing.Size(53, 43)
@@ -625,7 +626,7 @@ Partial Class FrmPrincipal
         Me.txtP13.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP13.HideSelection = False
         Me.txtP13.Location = New System.Drawing.Point(267, 178)
-        Me.txtP13.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP13.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP13.MaxLength = 1
         Me.txtP13.Name = "txtP13"
         Me.txtP13.Size = New System.Drawing.Size(53, 43)
@@ -645,7 +646,7 @@ Partial Class FrmPrincipal
         Me.txtP12.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP12.HideSelection = False
         Me.txtP12.Location = New System.Drawing.Point(209, 178)
-        Me.txtP12.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP12.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP12.MaxLength = 1
         Me.txtP12.Name = "txtP12"
         Me.txtP12.Size = New System.Drawing.Size(53, 43)
@@ -665,7 +666,7 @@ Partial Class FrmPrincipal
         Me.txtP11.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP11.HideSelection = False
         Me.txtP11.Location = New System.Drawing.Point(152, 178)
-        Me.txtP11.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP11.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP11.MaxLength = 1
         Me.txtP11.Name = "txtP11"
         Me.txtP11.Size = New System.Drawing.Size(53, 43)
@@ -685,7 +686,7 @@ Partial Class FrmPrincipal
         Me.txtP20.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP20.HideSelection = False
         Me.txtP20.Location = New System.Drawing.Point(382, 231)
-        Me.txtP20.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP20.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP20.MaxLength = 1
         Me.txtP20.Name = "txtP20"
         Me.txtP20.Size = New System.Drawing.Size(53, 43)
@@ -705,7 +706,7 @@ Partial Class FrmPrincipal
         Me.txtP19.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP19.HideSelection = False
         Me.txtP19.Location = New System.Drawing.Point(325, 231)
-        Me.txtP19.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP19.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP19.MaxLength = 1
         Me.txtP19.Name = "txtP19"
         Me.txtP19.Size = New System.Drawing.Size(53, 43)
@@ -725,7 +726,7 @@ Partial Class FrmPrincipal
         Me.txtP18.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP18.HideSelection = False
         Me.txtP18.Location = New System.Drawing.Point(267, 231)
-        Me.txtP18.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP18.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP18.MaxLength = 1
         Me.txtP18.Name = "txtP18"
         Me.txtP18.Size = New System.Drawing.Size(53, 43)
@@ -745,7 +746,7 @@ Partial Class FrmPrincipal
         Me.txtP17.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP17.HideSelection = False
         Me.txtP17.Location = New System.Drawing.Point(209, 231)
-        Me.txtP17.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP17.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP17.MaxLength = 1
         Me.txtP17.Name = "txtP17"
         Me.txtP17.Size = New System.Drawing.Size(53, 43)
@@ -765,7 +766,7 @@ Partial Class FrmPrincipal
         Me.txtP16.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP16.HideSelection = False
         Me.txtP16.Location = New System.Drawing.Point(152, 231)
-        Me.txtP16.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP16.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP16.MaxLength = 1
         Me.txtP16.Name = "txtP16"
         Me.txtP16.Size = New System.Drawing.Size(53, 43)
@@ -785,7 +786,7 @@ Partial Class FrmPrincipal
         Me.txtP25.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP25.HideSelection = False
         Me.txtP25.Location = New System.Drawing.Point(382, 284)
-        Me.txtP25.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP25.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP25.MaxLength = 1
         Me.txtP25.Name = "txtP25"
         Me.txtP25.Size = New System.Drawing.Size(53, 43)
@@ -805,7 +806,7 @@ Partial Class FrmPrincipal
         Me.txtP24.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP24.HideSelection = False
         Me.txtP24.Location = New System.Drawing.Point(325, 284)
-        Me.txtP24.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP24.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP24.MaxLength = 1
         Me.txtP24.Name = "txtP24"
         Me.txtP24.Size = New System.Drawing.Size(53, 43)
@@ -825,7 +826,7 @@ Partial Class FrmPrincipal
         Me.txtP23.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP23.HideSelection = False
         Me.txtP23.Location = New System.Drawing.Point(267, 284)
-        Me.txtP23.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP23.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP23.MaxLength = 1
         Me.txtP23.Name = "txtP23"
         Me.txtP23.Size = New System.Drawing.Size(53, 43)
@@ -845,7 +846,7 @@ Partial Class FrmPrincipal
         Me.txtP22.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP22.HideSelection = False
         Me.txtP22.Location = New System.Drawing.Point(209, 284)
-        Me.txtP22.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP22.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP22.MaxLength = 1
         Me.txtP22.Name = "txtP22"
         Me.txtP22.Size = New System.Drawing.Size(53, 43)
@@ -865,7 +866,7 @@ Partial Class FrmPrincipal
         Me.txtP21.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP21.HideSelection = False
         Me.txtP21.Location = New System.Drawing.Point(152, 284)
-        Me.txtP21.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.txtP21.Margin = New System.Windows.Forms.Padding(2)
         Me.txtP21.MaxLength = 1
         Me.txtP21.Name = "txtP21"
         Me.txtP21.Size = New System.Drawing.Size(53, 43)
@@ -875,21 +876,34 @@ Partial Class FrmPrincipal
         '
         'btnModoOscuro
         '
-        Me.btnModoOscuro.Location = New System.Drawing.Point(497, 24)
+        Me.btnModoOscuro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModoOscuro.Location = New System.Drawing.Point(479, 36)
         Me.btnModoOscuro.Name = "btnModoOscuro"
-        Me.btnModoOscuro.Size = New System.Drawing.Size(75, 23)
+        Me.btnModoOscuro.Size = New System.Drawing.Size(74, 60)
         Me.btnModoOscuro.TabIndex = 55
-        Me.btnModoOscuro.Text = "Button1"
+        Me.btnModoOscuro.Text = "ModoOscuro"
         Me.btnModoOscuro.UseVisualStyleBackColor = True
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(584, 24)
+        Me.MenuStrip1.TabIndex = 57
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'btnReinicio
         '
-        Me.btnReinicio.Location = New System.Drawing.Point(497, 304)
+        Me.btnReinicio.BackColor = System.Drawing.Color.Transparent
+        Me.btnReinicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnReinicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnReinicio.ForeColor = System.Drawing.Color.Transparent
+        Me.btnReinicio.Image = Global.Forms.My.Resources.Resources.ReinicioNegro
+        Me.btnReinicio.Location = New System.Drawing.Point(479, 339)
         Me.btnReinicio.Name = "btnReinicio"
-        Me.btnReinicio.Size = New System.Drawing.Size(75, 23)
-        Me.btnReinicio.TabIndex = 56
-        Me.btnReinicio.Text = "Button1"
-        Me.btnReinicio.UseVisualStyleBackColor = True
+        Me.btnReinicio.Size = New System.Drawing.Size(65, 53)
+        Me.btnReinicio.TabIndex = 58
+        Me.btnReinicio.UseVisualStyleBackColor = False
         '
         'FrmPrincipal
         '
@@ -952,8 +966,10 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.btnC)
         Me.Controls.Add(Me.btnB)
         Me.Controls.Add(Me.btnA)
+        Me.Controls.Add(Me.MenuStrip1)
         Me.KeyPreview = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FrmPrincipal"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -1016,5 +1032,6 @@ Partial Class FrmPrincipal
     Friend WithEvents txtP22 As TextBox
     Friend WithEvents txtP21 As TextBox
     Friend WithEvents btnModoOscuro As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents btnReinicio As Button
 End Class

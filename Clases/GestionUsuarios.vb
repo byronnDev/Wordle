@@ -10,6 +10,7 @@ Public Class GestionUsuarios
             ' Creamos un Array con todos los datos de todos los usuarios
             Dim tempDatos As String() = File.ReadAllLines(pathUsers)
             For Each datos In tempDatos
+
                 users.Add(New Usuario(datos.Split("*")(0), datos.Split("*")(1), datos.Split("*")(2), datos.Split("*")(3)))
             Next
         End If

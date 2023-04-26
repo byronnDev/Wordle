@@ -1,4 +1,5 @@
-﻿Imports Clases
+﻿Imports System.Windows
+Imports Clases
 Public Class FrmPrincipal
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
         If palabra.Length <> LONGITUDPALABRA Then
@@ -23,14 +24,16 @@ Public Class FrmPrincipal
         TextBoxActual().Text += TryCast(sender, Button).Text
         palabra += TryCast(sender, Button).Text
     End Sub
-
+    'Dim oscuroOno As Boolean
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25} ' Array de TextBox
         manage = New GestionUsuarios
         listaRecuadros.AddRange(arrayDeTextBox) ' Agregar los TextBox a la lista
         txtP1.Select()
-        'Me.Hide()
-        'FrmUsuarios.ShowDialog()
+        Me.Hide()
+        btnReinicio.FlatStyle = FlatStyle.Flat
+        btnReinicio.FlatAppearance.BorderSize = 0
+        FrmUsuarios.ShowDialog()
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
@@ -114,6 +117,7 @@ Public Class FrmPrincipal
     Private Sub btnModoOscuro_Click(sender As Object, e As EventArgs) Handles btnModoOscuro.Click
         Dim conntrol As Control
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
+            btnReinicio.Image = My.Resources.ReinicioNegro
             Me.BackColor = Color.White
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
@@ -128,13 +132,12 @@ Public Class FrmPrincipal
                     conntrol.ForeColor = Color.White
                 End If
             Next
-
+            btnReinicio.BackColor = Color.Transparent
+            btnReinicio.Image = My.Resources.ReinicioBlanco
             Me.BackColor = Color.FromArgb(15, 15, 15)
         End If
 
     End Sub
 
-    Private Sub btnReinicio_Click(sender As Object, e As EventArgs) Handles btnReinicio.Click
-        Limpieza()
-    End Sub
+
 End Class

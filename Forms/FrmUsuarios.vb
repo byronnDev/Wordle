@@ -7,6 +7,9 @@ Public Class FrmUsuarios
     'toDo arreglar inicio de sesion
     Private Sub btnLoginRegister_Click(sender As Object, e As EventArgs) Handles btnLoginRegister.Click
         ' Si existe
+        LblLoginError.Text = "Usuario no existe"
+        LblLoginError.Visible = False
+        LblLoginError.ForeColor = Color.Red
         If String.IsNullOrWhiteSpace(txtUsuarioNombre.Text) OrElse String.IsNullOrWhiteSpace(txtContrasena.Text) Then
             MessageBox.Show("Debe llenar todos los campos")
         Else
@@ -17,9 +20,8 @@ Public Class FrmUsuarios
                 'te notifica 
                 If manage.BuscarUsuario(txtUsuarioNombre.Text) = Nothing Then
                     'usuario no existe
-                    MessageBox.Show("usuario no exite")
+                    LblLoginError.Visible = True
                 Else
-                    MessageBox.Show($"gracias por iniciar sesion {txtUsuarioNombre.Text}, disfrute del juego")
                     Me.Close()
                 End If
             ElseIf rbtRegistrarse.Checked = True Then
@@ -27,10 +29,11 @@ Public Class FrmUsuarios
                 lblRepetirContrasena.Show()
                 If manage.RegistrarUsuario(txtUsuarioNombre.Text, txtContrasena.Text) = Nothing Then
                     'usuario no existe
-                    MessageBox.Show("usuario no exite")
+                    LblLoginError.Visible = True
                 Else
-                    MessageBox.Show($"gracias por iniciar sesion {txtUsuarioNombre.Text}, disfrute del juego")
-                    Me.Close()
+                    LblLoginError.Visible = True
+                    LblLoginError.ForeColor = Color.Green
+                    LblLoginError.Text = $"Gracias por registrarte {txtUsuarioNombre.Text}, recuerda logearte ahora para disfrutar del juego"
                 End If
             End If
         End If
@@ -40,5 +43,17 @@ Public Class FrmUsuarios
         Me.Close()
         ' Cierra la aplicación
         FrmPrincipal.Close()
+    End Sub
+
+    Private Sub rbtIniciarSesion_CheckedChanged(sender As Object, e As EventArgs) Handles rbtIniciarSesion.CheckedChanged
+        LblLoginError.Visible = False
+        txtRepetirContrasena.Visible = False
+        lblRepetirContrasena.Visible = False
+
+    End Sub
+
+    Private Sub rbtRegistrarse_CheckedChanged(sender As Object, e As EventArgs) Handles rbtRegistrarse.CheckedChanged
+        txtRepetirContrasena.Visible = True
+        lblRepetirContrasena.Visible = True
     End Sub
 End Class

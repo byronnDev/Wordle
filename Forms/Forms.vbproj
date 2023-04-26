@@ -145,5 +145,11 @@
       <Name>Clases</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReinicioNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReinicioBlanco.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
