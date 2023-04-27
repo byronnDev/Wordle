@@ -7,7 +7,6 @@ Public Class FrmPrincipal
         End If
         ' Validacion
         If palabraAdivinar.Equals(palabra.ToUpper) Then
-
             Me.Enabled = False
             FrmVictoria.ShowDialog()
             Exit Sub
@@ -28,11 +27,15 @@ Public Class FrmPrincipal
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25} ' Array de TextBox
         manage = New GestionUsuarios
+        ' Añadimos la palabra elegida aleatoriamente del array
+        palabraAdivinar = "AVION" 'palabrasDisponibles(rnd.Next(palabrasDisponibles.Length + 1))
         listaRecuadros.AddRange(arrayDeTextBox) ' Agregar los TextBox a la lista
         txtP1.Select()
         Me.Hide()
         btnReinicio.FlatStyle = FlatStyle.Flat
         btnReinicio.FlatAppearance.BorderSize = 0
+        btnModoOscuro.FlatStyle = FlatStyle.Flat
+        btnModoOscuro.FlatAppearance.BorderSize = 0
         FrmUsuarios.ShowDialog()
     End Sub
 
@@ -62,9 +65,11 @@ Public Class FrmPrincipal
                     DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
                 End If
             Next
+
             ' Si se acaban los intentos
             If intentosTotales >= 5 Then
                 MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                palabraAdivinar = palabrasDisponibles(rnd.Next(palabrasDisponibles.Length + 1))
                 Limpieza() ' Limpiar los TextBox
             End If
             btnEnviar_Click(sender, e)
@@ -117,7 +122,10 @@ Public Class FrmPrincipal
     Private Sub btnModoOscuro_Click(sender As Object, e As EventArgs) Handles btnModoOscuro.Click
         Dim conntrol As Control
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
+
             btnReinicio.Image = My.Resources.ReinicioNegro
+            btnModoOscuro.Image = My.Resources.LunaNegro
+            btnModoOscuro.BackColor = Color.Transparent
             Me.BackColor = Color.White
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
@@ -133,11 +141,14 @@ Public Class FrmPrincipal
                 End If
             Next
             btnReinicio.BackColor = Color.Transparent
+            btnModoOscuro.BackColor = Color.Transparent
+            btnModoOscuro.Image = My.Resources.SolBlanco
             btnReinicio.Image = My.Resources.ReinicioBlanco
             Me.BackColor = Color.FromArgb(15, 15, 15)
         End If
-
     End Sub
-
-
+    Private Sub btnReinicio_Click(sender As Object, e As EventArgs) Handles btnReinicio.Click
+        Limpieza()
+        palabraAdivinar = palabrasDisponibles(rnd.Next(palabrasDisponibles.Length + 1))
+    End Sub
 End Class

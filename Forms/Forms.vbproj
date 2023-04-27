@@ -151,5 +151,23 @@
   <ItemGroup>
     <None Include="Resources\ReinicioBlanco.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LunaBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LunaNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\datos\usuarios.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\datos\palabras.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

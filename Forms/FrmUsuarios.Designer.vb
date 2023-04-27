@@ -55,7 +55,7 @@ Partial Class FrmUsuarios
         Me.btnLoginRegister.Location = New System.Drawing.Point(96, 292)
         Me.btnLoginRegister.Name = "btnLoginRegister"
         Me.btnLoginRegister.Size = New System.Drawing.Size(75, 23)
-        Me.btnLoginRegister.TabIndex = 3
+        Me.btnLoginRegister.TabIndex = 6
         Me.btnLoginRegister.Text = "Aceptar"
         Me.btnLoginRegister.UseVisualStyleBackColor = True
         '
@@ -65,7 +65,7 @@ Partial Class FrmUsuarios
         Me.rbtIniciarSesion.Location = New System.Drawing.Point(155, 238)
         Me.rbtIniciarSesion.Name = "rbtIniciarSesion"
         Me.rbtIniciarSesion.Size = New System.Drawing.Size(86, 17)
-        Me.rbtIniciarSesion.TabIndex = 5
+        Me.rbtIniciarSesion.TabIndex = 4
         Me.rbtIniciarSesion.TabStop = True
         Me.rbtIniciarSesion.Text = "Iniciar sesion"
         Me.rbtIniciarSesion.UseVisualStyleBackColor = True
@@ -76,7 +76,7 @@ Partial Class FrmUsuarios
         Me.rbtRegistrarse.Location = New System.Drawing.Point(279, 238)
         Me.rbtRegistrarse.Name = "rbtRegistrarse"
         Me.rbtRegistrarse.Size = New System.Drawing.Size(76, 17)
-        Me.rbtRegistrarse.TabIndex = 6
+        Me.rbtRegistrarse.TabIndex = 5
         Me.rbtRegistrarse.TabStop = True
         Me.rbtRegistrarse.Text = "Registrarte"
         Me.rbtRegistrarse.UseVisualStyleBackColor = True
@@ -86,7 +86,7 @@ Partial Class FrmUsuarios
         Me.btnCancelar.Location = New System.Drawing.Point(349, 292)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
-        Me.btnCancelar.TabIndex = 3
+        Me.btnCancelar.TabIndex = 7
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
@@ -124,7 +124,7 @@ Partial Class FrmUsuarios
         Me.txtUsuarioNombre.Location = New System.Drawing.Point(228, 101)
         Me.txtUsuarioNombre.Name = "txtUsuarioNombre"
         Me.txtUsuarioNombre.Size = New System.Drawing.Size(179, 20)
-        Me.txtUsuarioNombre.TabIndex = 10
+        Me.txtUsuarioNombre.TabIndex = 0
         Me.txtUsuarioNombre.Text = "admin"
         '
         'txtRepetirContrasena
@@ -133,7 +133,7 @@ Partial Class FrmUsuarios
         Me.txtRepetirContrasena.Location = New System.Drawing.Point(228, 184)
         Me.txtRepetirContrasena.Name = "txtRepetirContrasena"
         Me.txtRepetirContrasena.Size = New System.Drawing.Size(179, 20)
-        Me.txtRepetirContrasena.TabIndex = 10
+        Me.txtRepetirContrasena.TabIndex = 3
         Me.txtRepetirContrasena.Visible = False
         '
         'Titulo

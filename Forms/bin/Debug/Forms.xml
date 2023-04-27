@@ -22,6 +22,16 @@ Forms
   búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
 </summary>
 </member>
+<member name="P:Forms.My.Resources.Resources.LunaBlanco">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Forms.My.Resources.Resources.LunaNegro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Forms.My.Resources.Resources.ReinicioBlanco">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
@@ -30,6 +40,21 @@ Forms
 <member name="P:Forms.My.Resources.Resources.ReinicioNegro">
 <summary>
   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Forms.My.Resources.Resources.SolBlanco">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Forms.My.Resources.Resources.SolNegro">
+<summary>
+  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Forms.My.Resources.Resources.usuarios">
+<summary>
+  Busca una cadena traducida similar a admin*admin*0*0.
 </summary>
 </member>
 </members>

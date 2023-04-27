@@ -11,7 +11,7 @@ Public Class GestionUsuarios
             Dim tempDatos As String() = File.ReadAllLines(pathUsers)
             For Each datos In tempDatos
 
-                users.Add(New Usuario(datos.Split("*")(0), datos.Split("*")(1), datos.Split("*")(2), datos.Split("*")(3)))
+                users.Add(New Usuario(datos.Split("*")(0), datos.Split("*")(1), datos.Split("*")(2), datos.Split("*")(3) & vbCrLf))
             Next
         End If
     End Sub

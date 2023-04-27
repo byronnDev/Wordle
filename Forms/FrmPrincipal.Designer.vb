@@ -876,13 +876,14 @@ Partial Class FrmPrincipal
         '
         'btnModoOscuro
         '
+        Me.btnModoOscuro.BackColor = System.Drawing.Color.Transparent
         Me.btnModoOscuro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModoOscuro.Image = Global.Forms.My.Resources.Resources.LunaNegro
         Me.btnModoOscuro.Location = New System.Drawing.Point(479, 36)
         Me.btnModoOscuro.Name = "btnModoOscuro"
         Me.btnModoOscuro.Size = New System.Drawing.Size(74, 60)
         Me.btnModoOscuro.TabIndex = 55
-        Me.btnModoOscuro.Text = "ModoOscuro"
-        Me.btnModoOscuro.UseVisualStyleBackColor = True
+        Me.btnModoOscuro.UseVisualStyleBackColor = False
         '
         'MenuStrip1
         '

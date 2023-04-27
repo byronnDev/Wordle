@@ -124,4 +124,19 @@
   <data name="ReinicioBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ReinicioBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="LunaBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LunaBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LunaNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LunaNegro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolBlanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SolBlanco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SolNegro" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SolNegro.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="usuarios" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\datos\usuarios.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>

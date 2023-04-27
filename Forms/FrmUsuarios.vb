@@ -2,6 +2,7 @@
 Imports Clases
 Public Class FrmUsuarios
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        btnLoginRegister.Focus()
         rbtIniciarSesion.Checked = True
     End Sub
     'toDo arreglar inicio de sesion
