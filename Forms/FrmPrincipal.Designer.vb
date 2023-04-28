@@ -77,276 +77,275 @@ Partial Class FrmPrincipal
         Me.txtP22 = New System.Windows.Forms.TextBox()
         Me.txtP21 = New System.Windows.Forms.TextBox()
         Me.btnModoOscuro = New System.Windows.Forms.Button()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.btnReinicio = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnA
         '
-        Me.btnA.Location = New System.Drawing.Point(58, 454)
-        Me.btnA.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnA.Location = New System.Drawing.Point(77, 559)
+        Me.btnA.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnA.Name = "btnA"
-        Me.btnA.Size = New System.Drawing.Size(44, 35)
+        Me.btnA.Size = New System.Drawing.Size(59, 43)
         Me.btnA.TabIndex = 0
         Me.btnA.Text = "A"
         Me.btnA.UseVisualStyleBackColor = True
         '
         'btnB
         '
-        Me.btnB.Location = New System.Drawing.Point(335, 494)
-        Me.btnB.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnB.Location = New System.Drawing.Point(447, 608)
+        Me.btnB.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnB.Name = "btnB"
-        Me.btnB.Size = New System.Drawing.Size(44, 35)
+        Me.btnB.Size = New System.Drawing.Size(59, 43)
         Me.btnB.TabIndex = 1
         Me.btnB.Text = "B"
         Me.btnB.UseVisualStyleBackColor = True
         '
         'btnC
         '
-        Me.btnC.Location = New System.Drawing.Point(239, 494)
-        Me.btnC.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnC.Location = New System.Drawing.Point(319, 608)
+        Me.btnC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnC.Name = "btnC"
-        Me.btnC.Size = New System.Drawing.Size(44, 35)
+        Me.btnC.Size = New System.Drawing.Size(59, 43)
         Me.btnC.TabIndex = 2
         Me.btnC.Text = "C"
         Me.btnC.UseVisualStyleBackColor = True
         '
         'btnD
         '
-        Me.btnD.Location = New System.Drawing.Point(154, 454)
-        Me.btnD.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnD.Location = New System.Drawing.Point(205, 559)
+        Me.btnD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnD.Name = "btnD"
-        Me.btnD.Size = New System.Drawing.Size(44, 35)
+        Me.btnD.Size = New System.Drawing.Size(59, 43)
         Me.btnD.TabIndex = 3
         Me.btnD.Text = "D"
         Me.btnD.UseVisualStyleBackColor = True
         '
         'btnE
         '
-        Me.btnE.Location = New System.Drawing.Point(154, 414)
-        Me.btnE.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnE.Location = New System.Drawing.Point(205, 510)
+        Me.btnE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnE.Name = "btnE"
-        Me.btnE.Size = New System.Drawing.Size(44, 35)
+        Me.btnE.Size = New System.Drawing.Size(59, 43)
         Me.btnE.TabIndex = 4
         Me.btnE.Text = "E"
         Me.btnE.UseVisualStyleBackColor = True
         '
         'btnF
         '
-        Me.btnF.Location = New System.Drawing.Point(202, 454)
-        Me.btnF.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnF.Location = New System.Drawing.Point(269, 559)
+        Me.btnF.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnF.Name = "btnF"
-        Me.btnF.Size = New System.Drawing.Size(44, 35)
+        Me.btnF.Size = New System.Drawing.Size(59, 43)
         Me.btnF.TabIndex = 5
         Me.btnF.Text = "F"
         Me.btnF.UseVisualStyleBackColor = True
         '
         'btnG
         '
-        Me.btnG.Location = New System.Drawing.Point(250, 454)
-        Me.btnG.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnG.Location = New System.Drawing.Point(333, 559)
+        Me.btnG.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnG.Name = "btnG"
-        Me.btnG.Size = New System.Drawing.Size(44, 35)
+        Me.btnG.Size = New System.Drawing.Size(59, 43)
         Me.btnG.TabIndex = 6
         Me.btnG.Text = "G"
         Me.btnG.UseVisualStyleBackColor = True
         '
         'btnH
         '
-        Me.btnH.Location = New System.Drawing.Point(298, 454)
-        Me.btnH.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnH.Location = New System.Drawing.Point(397, 559)
+        Me.btnH.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnH.Name = "btnH"
-        Me.btnH.Size = New System.Drawing.Size(44, 35)
+        Me.btnH.Size = New System.Drawing.Size(59, 43)
         Me.btnH.TabIndex = 7
         Me.btnH.Text = "H"
         Me.btnH.UseVisualStyleBackColor = True
         '
         'btnI
         '
-        Me.btnI.Location = New System.Drawing.Point(394, 414)
-        Me.btnI.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnI.Location = New System.Drawing.Point(525, 510)
+        Me.btnI.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnI.Name = "btnI"
-        Me.btnI.Size = New System.Drawing.Size(44, 35)
+        Me.btnI.Size = New System.Drawing.Size(59, 43)
         Me.btnI.TabIndex = 8
         Me.btnI.Text = "I"
         Me.btnI.UseVisualStyleBackColor = True
         '
         'btnJ
         '
-        Me.btnJ.Location = New System.Drawing.Point(346, 454)
-        Me.btnJ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnJ.Location = New System.Drawing.Point(461, 559)
+        Me.btnJ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnJ.Name = "btnJ"
-        Me.btnJ.Size = New System.Drawing.Size(44, 35)
+        Me.btnJ.Size = New System.Drawing.Size(59, 43)
         Me.btnJ.TabIndex = 9
         Me.btnJ.Text = "J"
         Me.btnJ.UseVisualStyleBackColor = True
         '
         'btnK
         '
-        Me.btnK.Location = New System.Drawing.Point(394, 454)
-        Me.btnK.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnK.Location = New System.Drawing.Point(525, 559)
+        Me.btnK.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnK.Name = "btnK"
-        Me.btnK.Size = New System.Drawing.Size(44, 35)
+        Me.btnK.Size = New System.Drawing.Size(59, 43)
         Me.btnK.TabIndex = 10
         Me.btnK.Text = "K"
         Me.btnK.UseVisualStyleBackColor = True
         '
         'btnL
         '
-        Me.btnL.Location = New System.Drawing.Point(442, 454)
-        Me.btnL.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnL.Location = New System.Drawing.Point(589, 559)
+        Me.btnL.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnL.Name = "btnL"
-        Me.btnL.Size = New System.Drawing.Size(44, 35)
+        Me.btnL.Size = New System.Drawing.Size(59, 43)
         Me.btnL.TabIndex = 11
         Me.btnL.Text = "L"
         Me.btnL.UseVisualStyleBackColor = True
         '
         'btnM
         '
-        Me.btnM.Location = New System.Drawing.Point(431, 494)
-        Me.btnM.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnM.Location = New System.Drawing.Point(575, 608)
+        Me.btnM.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnM.Name = "btnM"
-        Me.btnM.Size = New System.Drawing.Size(44, 35)
+        Me.btnM.Size = New System.Drawing.Size(59, 43)
         Me.btnM.TabIndex = 12
         Me.btnM.Text = "M"
         Me.btnM.UseVisualStyleBackColor = True
         '
         'btnN
         '
-        Me.btnN.Location = New System.Drawing.Point(383, 494)
-        Me.btnN.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnN.Location = New System.Drawing.Point(511, 608)
+        Me.btnN.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnN.Name = "btnN"
-        Me.btnN.Size = New System.Drawing.Size(44, 35)
+        Me.btnN.Size = New System.Drawing.Size(59, 43)
         Me.btnN.TabIndex = 13
         Me.btnN.Text = "N"
         Me.btnN.UseVisualStyleBackColor = True
         '
         'btnÑ
         '
-        Me.btnÑ.Location = New System.Drawing.Point(490, 454)
-        Me.btnÑ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnÑ.Location = New System.Drawing.Point(653, 559)
+        Me.btnÑ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnÑ.Name = "btnÑ"
-        Me.btnÑ.Size = New System.Drawing.Size(44, 35)
+        Me.btnÑ.Size = New System.Drawing.Size(59, 43)
         Me.btnÑ.TabIndex = 14
         Me.btnÑ.Text = "Ñ"
         Me.btnÑ.UseVisualStyleBackColor = True
         '
         'btnO
         '
-        Me.btnO.Location = New System.Drawing.Point(442, 414)
-        Me.btnO.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnO.Location = New System.Drawing.Point(589, 510)
+        Me.btnO.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnO.Name = "btnO"
-        Me.btnO.Size = New System.Drawing.Size(44, 35)
+        Me.btnO.Size = New System.Drawing.Size(59, 43)
         Me.btnO.TabIndex = 15
         Me.btnO.Text = "O"
         Me.btnO.UseVisualStyleBackColor = True
         '
         'btnP
         '
-        Me.btnP.Location = New System.Drawing.Point(490, 414)
-        Me.btnP.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnP.Location = New System.Drawing.Point(653, 510)
+        Me.btnP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnP.Name = "btnP"
-        Me.btnP.Size = New System.Drawing.Size(44, 35)
+        Me.btnP.Size = New System.Drawing.Size(59, 43)
         Me.btnP.TabIndex = 16
         Me.btnP.Text = "P"
         Me.btnP.UseVisualStyleBackColor = True
         '
         'btnQ
         '
-        Me.btnQ.Location = New System.Drawing.Point(58, 414)
-        Me.btnQ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnQ.Location = New System.Drawing.Point(77, 510)
+        Me.btnQ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnQ.Name = "btnQ"
-        Me.btnQ.Size = New System.Drawing.Size(44, 35)
+        Me.btnQ.Size = New System.Drawing.Size(59, 43)
         Me.btnQ.TabIndex = 17
         Me.btnQ.Text = "Q"
         Me.btnQ.UseVisualStyleBackColor = True
         '
         'btnR
         '
-        Me.btnR.Location = New System.Drawing.Point(202, 414)
-        Me.btnR.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnR.Location = New System.Drawing.Point(269, 510)
+        Me.btnR.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnR.Name = "btnR"
-        Me.btnR.Size = New System.Drawing.Size(44, 35)
+        Me.btnR.Size = New System.Drawing.Size(59, 43)
         Me.btnR.TabIndex = 18
         Me.btnR.Text = "R"
         Me.btnR.UseVisualStyleBackColor = True
         '
         'btnS
         '
-        Me.btnS.Location = New System.Drawing.Point(106, 454)
-        Me.btnS.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnS.Location = New System.Drawing.Point(141, 559)
+        Me.btnS.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnS.Name = "btnS"
-        Me.btnS.Size = New System.Drawing.Size(44, 35)
+        Me.btnS.Size = New System.Drawing.Size(59, 43)
         Me.btnS.TabIndex = 19
         Me.btnS.Text = "S"
         Me.btnS.UseVisualStyleBackColor = True
         '
         'btnT
         '
-        Me.btnT.Location = New System.Drawing.Point(250, 414)
-        Me.btnT.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnT.Location = New System.Drawing.Point(333, 510)
+        Me.btnT.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnT.Name = "btnT"
-        Me.btnT.Size = New System.Drawing.Size(44, 35)
+        Me.btnT.Size = New System.Drawing.Size(59, 43)
         Me.btnT.TabIndex = 20
         Me.btnT.Text = "T"
         Me.btnT.UseVisualStyleBackColor = True
         '
         'btnU
         '
-        Me.btnU.Location = New System.Drawing.Point(346, 414)
-        Me.btnU.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnU.Location = New System.Drawing.Point(461, 510)
+        Me.btnU.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnU.Name = "btnU"
-        Me.btnU.Size = New System.Drawing.Size(44, 35)
+        Me.btnU.Size = New System.Drawing.Size(59, 43)
         Me.btnU.TabIndex = 21
         Me.btnU.Text = "U"
         Me.btnU.UseVisualStyleBackColor = True
         '
         'btnV
         '
-        Me.btnV.Location = New System.Drawing.Point(287, 494)
-        Me.btnV.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnV.Location = New System.Drawing.Point(383, 608)
+        Me.btnV.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnV.Name = "btnV"
-        Me.btnV.Size = New System.Drawing.Size(44, 35)
+        Me.btnV.Size = New System.Drawing.Size(59, 43)
         Me.btnV.TabIndex = 22
         Me.btnV.Text = "V"
         Me.btnV.UseVisualStyleBackColor = True
         '
         'btnW
         '
-        Me.btnW.Location = New System.Drawing.Point(106, 414)
-        Me.btnW.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnW.Location = New System.Drawing.Point(141, 510)
+        Me.btnW.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnW.Name = "btnW"
-        Me.btnW.Size = New System.Drawing.Size(44, 35)
+        Me.btnW.Size = New System.Drawing.Size(59, 43)
         Me.btnW.TabIndex = 23
         Me.btnW.Text = "W"
         Me.btnW.UseVisualStyleBackColor = True
         '
         'btnX
         '
-        Me.btnX.Location = New System.Drawing.Point(191, 494)
-        Me.btnX.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnX.Location = New System.Drawing.Point(255, 608)
+        Me.btnX.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnX.Name = "btnX"
-        Me.btnX.Size = New System.Drawing.Size(44, 35)
+        Me.btnX.Size = New System.Drawing.Size(59, 43)
         Me.btnX.TabIndex = 24
         Me.btnX.Text = "X"
         Me.btnX.UseVisualStyleBackColor = True
         '
         'btnY
         '
-        Me.btnY.Location = New System.Drawing.Point(298, 414)
-        Me.btnY.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnY.Location = New System.Drawing.Point(397, 510)
+        Me.btnY.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnY.Name = "btnY"
-        Me.btnY.Size = New System.Drawing.Size(44, 35)
+        Me.btnY.Size = New System.Drawing.Size(59, 43)
         Me.btnY.TabIndex = 25
         Me.btnY.Text = "Y"
         Me.btnY.UseVisualStyleBackColor = True
         '
         'btnZ
         '
-        Me.btnZ.Location = New System.Drawing.Point(143, 494)
-        Me.btnZ.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnZ.Location = New System.Drawing.Point(191, 608)
+        Me.btnZ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnZ.Name = "btnZ"
-        Me.btnZ.Size = New System.Drawing.Size(44, 35)
+        Me.btnZ.Size = New System.Drawing.Size(59, 43)
         Me.btnZ.TabIndex = 26
         Me.btnZ.Text = "Z"
         Me.btnZ.UseVisualStyleBackColor = True
@@ -362,11 +361,11 @@ Partial Class FrmPrincipal
         Me.txtP1.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP1.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP1.HideSelection = False
-        Me.txtP1.Location = New System.Drawing.Point(152, 72)
-        Me.txtP1.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP1.Location = New System.Drawing.Point(203, 89)
+        Me.txtP1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP1.MaxLength = 1
         Me.txtP1.Name = "txtP1"
-        Me.txtP1.Size = New System.Drawing.Size(53, 43)
+        Me.txtP1.Size = New System.Drawing.Size(71, 54)
         Me.txtP1.TabIndex = 27
         Me.txtP1.Tag = "1"
         Me.txtP1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -382,11 +381,11 @@ Partial Class FrmPrincipal
         Me.txtP2.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP2.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP2.HideSelection = False
-        Me.txtP2.Location = New System.Drawing.Point(209, 72)
-        Me.txtP2.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP2.Location = New System.Drawing.Point(279, 89)
+        Me.txtP2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP2.MaxLength = 1
         Me.txtP2.Name = "txtP2"
-        Me.txtP2.Size = New System.Drawing.Size(53, 43)
+        Me.txtP2.Size = New System.Drawing.Size(71, 54)
         Me.txtP2.TabIndex = 28
         Me.txtP2.Tag = "2"
         Me.txtP2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -402,11 +401,11 @@ Partial Class FrmPrincipal
         Me.txtP3.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP3.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP3.HideSelection = False
-        Me.txtP3.Location = New System.Drawing.Point(267, 72)
-        Me.txtP3.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP3.Location = New System.Drawing.Point(356, 89)
+        Me.txtP3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP3.MaxLength = 1
         Me.txtP3.Name = "txtP3"
-        Me.txtP3.Size = New System.Drawing.Size(53, 43)
+        Me.txtP3.Size = New System.Drawing.Size(71, 54)
         Me.txtP3.TabIndex = 29
         Me.txtP3.Tag = "3"
         Me.txtP3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -422,11 +421,11 @@ Partial Class FrmPrincipal
         Me.txtP4.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP4.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP4.HideSelection = False
-        Me.txtP4.Location = New System.Drawing.Point(325, 72)
-        Me.txtP4.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP4.Location = New System.Drawing.Point(433, 89)
+        Me.txtP4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP4.MaxLength = 1
         Me.txtP4.Name = "txtP4"
-        Me.txtP4.Size = New System.Drawing.Size(53, 43)
+        Me.txtP4.Size = New System.Drawing.Size(71, 54)
         Me.txtP4.TabIndex = 30
         Me.txtP4.Tag = "4"
         Me.txtP4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -442,11 +441,11 @@ Partial Class FrmPrincipal
         Me.txtP5.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP5.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP5.HideSelection = False
-        Me.txtP5.Location = New System.Drawing.Point(382, 72)
-        Me.txtP5.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP5.Location = New System.Drawing.Point(509, 89)
+        Me.txtP5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP5.MaxLength = 1
         Me.txtP5.Name = "txtP5"
-        Me.txtP5.Size = New System.Drawing.Size(53, 43)
+        Me.txtP5.Size = New System.Drawing.Size(71, 54)
         Me.txtP5.TabIndex = 31
         Me.txtP5.Tag = "5"
         Me.txtP5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -454,10 +453,10 @@ Partial Class FrmPrincipal
         'btnEnviar
         '
         Me.btnEnviar.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEnviar.Location = New System.Drawing.Point(58, 494)
-        Me.btnEnviar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnEnviar.Location = New System.Drawing.Point(77, 608)
+        Me.btnEnviar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnEnviar.Name = "btnEnviar"
-        Me.btnEnviar.Size = New System.Drawing.Size(81, 35)
+        Me.btnEnviar.Size = New System.Drawing.Size(108, 43)
         Me.btnEnviar.TabIndex = 33
         Me.btnEnviar.Text = "✓"
         Me.btnEnviar.UseVisualStyleBackColor = True
@@ -465,10 +464,10 @@ Partial Class FrmPrincipal
         'btnBorrar
         '
         Me.btnBorrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBorrar.Location = New System.Drawing.Point(479, 494)
-        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(2)
+        Me.btnBorrar.Location = New System.Drawing.Point(639, 608)
+        Me.btnBorrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBorrar.Name = "btnBorrar"
-        Me.btnBorrar.Size = New System.Drawing.Size(54, 35)
+        Me.btnBorrar.Size = New System.Drawing.Size(72, 43)
         Me.btnBorrar.TabIndex = 34
         Me.btnBorrar.Text = "⬅️"
         Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -485,11 +484,11 @@ Partial Class FrmPrincipal
         Me.txtP10.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP10.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP10.HideSelection = False
-        Me.txtP10.Location = New System.Drawing.Point(382, 125)
-        Me.txtP10.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP10.Location = New System.Drawing.Point(509, 154)
+        Me.txtP10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP10.MaxLength = 1
         Me.txtP10.Name = "txtP10"
-        Me.txtP10.Size = New System.Drawing.Size(53, 43)
+        Me.txtP10.Size = New System.Drawing.Size(71, 54)
         Me.txtP10.TabIndex = 39
         Me.txtP10.Tag = "10"
         Me.txtP10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -505,11 +504,11 @@ Partial Class FrmPrincipal
         Me.txtP9.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP9.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP9.HideSelection = False
-        Me.txtP9.Location = New System.Drawing.Point(325, 125)
-        Me.txtP9.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP9.Location = New System.Drawing.Point(433, 154)
+        Me.txtP9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP9.MaxLength = 1
         Me.txtP9.Name = "txtP9"
-        Me.txtP9.Size = New System.Drawing.Size(53, 43)
+        Me.txtP9.Size = New System.Drawing.Size(71, 54)
         Me.txtP9.TabIndex = 38
         Me.txtP9.Tag = "9"
         Me.txtP9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -525,11 +524,11 @@ Partial Class FrmPrincipal
         Me.txtP8.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP8.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP8.HideSelection = False
-        Me.txtP8.Location = New System.Drawing.Point(267, 125)
-        Me.txtP8.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP8.Location = New System.Drawing.Point(356, 154)
+        Me.txtP8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP8.MaxLength = 1
         Me.txtP8.Name = "txtP8"
-        Me.txtP8.Size = New System.Drawing.Size(53, 43)
+        Me.txtP8.Size = New System.Drawing.Size(71, 54)
         Me.txtP8.TabIndex = 37
         Me.txtP8.Tag = "8"
         Me.txtP8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -545,11 +544,11 @@ Partial Class FrmPrincipal
         Me.txtP7.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP7.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP7.HideSelection = False
-        Me.txtP7.Location = New System.Drawing.Point(209, 125)
-        Me.txtP7.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP7.Location = New System.Drawing.Point(279, 154)
+        Me.txtP7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP7.MaxLength = 1
         Me.txtP7.Name = "txtP7"
-        Me.txtP7.Size = New System.Drawing.Size(53, 43)
+        Me.txtP7.Size = New System.Drawing.Size(71, 54)
         Me.txtP7.TabIndex = 36
         Me.txtP7.Tag = "7"
         Me.txtP7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -565,11 +564,11 @@ Partial Class FrmPrincipal
         Me.txtP6.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP6.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP6.HideSelection = False
-        Me.txtP6.Location = New System.Drawing.Point(152, 125)
-        Me.txtP6.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP6.Location = New System.Drawing.Point(203, 154)
+        Me.txtP6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP6.MaxLength = 1
         Me.txtP6.Name = "txtP6"
-        Me.txtP6.Size = New System.Drawing.Size(53, 43)
+        Me.txtP6.Size = New System.Drawing.Size(71, 54)
         Me.txtP6.TabIndex = 35
         Me.txtP6.Tag = "6"
         Me.txtP6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -585,11 +584,11 @@ Partial Class FrmPrincipal
         Me.txtP15.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP15.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP15.HideSelection = False
-        Me.txtP15.Location = New System.Drawing.Point(382, 178)
-        Me.txtP15.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP15.Location = New System.Drawing.Point(509, 219)
+        Me.txtP15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP15.MaxLength = 1
         Me.txtP15.Name = "txtP15"
-        Me.txtP15.Size = New System.Drawing.Size(53, 43)
+        Me.txtP15.Size = New System.Drawing.Size(71, 54)
         Me.txtP15.TabIndex = 44
         Me.txtP15.Tag = "15"
         Me.txtP15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -605,11 +604,11 @@ Partial Class FrmPrincipal
         Me.txtP14.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP14.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP14.HideSelection = False
-        Me.txtP14.Location = New System.Drawing.Point(325, 178)
-        Me.txtP14.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP14.Location = New System.Drawing.Point(433, 219)
+        Me.txtP14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP14.MaxLength = 1
         Me.txtP14.Name = "txtP14"
-        Me.txtP14.Size = New System.Drawing.Size(53, 43)
+        Me.txtP14.Size = New System.Drawing.Size(71, 54)
         Me.txtP14.TabIndex = 43
         Me.txtP14.Tag = "14"
         Me.txtP14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -625,11 +624,11 @@ Partial Class FrmPrincipal
         Me.txtP13.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP13.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP13.HideSelection = False
-        Me.txtP13.Location = New System.Drawing.Point(267, 178)
-        Me.txtP13.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP13.Location = New System.Drawing.Point(356, 219)
+        Me.txtP13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP13.MaxLength = 1
         Me.txtP13.Name = "txtP13"
-        Me.txtP13.Size = New System.Drawing.Size(53, 43)
+        Me.txtP13.Size = New System.Drawing.Size(71, 54)
         Me.txtP13.TabIndex = 42
         Me.txtP13.Tag = "13"
         Me.txtP13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -645,11 +644,11 @@ Partial Class FrmPrincipal
         Me.txtP12.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP12.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP12.HideSelection = False
-        Me.txtP12.Location = New System.Drawing.Point(209, 178)
-        Me.txtP12.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP12.Location = New System.Drawing.Point(279, 219)
+        Me.txtP12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP12.MaxLength = 1
         Me.txtP12.Name = "txtP12"
-        Me.txtP12.Size = New System.Drawing.Size(53, 43)
+        Me.txtP12.Size = New System.Drawing.Size(71, 54)
         Me.txtP12.TabIndex = 41
         Me.txtP12.Tag = "12"
         Me.txtP12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -665,11 +664,11 @@ Partial Class FrmPrincipal
         Me.txtP11.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP11.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP11.HideSelection = False
-        Me.txtP11.Location = New System.Drawing.Point(152, 178)
-        Me.txtP11.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP11.Location = New System.Drawing.Point(203, 219)
+        Me.txtP11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP11.MaxLength = 1
         Me.txtP11.Name = "txtP11"
-        Me.txtP11.Size = New System.Drawing.Size(53, 43)
+        Me.txtP11.Size = New System.Drawing.Size(71, 54)
         Me.txtP11.TabIndex = 40
         Me.txtP11.Tag = "11"
         Me.txtP11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -685,11 +684,11 @@ Partial Class FrmPrincipal
         Me.txtP20.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP20.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP20.HideSelection = False
-        Me.txtP20.Location = New System.Drawing.Point(382, 231)
-        Me.txtP20.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP20.Location = New System.Drawing.Point(509, 284)
+        Me.txtP20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP20.MaxLength = 1
         Me.txtP20.Name = "txtP20"
-        Me.txtP20.Size = New System.Drawing.Size(53, 43)
+        Me.txtP20.Size = New System.Drawing.Size(71, 54)
         Me.txtP20.TabIndex = 49
         Me.txtP20.Tag = "20"
         Me.txtP20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -705,11 +704,11 @@ Partial Class FrmPrincipal
         Me.txtP19.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP19.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP19.HideSelection = False
-        Me.txtP19.Location = New System.Drawing.Point(325, 231)
-        Me.txtP19.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP19.Location = New System.Drawing.Point(433, 284)
+        Me.txtP19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP19.MaxLength = 1
         Me.txtP19.Name = "txtP19"
-        Me.txtP19.Size = New System.Drawing.Size(53, 43)
+        Me.txtP19.Size = New System.Drawing.Size(71, 54)
         Me.txtP19.TabIndex = 48
         Me.txtP19.Tag = "19"
         Me.txtP19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -725,11 +724,11 @@ Partial Class FrmPrincipal
         Me.txtP18.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP18.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP18.HideSelection = False
-        Me.txtP18.Location = New System.Drawing.Point(267, 231)
-        Me.txtP18.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP18.Location = New System.Drawing.Point(356, 284)
+        Me.txtP18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP18.MaxLength = 1
         Me.txtP18.Name = "txtP18"
-        Me.txtP18.Size = New System.Drawing.Size(53, 43)
+        Me.txtP18.Size = New System.Drawing.Size(71, 54)
         Me.txtP18.TabIndex = 47
         Me.txtP18.Tag = "18"
         Me.txtP18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -745,11 +744,11 @@ Partial Class FrmPrincipal
         Me.txtP17.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP17.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP17.HideSelection = False
-        Me.txtP17.Location = New System.Drawing.Point(209, 231)
-        Me.txtP17.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP17.Location = New System.Drawing.Point(279, 284)
+        Me.txtP17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP17.MaxLength = 1
         Me.txtP17.Name = "txtP17"
-        Me.txtP17.Size = New System.Drawing.Size(53, 43)
+        Me.txtP17.Size = New System.Drawing.Size(71, 54)
         Me.txtP17.TabIndex = 46
         Me.txtP17.Tag = "17"
         Me.txtP17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -765,11 +764,11 @@ Partial Class FrmPrincipal
         Me.txtP16.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP16.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP16.HideSelection = False
-        Me.txtP16.Location = New System.Drawing.Point(152, 231)
-        Me.txtP16.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP16.Location = New System.Drawing.Point(203, 284)
+        Me.txtP16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP16.MaxLength = 1
         Me.txtP16.Name = "txtP16"
-        Me.txtP16.Size = New System.Drawing.Size(53, 43)
+        Me.txtP16.Size = New System.Drawing.Size(71, 54)
         Me.txtP16.TabIndex = 45
         Me.txtP16.Tag = "16"
         Me.txtP16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -785,11 +784,11 @@ Partial Class FrmPrincipal
         Me.txtP25.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP25.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP25.HideSelection = False
-        Me.txtP25.Location = New System.Drawing.Point(382, 284)
-        Me.txtP25.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP25.Location = New System.Drawing.Point(509, 350)
+        Me.txtP25.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP25.MaxLength = 1
         Me.txtP25.Name = "txtP25"
-        Me.txtP25.Size = New System.Drawing.Size(53, 43)
+        Me.txtP25.Size = New System.Drawing.Size(71, 54)
         Me.txtP25.TabIndex = 54
         Me.txtP25.Tag = "25"
         Me.txtP25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -805,11 +804,11 @@ Partial Class FrmPrincipal
         Me.txtP24.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP24.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP24.HideSelection = False
-        Me.txtP24.Location = New System.Drawing.Point(325, 284)
-        Me.txtP24.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP24.Location = New System.Drawing.Point(433, 350)
+        Me.txtP24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP24.MaxLength = 1
         Me.txtP24.Name = "txtP24"
-        Me.txtP24.Size = New System.Drawing.Size(53, 43)
+        Me.txtP24.Size = New System.Drawing.Size(71, 54)
         Me.txtP24.TabIndex = 53
         Me.txtP24.Tag = "24"
         Me.txtP24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -825,11 +824,11 @@ Partial Class FrmPrincipal
         Me.txtP23.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP23.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP23.HideSelection = False
-        Me.txtP23.Location = New System.Drawing.Point(267, 284)
-        Me.txtP23.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP23.Location = New System.Drawing.Point(356, 350)
+        Me.txtP23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP23.MaxLength = 1
         Me.txtP23.Name = "txtP23"
-        Me.txtP23.Size = New System.Drawing.Size(53, 43)
+        Me.txtP23.Size = New System.Drawing.Size(71, 54)
         Me.txtP23.TabIndex = 52
         Me.txtP23.Tag = "23"
         Me.txtP23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -845,11 +844,11 @@ Partial Class FrmPrincipal
         Me.txtP22.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP22.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP22.HideSelection = False
-        Me.txtP22.Location = New System.Drawing.Point(209, 284)
-        Me.txtP22.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP22.Location = New System.Drawing.Point(279, 350)
+        Me.txtP22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP22.MaxLength = 1
         Me.txtP22.Name = "txtP22"
-        Me.txtP22.Size = New System.Drawing.Size(53, 43)
+        Me.txtP22.Size = New System.Drawing.Size(71, 54)
         Me.txtP22.TabIndex = 51
         Me.txtP22.Tag = "22"
         Me.txtP22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -865,11 +864,11 @@ Partial Class FrmPrincipal
         Me.txtP21.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP21.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP21.HideSelection = False
-        Me.txtP21.Location = New System.Drawing.Point(152, 284)
-        Me.txtP21.Margin = New System.Windows.Forms.Padding(2)
+        Me.txtP21.Location = New System.Drawing.Point(203, 350)
+        Me.txtP21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP21.MaxLength = 1
         Me.txtP21.Name = "txtP21"
-        Me.txtP21.Size = New System.Drawing.Size(53, 43)
+        Me.txtP21.Size = New System.Drawing.Size(71, 54)
         Me.txtP21.TabIndex = 50
         Me.txtP21.Tag = "21"
         Me.txtP21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -879,19 +878,12 @@ Partial Class FrmPrincipal
         Me.btnModoOscuro.BackColor = System.Drawing.Color.Transparent
         Me.btnModoOscuro.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnModoOscuro.Image = Global.Forms.My.Resources.Resources.LunaNegro
-        Me.btnModoOscuro.Location = New System.Drawing.Point(479, 36)
+        Me.btnModoOscuro.Location = New System.Drawing.Point(639, 44)
+        Me.btnModoOscuro.Margin = New System.Windows.Forms.Padding(4)
         Me.btnModoOscuro.Name = "btnModoOscuro"
-        Me.btnModoOscuro.Size = New System.Drawing.Size(74, 60)
+        Me.btnModoOscuro.Size = New System.Drawing.Size(99, 74)
         Me.btnModoOscuro.TabIndex = 55
         Me.btnModoOscuro.UseVisualStyleBackColor = False
-        '
-        'MenuStrip1
-        '
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(584, 24)
-        Me.MenuStrip1.TabIndex = 57
-        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'btnReinicio
         '
@@ -900,17 +892,18 @@ Partial Class FrmPrincipal
         Me.btnReinicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
         Me.btnReinicio.ForeColor = System.Drawing.Color.Transparent
         Me.btnReinicio.Image = Global.Forms.My.Resources.Resources.ReinicioNegro
-        Me.btnReinicio.Location = New System.Drawing.Point(479, 339)
+        Me.btnReinicio.Location = New System.Drawing.Point(639, 417)
+        Me.btnReinicio.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReinicio.Name = "btnReinicio"
-        Me.btnReinicio.Size = New System.Drawing.Size(65, 53)
+        Me.btnReinicio.Size = New System.Drawing.Size(87, 65)
         Me.btnReinicio.TabIndex = 58
         Me.btnReinicio.UseVisualStyleBackColor = False
         '
         'FrmPrincipal
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(584, 574)
+        Me.ClientSize = New System.Drawing.Size(779, 706)
         Me.Controls.Add(Me.btnReinicio)
         Me.Controls.Add(Me.btnModoOscuro)
         Me.Controls.Add(Me.txtP25)
@@ -967,12 +960,10 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.btnC)
         Me.Controls.Add(Me.btnB)
         Me.Controls.Add(Me.btnA)
-        Me.Controls.Add(Me.MenuStrip1)
         Me.KeyPreview = True
-        Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmPrincipal"
-        Me.Text = "Form1"
+        Me.Text = "WORDLE"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1033,6 +1024,5 @@ Partial Class FrmPrincipal
     Friend WithEvents txtP22 As TextBox
     Friend WithEvents txtP21 As TextBox
     Friend WithEvents btnModoOscuro As Button
-    Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents btnReinicio As Button
 End Class

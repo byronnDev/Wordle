@@ -10,7 +10,6 @@ Public Class GestionUsuarios
             ' Creamos un Array con todos los datos de todos los usuarios
             Dim tempDatos As String() = File.ReadAllLines(pathUsers)
             For Each datos In tempDatos
-
                 users.Add(New Usuario(datos.Split("*")(0), datos.Split("*")(1), datos.Split("*")(2), datos.Split("*")(3) & vbCrLf))
             Next
         End If
@@ -27,11 +26,11 @@ Public Class GestionUsuarios
         Return "Usuario registrado correctamente"
     End Function
 
-    Public Function ListarUsuarios() As List(Of Usuario)
+    Public Function ListarUsuarios() As List(Of Usuario) ' Devuelve la lista de usuarios actual
         'Devuelve la lista de usuarios actual
         Return users
     End Function
-    Public Function BuscarUsuario(nombreUsuario As String) As Usuario
+    Public Function BuscarUsuario(nombreUsuario As String) As Usuario ' Busca un usuario por su nombre
         Dim tempUser As New Usuario(nombreUsuario)
         Dim posicion As Integer = users.IndexOf(tempUser)
         If posicion = -1 Then ' Si no encuentra el usuario
@@ -40,11 +39,20 @@ Public Class GestionUsuarios
         ' Si lo encuentra, lo devuelve
         Return users(posicion)
     End Function
-    Public Function Fallos(nombreUsuario As String) As Integer
-        Dim tempUser As Usuario = BuscarUsuario(nombreUsuario) ' Creo un usuairo temporal
-        If IsNothing(tempUser) Then
-            Return Nothing
+    Public Sub SumarPunto(user As Usuario, puntos As Integer) ' Suma puntos al usuario
+        Dim posicion = users.IndexOf(user)
+        If posicion = -1 Then
+            Exit Sub
         End If
-        Return tempUser.Fallos ' Devuelve la cantidad de fallos
-    End Function
+        users(posicion).Puntos += puntos
+        File.WriteAllLines(pathUsers, users.Select(Function(x) x.ToString)) ' Guardamos los cambios en el fichero
+    End Sub
+    Public Sub AnadirWin(user As Usuario) ' Añade una victoria al usuario
+        Dim posicion = users.IndexOf(user)
+        If posicion = -1 Then
+            Exit Sub
+        End If
+        users(posicion).Wins += 1
+        File.WriteAllLines(pathUsers, users.Select(Function(x) x.ToString)) ' Guardamos los cambios en el fichero
+    End Sub
 End Class

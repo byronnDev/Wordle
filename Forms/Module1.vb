@@ -3,8 +3,8 @@ Imports System.IO
 Module Module1
     'toDo hacer que cuando le de al boton tambien cambien los colores
     'toDo crear tabla de puntuaciones
-    'toDo Hacer form de victoria -> hidalgo
-    'toDo Boton para reiniciar el juego() -> Hidalgo
+    'toDo CAmbiar lo controles a tiempo de ejecucion -> Hidalgo
+    'toDo Hacer form de victoria -> Mikel
     'toDo clase de palabras con hijos de diferentes tipos y que cuando gane te de tips -> Arkaitz
     'toDo Avanzado: Añadir o quitar un boton de tecla en la interfaz grafica y que sin tocar codigo siga funcionando
     'toDo Avanzado: Hacer que a la hora de cambiar en la interfaz grafica la cantidad de recuadros de 5 a 6 no afecte al codigo
@@ -19,4 +19,8 @@ Module Module1
     Public maxPos As Integer = 4
     Public Const LONGITUDPALABRA = 5 ' La longitud de la palabra
     Public intentosTotales As Byte = 0
+
+    Public Sub NuevaPalabra()
+        palabraAdivinar = palabrasDisponibles(rnd.Next(palabrasDisponibles.Length))
+    End Sub
 End Module

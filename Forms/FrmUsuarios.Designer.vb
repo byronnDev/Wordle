@@ -38,23 +38,26 @@ Partial Class FrmUsuarios
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.LblLoginError = New System.Windows.Forms.Label()
+        Me.lblLoginError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtContrasena
         '
         Me.txtContrasena.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.txtContrasena.Location = New System.Drawing.Point(228, 140)
+        Me.txtContrasena.Location = New System.Drawing.Point(304, 172)
+        Me.txtContrasena.Margin = New System.Windows.Forms.Padding(4)
         Me.txtContrasena.Name = "txtContrasena"
-        Me.txtContrasena.Size = New System.Drawing.Size(179, 20)
+        Me.txtContrasena.Size = New System.Drawing.Size(237, 22)
         Me.txtContrasena.TabIndex = 2
         Me.txtContrasena.Text = "admin"
+        Me.txtContrasena.UseSystemPasswordChar = True
         '
         'btnLoginRegister
         '
-        Me.btnLoginRegister.Location = New System.Drawing.Point(96, 292)
+        Me.btnLoginRegister.Location = New System.Drawing.Point(128, 359)
+        Me.btnLoginRegister.Margin = New System.Windows.Forms.Padding(4)
         Me.btnLoginRegister.Name = "btnLoginRegister"
-        Me.btnLoginRegister.Size = New System.Drawing.Size(75, 23)
+        Me.btnLoginRegister.Size = New System.Drawing.Size(100, 28)
         Me.btnLoginRegister.TabIndex = 6
         Me.btnLoginRegister.Text = "Aceptar"
         Me.btnLoginRegister.UseVisualStyleBackColor = True
@@ -62,9 +65,10 @@ Partial Class FrmUsuarios
         'rbtIniciarSesion
         '
         Me.rbtIniciarSesion.AutoSize = True
-        Me.rbtIniciarSesion.Location = New System.Drawing.Point(155, 238)
+        Me.rbtIniciarSesion.Location = New System.Drawing.Point(207, 293)
+        Me.rbtIniciarSesion.Margin = New System.Windows.Forms.Padding(4)
         Me.rbtIniciarSesion.Name = "rbtIniciarSesion"
-        Me.rbtIniciarSesion.Size = New System.Drawing.Size(86, 17)
+        Me.rbtIniciarSesion.Size = New System.Drawing.Size(106, 20)
         Me.rbtIniciarSesion.TabIndex = 4
         Me.rbtIniciarSesion.TabStop = True
         Me.rbtIniciarSesion.Text = "Iniciar sesion"
@@ -73,9 +77,10 @@ Partial Class FrmUsuarios
         'rbtRegistrarse
         '
         Me.rbtRegistrarse.AutoSize = True
-        Me.rbtRegistrarse.Location = New System.Drawing.Point(279, 238)
+        Me.rbtRegistrarse.Location = New System.Drawing.Point(372, 293)
+        Me.rbtRegistrarse.Margin = New System.Windows.Forms.Padding(4)
         Me.rbtRegistrarse.Name = "rbtRegistrarse"
-        Me.rbtRegistrarse.Size = New System.Drawing.Size(76, 17)
+        Me.rbtRegistrarse.Size = New System.Drawing.Size(94, 20)
         Me.rbtRegistrarse.TabIndex = 5
         Me.rbtRegistrarse.TabStop = True
         Me.rbtRegistrarse.Text = "Registrarte"
@@ -83,9 +88,10 @@ Partial Class FrmUsuarios
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(349, 292)
+        Me.btnCancelar.Location = New System.Drawing.Point(465, 359)
+        Me.btnCancelar.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancelar.Name = "btnCancelar"
-        Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
+        Me.btnCancelar.Size = New System.Drawing.Size(100, 28)
         Me.btnCancelar.TabIndex = 7
         Me.btnCancelar.Text = "Cancelar"
         Me.btnCancelar.UseVisualStyleBackColor = True
@@ -93,27 +99,30 @@ Partial Class FrmUsuarios
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(130, 143)
+        Me.Label2.Location = New System.Drawing.Point(173, 176)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(61, 13)
+        Me.Label2.Size = New System.Drawing.Size(76, 16)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "Contraseña"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(153, 101)
+        Me.Label1.Location = New System.Drawing.Point(204, 124)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(44, 13)
+        Me.Label1.Size = New System.Drawing.Size(56, 16)
         Me.Label1.TabIndex = 8
         Me.Label1.Text = "Nombre"
         '
         'lblRepetirContrasena
         '
         Me.lblRepetirContrasena.AutoSize = True
-        Me.lblRepetirContrasena.Location = New System.Drawing.Point(95, 187)
+        Me.lblRepetirContrasena.Location = New System.Drawing.Point(127, 230)
+        Me.lblRepetirContrasena.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblRepetirContrasena.Name = "lblRepetirContrasena"
-        Me.lblRepetirContrasena.Size = New System.Drawing.Size(97, 13)
+        Me.lblRepetirContrasena.Size = New System.Drawing.Size(121, 16)
         Me.lblRepetirContrasena.TabIndex = 9
         Me.lblRepetirContrasena.Text = "Repetir contraseña"
         Me.lblRepetirContrasena.Visible = False
@@ -121,19 +130,22 @@ Partial Class FrmUsuarios
         'txtUsuarioNombre
         '
         Me.txtUsuarioNombre.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.txtUsuarioNombre.Location = New System.Drawing.Point(228, 101)
+        Me.txtUsuarioNombre.Location = New System.Drawing.Point(304, 124)
+        Me.txtUsuarioNombre.Margin = New System.Windows.Forms.Padding(4)
         Me.txtUsuarioNombre.Name = "txtUsuarioNombre"
-        Me.txtUsuarioNombre.Size = New System.Drawing.Size(179, 20)
+        Me.txtUsuarioNombre.Size = New System.Drawing.Size(237, 22)
         Me.txtUsuarioNombre.TabIndex = 0
         Me.txtUsuarioNombre.Text = "admin"
         '
         'txtRepetirContrasena
         '
         Me.txtRepetirContrasena.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.txtRepetirContrasena.Location = New System.Drawing.Point(228, 184)
+        Me.txtRepetirContrasena.Location = New System.Drawing.Point(304, 226)
+        Me.txtRepetirContrasena.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRepetirContrasena.Name = "txtRepetirContrasena"
-        Me.txtRepetirContrasena.Size = New System.Drawing.Size(179, 20)
+        Me.txtRepetirContrasena.Size = New System.Drawing.Size(237, 22)
         Me.txtRepetirContrasena.TabIndex = 3
+        Me.txtRepetirContrasena.UseSystemPasswordChar = True
         Me.txtRepetirContrasena.Visible = False
         '
         'Titulo
@@ -141,9 +153,10 @@ Partial Class FrmUsuarios
         Me.Titulo.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Titulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Titulo.ForeColor = System.Drawing.Color.White
-        Me.Titulo.Location = New System.Drawing.Point(3, 9)
+        Me.Titulo.Location = New System.Drawing.Point(4, 11)
+        Me.Titulo.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Titulo.Name = "Titulo"
-        Me.Titulo.Size = New System.Drawing.Size(82, 67)
+        Me.Titulo.Size = New System.Drawing.Size(109, 82)
         Me.Titulo.TabIndex = 11
         Me.Titulo.Text = "W"
         Me.Titulo.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -153,9 +166,10 @@ Partial Class FrmUsuarios
         Me.Label4.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(98, 9)
+        Me.Label4.Location = New System.Drawing.Point(131, 11)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(82, 67)
+        Me.Label4.Size = New System.Drawing.Size(109, 82)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "O"
         Me.Label4.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -165,9 +179,10 @@ Partial Class FrmUsuarios
         Me.Label5.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(191, 9)
+        Me.Label5.Location = New System.Drawing.Point(255, 11)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(82, 67)
+        Me.Label5.Size = New System.Drawing.Size(109, 82)
         Me.Label5.TabIndex = 11
         Me.Label5.Text = "R"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -177,9 +192,10 @@ Partial Class FrmUsuarios
         Me.Label6.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(284, 9)
+        Me.Label6.Location = New System.Drawing.Point(379, 11)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(82, 67)
+        Me.Label6.Size = New System.Drawing.Size(109, 82)
         Me.Label6.TabIndex = 11
         Me.Label6.Text = "D"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -189,9 +205,10 @@ Partial Class FrmUsuarios
         Me.Label7.BackColor = System.Drawing.Color.MediumOrchid
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(377, 9)
+        Me.Label7.Location = New System.Drawing.Point(503, 11)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(82, 67)
+        Me.Label7.Size = New System.Drawing.Size(109, 82)
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "L"
         Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -201,31 +218,33 @@ Partial Class FrmUsuarios
         Me.Label8.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(470, 9)
+        Me.Label8.Location = New System.Drawing.Point(627, 11)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(82, 67)
+        Me.Label8.Size = New System.Drawing.Size(109, 82)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "E"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'LblLoginError
+        'lblLoginError
         '
-        Me.LblLoginError.ForeColor = System.Drawing.Color.Red
-        Me.LblLoginError.Location = New System.Drawing.Point(225, 212)
-        Me.LblLoginError.Name = "LblLoginError"
-        Me.LblLoginError.Size = New System.Drawing.Size(130, 23)
-        Me.LblLoginError.TabIndex = 12
-        Me.LblLoginError.Text = "EL ususario mo existe"
-        Me.LblLoginError.Visible = False
+        Me.lblLoginError.ForeColor = System.Drawing.Color.Red
+        Me.lblLoginError.Location = New System.Drawing.Point(300, 261)
+        Me.lblLoginError.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblLoginError.Name = "lblLoginError"
+        Me.lblLoginError.Size = New System.Drawing.Size(173, 28)
+        Me.lblLoginError.TabIndex = 12
+        Me.lblLoginError.Text = "EL ususario mo existe"
+        Me.lblLoginError.Visible = False
         '
         'FrmUsuarios
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(554, 365)
+        Me.ClientSize = New System.Drawing.Size(739, 449)
         Me.ControlBox = False
-        Me.Controls.Add(Me.LblLoginError)
+        Me.Controls.Add(Me.lblLoginError)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -242,6 +261,7 @@ Partial Class FrmUsuarios
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.btnLoginRegister)
         Me.Controls.Add(Me.txtContrasena)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmUsuarios"
@@ -265,5 +285,5 @@ Partial Class FrmUsuarios
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents LblLoginError As Label
+    Friend WithEvents lblLoginError As Label
 End Class

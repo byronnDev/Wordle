@@ -1,6 +1,7 @@
 ﻿Imports System.Net
 Imports Clases
 Public Class FrmUsuarios
+
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btnLoginRegister.Focus()
         rbtIniciarSesion.Checked = True
@@ -8,9 +9,9 @@ Public Class FrmUsuarios
     'toDo arreglar inicio de sesion
     Private Sub btnLoginRegister_Click(sender As Object, e As EventArgs) Handles btnLoginRegister.Click
         ' Si existe
-        LblLoginError.Text = "Usuario no existe"
-        LblLoginError.Visible = False
-        LblLoginError.ForeColor = Color.Red
+        lblLoginError.Text = "Usuario no existe"
+        lblLoginError.Visible = False
+        lblLoginError.ForeColor = Color.Red
         If String.IsNullOrWhiteSpace(txtUsuarioNombre.Text) OrElse String.IsNullOrWhiteSpace(txtContrasena.Text) Then
             MessageBox.Show("Debe llenar todos los campos")
         Else
@@ -19,23 +20,33 @@ Public Class FrmUsuarios
                 lblRepetirContrasena.Hide()
                 ' Si el usuario está registrado
                 'te notifica 
-                If manage.BuscarUsuario(txtUsuarioNombre.Text) = Nothing Then
+                usuarioActual = manage.BuscarUsuario(txtUsuarioNombre.Text)
+                If usuarioActual = Nothing Then
                     'usuario no existe
-                    LblLoginError.Visible = True
-                Else
+                    lblLoginError.Visible = True
+                Else ' Si el usuario existe
                     Me.Close()
                 End If
             ElseIf rbtRegistrarse.Checked = True Then
                 txtRepetirContrasena.Show()
                 lblRepetirContrasena.Show()
-                If manage.RegistrarUsuario(txtUsuarioNombre.Text, txtContrasena.Text) = Nothing Then
-                    'usuario no existe
-                    LblLoginError.Visible = True
+                If Not txtContrasena.Text.Equals(txtRepetirContrasena.Text) Then
+                    lblLoginError.ForeColor = Color.Red
+                    lblLoginError.Text = $"Contraseña no coincide"
+                    lblLoginError.Visible = Enabled
                 Else
-                    LblLoginError.Visible = True
-                    LblLoginError.ForeColor = Color.Green
-                    LblLoginError.Text = $"Gracias por registrarte {txtUsuarioNombre.Text}, recuerda logearte ahora para disfrutar del juego"
+                    If manage.RegistrarUsuario(txtUsuarioNombre.Text, txtContrasena.Text) = Nothing Then
+                        'usuario no existe
+                        lblLoginError.Visible = True
+                        lblLoginError.ForeColor = Color.Red
+                        lblLoginError.Text = "Usuario ya existe"
+                    Else
+                        lblLoginError.Visible = True
+                        lblLoginError.ForeColor = Color.Green
+                        lblLoginError.Text = $"Gracias por registrarte "
+                    End If
                 End If
+
             End If
         End If
     End Sub
@@ -47,7 +58,7 @@ Public Class FrmUsuarios
     End Sub
 
     Private Sub rbtIniciarSesion_CheckedChanged(sender As Object, e As EventArgs) Handles rbtIniciarSesion.CheckedChanged
-        LblLoginError.Visible = False
+        lblLoginError.Visible = False
         txtRepetirContrasena.Visible = False
         lblRepetirContrasena.Visible = False
 

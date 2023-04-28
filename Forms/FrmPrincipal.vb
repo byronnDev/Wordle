@@ -1,5 +1,4 @@
-﻿Imports System.Windows
-Imports Clases
+﻿Imports Clases
 Public Class FrmPrincipal
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
         If palabra.Length <> LONGITUDPALABRA Then
@@ -8,6 +7,7 @@ Public Class FrmPrincipal
         ' Validacion
         If palabraAdivinar.Equals(palabra.ToUpper) Then
             Me.Enabled = False
+            manage.AnadirWin(usuarioActual)
             FrmVictoria.ShowDialog()
             Exit Sub
         End If
@@ -27,8 +27,8 @@ Public Class FrmPrincipal
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25} ' Array de TextBox
         manage = New GestionUsuarios
+        NuevaPalabra()
         ' Añadimos la palabra elegida aleatoriamente del array
-        palabraAdivinar = "AVION" 'palabrasDisponibles(rnd.Next(palabrasDisponibles.Length + 1))
         listaRecuadros.AddRange(arrayDeTextBox) ' Agregar los TextBox a la lista
         txtP1.Select()
         Me.Hide()
@@ -61,15 +61,17 @@ Public Class FrmPrincipal
             For i = 0 To LONGITUDPALABRA - 1
                 If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then
                     DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
+                    manage.SumarPunto(usuarioActual, 50)
                 ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then
                     DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
+                    manage.SumarPunto(usuarioActual, 10)
                 End If
             Next
 
             ' Si se acaban los intentos
             If intentosTotales >= 5 Then
                 MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                palabraAdivinar = palabrasDisponibles(rnd.Next(palabrasDisponibles.Length + 1))
+                NuevaPalabra()
                 Limpieza() ' Limpiar los TextBox
             End If
             btnEnviar_Click(sender, e)
@@ -149,6 +151,6 @@ Public Class FrmPrincipal
     End Sub
     Private Sub btnReinicio_Click(sender As Object, e As EventArgs) Handles btnReinicio.Click
         Limpieza()
-        palabraAdivinar = palabrasDisponibles(rnd.Next(palabrasDisponibles.Length + 1))
+        NuevaPalabra()
     End Sub
 End Class
