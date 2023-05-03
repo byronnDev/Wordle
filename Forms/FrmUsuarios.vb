@@ -43,7 +43,7 @@ Public Class FrmUsuarios
                     Else
                         lblLoginError.Visible = True
                         lblLoginError.ForeColor = Color.Green
-                        lblLoginError.Text = $"Gracias por registrarte "
+                        lblLoginError.Text = $"Gracias por registrarte"
                     End If
                 End If
 

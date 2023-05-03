@@ -24,20 +24,21 @@ Partial Class FrmVictoria
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnCerrar = New System.Windows.Forms.Button()
-        Me.lblIntentos = New System.Windows.Forms.Label()
+        Me.lblTxtPuntuacion = New System.Windows.Forms.Label()
         Me.lblVictorias = New System.Windows.Forms.Label()
-        Me.lblNumIntentos = New System.Windows.Forms.Label()
+        Me.lblPuntuacion = New System.Windows.Forms.Label()
         Me.lblWins = New System.Windows.Forms.Label()
         Me.btnVolverAJugar = New System.Windows.Forms.Button()
+        Me.btnClasificacion = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(199, 58)
+        Me.Label1.Font = New System.Drawing.Font("Impact", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(168, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(373, 54)
+        Me.Label1.Size = New System.Drawing.Size(480, 98)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "¡HAS GANADO!"
         '
@@ -51,40 +52,44 @@ Partial Class FrmVictoria
         Me.btnCerrar.Text = "Cerrar"
         Me.btnCerrar.UseVisualStyleBackColor = True
         '
-        'lblIntentos
+        'lblTxtPuntuacion
         '
-        Me.lblIntentos.AutoSize = True
-        Me.lblIntentos.Location = New System.Drawing.Point(125, 166)
-        Me.lblIntentos.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblIntentos.Name = "lblIntentos"
-        Me.lblIntentos.Size = New System.Drawing.Size(82, 16)
-        Me.lblIntentos.TabIndex = 2
-        Me.lblIntentos.Text = "Puntuación : "
+        Me.lblTxtPuntuacion.AutoSize = True
+        Me.lblTxtPuntuacion.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTxtPuntuacion.Location = New System.Drawing.Point(220, 129)
+        Me.lblTxtPuntuacion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTxtPuntuacion.Name = "lblTxtPuntuacion"
+        Me.lblTxtPuntuacion.Size = New System.Drawing.Size(174, 37)
+        Me.lblTxtPuntuacion.TabIndex = 2
+        Me.lblTxtPuntuacion.Text = "Puntuación : "
         '
         'lblVictorias
         '
         Me.lblVictorias.AutoSize = True
-        Me.lblVictorias.Location = New System.Drawing.Point(453, 166)
+        Me.lblVictorias.Font = New System.Drawing.Font("Impact", 18.0!)
+        Me.lblVictorias.Location = New System.Drawing.Point(256, 197)
         Me.lblVictorias.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblVictorias.Name = "lblVictorias"
-        Me.lblVictorias.Size = New System.Drawing.Size(65, 16)
+        Me.lblVictorias.Size = New System.Drawing.Size(138, 37)
         Me.lblVictorias.TabIndex = 3
         Me.lblVictorias.Text = "Victorias: "
         '
-        'lblNumIntentos
+        'lblPuntuacion
         '
-        Me.lblNumIntentos.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.lblNumIntentos.Location = New System.Drawing.Point(205, 159)
-        Me.lblNumIntentos.Name = "lblNumIntentos"
-        Me.lblNumIntentos.Size = New System.Drawing.Size(100, 23)
-        Me.lblNumIntentos.TabIndex = 4
+        Me.lblPuntuacion.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.lblPuntuacion.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPuntuacion.Location = New System.Drawing.Point(401, 129)
+        Me.lblPuntuacion.Name = "lblPuntuacion"
+        Me.lblPuntuacion.Size = New System.Drawing.Size(117, 37)
+        Me.lblPuntuacion.TabIndex = 4
         '
         'lblWins
         '
         Me.lblWins.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.lblWins.Location = New System.Drawing.Point(531, 159)
+        Me.lblWins.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblWins.Location = New System.Drawing.Point(401, 197)
         Me.lblWins.Name = "lblWins"
-        Me.lblWins.Size = New System.Drawing.Size(100, 26)
+        Me.lblWins.Size = New System.Drawing.Size(117, 39)
         Me.lblWins.TabIndex = 5
         '
         'btnVolverAJugar
@@ -97,16 +102,26 @@ Partial Class FrmVictoria
         Me.btnVolverAJugar.Text = "Volver a jugar"
         Me.btnVolverAJugar.UseVisualStyleBackColor = True
         '
+        'btnClasificacion
+        '
+        Me.btnClasificacion.Location = New System.Drawing.Point(348, 255)
+        Me.btnClasificacion.Name = "btnClasificacion"
+        Me.btnClasificacion.Size = New System.Drawing.Size(123, 35)
+        Me.btnClasificacion.TabIndex = 7
+        Me.btnClasificacion.Text = "Ver Clasificación"
+        Me.btnClasificacion.UseVisualStyleBackColor = True
+        '
         'FrmVictoria
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.btnClasificacion)
         Me.Controls.Add(Me.btnVolverAJugar)
         Me.Controls.Add(Me.lblWins)
-        Me.Controls.Add(Me.lblNumIntentos)
+        Me.Controls.Add(Me.lblPuntuacion)
         Me.Controls.Add(Me.lblVictorias)
-        Me.Controls.Add(Me.lblIntentos)
+        Me.Controls.Add(Me.lblTxtPuntuacion)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -119,9 +134,10 @@ Partial Class FrmVictoria
 
     Friend WithEvents Label1 As Label
     Friend WithEvents btnCerrar As Button
-    Friend WithEvents lblIntentos As Label
+    Friend WithEvents lblTxtPuntuacion As Label
     Friend WithEvents lblVictorias As Label
-    Friend WithEvents lblNumIntentos As Label
+    Friend WithEvents lblPuntuacion As Label
     Friend WithEvents lblWins As Label
     Friend WithEvents btnVolverAJugar As Button
+    Friend WithEvents btnClasificacion As Button
 End Class

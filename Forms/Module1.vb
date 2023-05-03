@@ -3,8 +3,7 @@ Imports System.IO
 Module Module1
     'toDo hacer que cuando le de al boton tambien cambien los colores
     'toDo crear tabla de puntuaciones
-    'toDo CAmbiar lo controles a tiempo de ejecucion -> Hidalgo
-    'toDo Hacer form de victoria -> Mikel
+    'toDo Cambiar los controles a tiempo de ejecucion -> Hidalgo(Pospuesto)
     'toDo clase de palabras con hijos de diferentes tipos y que cuando gane te de tips -> Arkaitz
     'toDo Avanzado: Añadir o quitar un boton de tecla en la interfaz grafica y que sin tocar codigo siga funcionando
     'toDo Avanzado: Hacer que a la hora de cambiar en la interfaz grafica la cantidad de recuadros de 5 a 6 no afecte al codigo

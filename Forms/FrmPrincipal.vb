@@ -26,6 +26,39 @@ Public Class FrmPrincipal
     'Dim oscuroOno As Boolean
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25} ' Array de TextBox
+        '===================crear botones en tiempo de ejecucion=====================(Pospuesto)
+        'Dim x As Integer = 50
+        'Dim y As Integer = 364
+        'Dim posicion As Integer = 0
+        'For i As Integer = 0 To 2
+        '    For j As Integer = 0 To 9
+        '        If i = 2 AndAlso j > 6 Then
+        '            Exit For
+        '        End If
+        '        'les damos las propiedades a los botones
+        '        boton = New Button
+        '        boton.Text = letras(posicion)
+        '        boton.Tag = posicion
+        '        posicion += 1
+        '        boton.Location = New Point(x, y)
+        '        x += 45
+        '        boton.Size = New Size(40, 40)
+        '        boton.BackColor = Color.LightGray
+        '        boton.ForeColor = Color.Black
+        '        boton.Font = New Font("Arial", 20, FontStyle.Bold)
+        '        AddHandler boton.Click, AddressOf TeclaPulsada 'le decimos con que funcion se ejecutara el evento click
+        '        'agregamos el control a la lista interna de controles del formulario
+        '        Controls.Add(boton)
+        '        'reseteamos poosicion al llegar a 9 y le damos un salto de linea
+        '        If j = 9 Then
+        '            y += 5
+        '            x = 40
+        '        End If
+        '    Next
+        '    x = 50
+        '    y += 50
+        'Next
+        '===========================================================================
         manage = New GestionUsuarios
         NuevaPalabra()
         ' Añadimos la palabra elegida aleatoriamente del array
@@ -84,10 +117,10 @@ Public Class FrmPrincipal
         If posRecuadro > maxPos Then
             Exit Sub
         End If
-        posRecuadro += 1
-        TextBoxActual().Text += e.KeyChar
-        palabra += e.KeyChar
-        e.KeyChar = ""
+        posRecuadro += 1 ' Avanza una posicion en el recuadro
+        TextBoxActual().Text += e.KeyChar ' Añade la letra al recuadro
+        palabra += e.KeyChar ' Añade la letra al string palabra
+        e.KeyChar = "" ' Elimina la letra que se ha pulsado
     End Sub
     ' Devuelve el TextBox en el que estamos
     Public Function TextBoxActual() As TextBox
