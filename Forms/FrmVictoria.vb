@@ -35,4 +35,8 @@ Public Class FrmVictoria
         ReiniciarJuego()
         Me.Close()
     End Sub
+
+    Private Sub btnClasificacion_Click(sender As Object, e As EventArgs) Handles btnClasificacion.Click
+        FrmClasificacion.Show()
+    End Sub
 End Class

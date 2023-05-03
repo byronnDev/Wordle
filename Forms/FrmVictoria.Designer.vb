@@ -36,18 +36,18 @@ Partial Class FrmVictoria
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Impact", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(168, 9)
+        Me.Label1.Location = New System.Drawing.Point(126, 7)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(480, 98)
+        Me.Label1.Size = New System.Drawing.Size(384, 80)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "¡HAS GANADO!"
         '
         'btnCerrar
         '
-        Me.btnCerrar.Location = New System.Drawing.Point(503, 303)
-        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnCerrar.Location = New System.Drawing.Point(377, 246)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(145, 50)
+        Me.btnCerrar.Size = New System.Drawing.Size(109, 41)
         Me.btnCerrar.TabIndex = 1
         Me.btnCerrar.Text = "Cerrar"
         Me.btnCerrar.UseVisualStyleBackColor = True
@@ -56,10 +56,9 @@ Partial Class FrmVictoria
         '
         Me.lblTxtPuntuacion.AutoSize = True
         Me.lblTxtPuntuacion.Font = New System.Drawing.Font("Impact", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTxtPuntuacion.Location = New System.Drawing.Point(220, 129)
-        Me.lblTxtPuntuacion.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTxtPuntuacion.Location = New System.Drawing.Point(165, 105)
         Me.lblTxtPuntuacion.Name = "lblTxtPuntuacion"
-        Me.lblTxtPuntuacion.Size = New System.Drawing.Size(174, 37)
+        Me.lblTxtPuntuacion.Size = New System.Drawing.Size(139, 29)
         Me.lblTxtPuntuacion.TabIndex = 2
         Me.lblTxtPuntuacion.Text = "Puntuación : "
         '
@@ -67,10 +66,9 @@ Partial Class FrmVictoria
         '
         Me.lblVictorias.AutoSize = True
         Me.lblVictorias.Font = New System.Drawing.Font("Impact", 18.0!)
-        Me.lblVictorias.Location = New System.Drawing.Point(256, 197)
-        Me.lblVictorias.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblVictorias.Location = New System.Drawing.Point(192, 160)
         Me.lblVictorias.Name = "lblVictorias"
-        Me.lblVictorias.Size = New System.Drawing.Size(138, 37)
+        Me.lblVictorias.Size = New System.Drawing.Size(109, 29)
         Me.lblVictorias.TabIndex = 3
         Me.lblVictorias.Text = "Victorias: "
         '
@@ -78,44 +76,46 @@ Partial Class FrmVictoria
         '
         Me.lblPuntuacion.BackColor = System.Drawing.SystemColors.ControlLight
         Me.lblPuntuacion.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblPuntuacion.Location = New System.Drawing.Point(401, 129)
+        Me.lblPuntuacion.Location = New System.Drawing.Point(301, 105)
+        Me.lblPuntuacion.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblPuntuacion.Name = "lblPuntuacion"
-        Me.lblPuntuacion.Size = New System.Drawing.Size(117, 37)
+        Me.lblPuntuacion.Size = New System.Drawing.Size(88, 30)
         Me.lblPuntuacion.TabIndex = 4
         '
         'lblWins
         '
         Me.lblWins.BackColor = System.Drawing.SystemColors.ControlLight
         Me.lblWins.Font = New System.Drawing.Font("Microsoft YaHei UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblWins.Location = New System.Drawing.Point(401, 197)
+        Me.lblWins.Location = New System.Drawing.Point(301, 160)
+        Me.lblWins.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.lblWins.Name = "lblWins"
-        Me.lblWins.Size = New System.Drawing.Size(117, 39)
+        Me.lblWins.Size = New System.Drawing.Size(88, 32)
         Me.lblWins.TabIndex = 5
         '
         'btnVolverAJugar
         '
-        Me.btnVolverAJugar.Location = New System.Drawing.Point(168, 303)
-        Me.btnVolverAJugar.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnVolverAJugar.Location = New System.Drawing.Point(126, 246)
         Me.btnVolverAJugar.Name = "btnVolverAJugar"
-        Me.btnVolverAJugar.Size = New System.Drawing.Size(157, 57)
+        Me.btnVolverAJugar.Size = New System.Drawing.Size(118, 46)
         Me.btnVolverAJugar.TabIndex = 6
         Me.btnVolverAJugar.Text = "Volver a jugar"
         Me.btnVolverAJugar.UseVisualStyleBackColor = True
         '
         'btnClasificacion
         '
-        Me.btnClasificacion.Location = New System.Drawing.Point(348, 255)
+        Me.btnClasificacion.Location = New System.Drawing.Point(261, 207)
+        Me.btnClasificacion.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnClasificacion.Name = "btnClasificacion"
-        Me.btnClasificacion.Size = New System.Drawing.Size(123, 35)
+        Me.btnClasificacion.Size = New System.Drawing.Size(92, 28)
         Me.btnClasificacion.TabIndex = 7
         Me.btnClasificacion.Text = "Ver Clasificación"
         Me.btnClasificacion.UseVisualStyleBackColor = True
         '
         'FrmVictoria
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.btnClasificacion)
         Me.Controls.Add(Me.btnVolverAJugar)
         Me.Controls.Add(Me.lblWins)
@@ -124,7 +124,7 @@ Partial Class FrmVictoria
         Me.Controls.Add(Me.lblTxtPuntuacion)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FrmVictoria"
         Me.Text = "Victoria"
         Me.ResumeLayout(False)
