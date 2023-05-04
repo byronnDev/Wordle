@@ -3,7 +3,9 @@ Imports Clases
 Public Class FrmUsuarios
 
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         btnLoginRegister.Focus()
+        manage = New GestionUsuarios
         rbtIniciarSesion.Checked = True
     End Sub
     'toDo arreglar inicio de sesion
@@ -25,6 +27,7 @@ Public Class FrmUsuarios
                     'usuario no existe
                     lblLoginError.Visible = True
                 Else ' Si el usuario existe
+                    FrmPrincipal.Show()
                     Me.Close()
                 End If
             ElseIf rbtRegistrarse.Checked = True Then

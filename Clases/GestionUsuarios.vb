@@ -55,4 +55,20 @@ Public Class GestionUsuarios
         users(posicion).Wins += 1
         File.WriteAllLines(pathUsers, users.Select(Function(x) x.ToString)) ' Guardamos los cambios en el fichero
     End Sub
+    Public Function Clasificados() As List(Of Usuario)
+        Dim tempArray As New List(Of Usuario)
+        Dim maxPuntos As Integer
+        Dim maxUser As Usuario
+        Do Until tempArray.ToArray.Length = 10 OrElse tempArray.ToArray.Length = users.ToArray.Length
+            maxPuntos = Integer.MinValue
+            For Each user In users
+                If user.Puntos > maxPuntos AndAlso Not tempArray.Contains(user) Then
+                    maxPuntos = user.Puntos
+                    maxUser = user
+                End If
+            Next
+            tempArray.Add(maxUser)
+        Loop
+        Return tempArray
+    End Function
 End Class

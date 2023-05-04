@@ -9,6 +9,9 @@ Public Class Usuario
     Public Property Puntos As Integer
     Public Property Wins As Integer
 
+    Public Sub New()
+    End Sub
+
     Public Sub New(usernme As String, password As String, intentos As Integer, wins As Integer)
         Me._Username = usernme
         Me._Password = Encrypt(password)

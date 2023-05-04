@@ -960,9 +960,11 @@ Partial Class FrmPrincipal
         Me.Controls.Add(Me.btnC)
         Me.Controls.Add(Me.btnB)
         Me.Controls.Add(Me.btnA)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmPrincipal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "WORDLE"
         Me.ResumeLayout(False)
         Me.PerformLayout()

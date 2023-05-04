@@ -22,39 +22,52 @@ Partial Class FrmClasificacion
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.lstClasificacion = New System.Windows.Forms.ListBox()
+        Me.lstPuntuacion = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
-        'TextBox2
+        'lstClasificacion
         '
-        Me.TextBox2.Location = New System.Drawing.Point(225, 55)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 1
+        Me.lstClasificacion.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.lstClasificacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lstClasificacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstClasificacion.ForeColor = System.Drawing.Color.Black
+        Me.lstClasificacion.FormattingEnabled = True
+        Me.lstClasificacion.ItemHeight = 25
+        Me.lstClasificacion.Location = New System.Drawing.Point(229, 86)
+        Me.lstClasificacion.Name = "lstClasificacion"
+        Me.lstClasificacion.SelectionMode = System.Windows.Forms.SelectionMode.None
+        Me.lstClasificacion.Size = New System.Drawing.Size(310, 275)
+        Me.lstClasificacion.TabIndex = 3
         '
-        'Label1
+        'lstPuntuacion
         '
-        Me.Label1.Location = New System.Drawing.Point(161, 58)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(58, 20)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Usuario"
+        Me.lstPuntuacion.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.lstPuntuacion.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.lstPuntuacion.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lstPuntuacion.ForeColor = System.Drawing.Color.Black
+        Me.lstPuntuacion.FormattingEnabled = True
+        Me.lstPuntuacion.ItemHeight = 25
+        Me.lstPuntuacion.Location = New System.Drawing.Point(545, 86)
+        Me.lstPuntuacion.Name = "lstPuntuacion"
+        Me.lstPuntuacion.SelectionMode = System.Windows.Forms.SelectionMode.None
+        Me.lstPuntuacion.Size = New System.Drawing.Size(181, 275)
+        Me.lstPuntuacion.TabIndex = 4
         '
         'FrmClasificacion
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(600, 366)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lstPuntuacion)
+        Me.Controls.Add(Me.lstClasificacion)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "FrmClasificacion"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Clasificación"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lstClasificacion As ListBox
+    Friend WithEvents lstPuntuacion As ListBox
 End Class

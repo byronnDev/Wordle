@@ -6,9 +6,9 @@ Public Class FrmPrincipal
         End If
         ' Validacion
         If palabraAdivinar.Equals(palabra.ToUpper) Then
-            Me.Enabled = False
             manage.AnadirWin(usuarioActual)
-            FrmVictoria.ShowDialog()
+            FrmVictoria.Show()
+            Me.Close()
             Exit Sub
         End If
         maxPos += 5
@@ -24,8 +24,38 @@ Public Class FrmPrincipal
         palabra += TryCast(sender, Button).Text
     End Sub
     'Dim oscuroOno As Boolean
+    'Dim cuadroTexto As TextBox
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25} ' Array de TextBox
+        '============================Crear los textBox en tiempo de ejecucion==============================
+        'Dim posicion As Integer = 1
+        'Dim x As Integer = 152
+        'Dim y As Integer = 72
+        'For i As Integer = 0 To 4
+        '    For j As Integer = 0 To 4
+        '        If i = 4 AndAlso j > 4 Then
+        '            Exit For
+        '        End If
+        '        'les damos las propiedades a los botones
+        '        cuadroTexto = New TextBox
+        '        cuadroTexto.Text = ""
+        '        cuadroTexto.Tag = posicion
+        '        posicion += 1
+        '        cuadroTexto.Location = New Point(x, y)
+        '        x += 57
+        '        cuadroTexto.Size = New Size(53, 53)
+        '        cuadroTexto.BackColor = Color.LightGray
+        '        'agregamos el control a la lista interna de controles del formulario
+        '        Controls.Add(cuadroTexto)
+        '        'reseteamos poosicion al llegar a 9 y le damos un salto de linea
+        '        If j = 4 Then
+        '            y += 40
+        '            x = 152
+        '        End If
+        '    Next
+
+        'Next
         '===================crear botones en tiempo de ejecucion=====================(Pospuesto)
         'Dim x As Integer = 50
         'Dim y As Integer = 364
@@ -59,17 +89,14 @@ Public Class FrmPrincipal
         '    y += 50
         'Next
         '===========================================================================
-        manage = New GestionUsuarios
         NuevaPalabra()
         ' Añadimos la palabra elegida aleatoriamente del array
         listaRecuadros.AddRange(arrayDeTextBox) ' Agregar los TextBox a la lista
         txtP1.Select()
-        Me.Hide()
         btnReinicio.FlatStyle = FlatStyle.Flat
         btnReinicio.FlatAppearance.BorderSize = 0
         btnModoOscuro.FlatStyle = FlatStyle.Flat
         btnModoOscuro.FlatAppearance.BorderSize = 0
-        FrmUsuarios.ShowDialog()
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
@@ -181,6 +208,7 @@ Public Class FrmPrincipal
             btnReinicio.Image = My.Resources.ReinicioBlanco
             Me.BackColor = Color.FromArgb(15, 15, 15)
         End If
+        txtP1.Select()
     End Sub
     Private Sub btnReinicio_Click(sender As Object, e As EventArgs) Handles btnReinicio.Click
         Limpieza()

@@ -65,7 +65,7 @@ Partial Class FrmUsuarios
         'rbtIniciarSesion
         '
         Me.rbtIniciarSesion.AutoSize = True
-        Me.rbtIniciarSesion.Location = New System.Drawing.Point(207, 293)
+        Me.rbtIniciarSesion.Location = New System.Drawing.Point(218, 293)
         Me.rbtIniciarSesion.Margin = New System.Windows.Forms.Padding(4)
         Me.rbtIniciarSesion.Name = "rbtIniciarSesion"
         Me.rbtIniciarSesion.Size = New System.Drawing.Size(106, 20)
@@ -77,7 +77,7 @@ Partial Class FrmUsuarios
         'rbtRegistrarse
         '
         Me.rbtRegistrarse.AutoSize = True
-        Me.rbtRegistrarse.Location = New System.Drawing.Point(372, 293)
+        Me.rbtRegistrarse.Location = New System.Drawing.Point(383, 293)
         Me.rbtRegistrarse.Margin = New System.Windows.Forms.Padding(4)
         Me.rbtRegistrarse.Name = "rbtRegistrarse"
         Me.rbtRegistrarse.Size = New System.Drawing.Size(94, 20)
