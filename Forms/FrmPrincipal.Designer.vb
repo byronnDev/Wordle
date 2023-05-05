@@ -22,6 +22,7 @@ Partial Class FrmPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
         Me.btnA = New System.Windows.Forms.Button()
         Me.btnB = New System.Windows.Forms.Button()
         Me.btnC = New System.Windows.Forms.Button()
@@ -78,6 +79,8 @@ Partial Class FrmPrincipal
         Me.txtP21 = New System.Windows.Forms.TextBox()
         Me.btnModoOscuro = New System.Windows.Forms.Button()
         Me.btnReinicio = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnA
@@ -361,7 +364,7 @@ Partial Class FrmPrincipal
         Me.txtP1.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP1.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP1.HideSelection = False
-        Me.txtP1.Location = New System.Drawing.Point(203, 89)
+        Me.txtP1.Location = New System.Drawing.Point(203, 122)
         Me.txtP1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP1.MaxLength = 1
         Me.txtP1.Name = "txtP1"
@@ -381,7 +384,7 @@ Partial Class FrmPrincipal
         Me.txtP2.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP2.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP2.HideSelection = False
-        Me.txtP2.Location = New System.Drawing.Point(279, 89)
+        Me.txtP2.Location = New System.Drawing.Point(279, 122)
         Me.txtP2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP2.MaxLength = 1
         Me.txtP2.Name = "txtP2"
@@ -401,7 +404,7 @@ Partial Class FrmPrincipal
         Me.txtP3.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP3.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP3.HideSelection = False
-        Me.txtP3.Location = New System.Drawing.Point(356, 89)
+        Me.txtP3.Location = New System.Drawing.Point(356, 122)
         Me.txtP3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP3.MaxLength = 1
         Me.txtP3.Name = "txtP3"
@@ -421,7 +424,7 @@ Partial Class FrmPrincipal
         Me.txtP4.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP4.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP4.HideSelection = False
-        Me.txtP4.Location = New System.Drawing.Point(433, 89)
+        Me.txtP4.Location = New System.Drawing.Point(433, 122)
         Me.txtP4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP4.MaxLength = 1
         Me.txtP4.Name = "txtP4"
@@ -441,7 +444,7 @@ Partial Class FrmPrincipal
         Me.txtP5.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP5.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP5.HideSelection = False
-        Me.txtP5.Location = New System.Drawing.Point(509, 89)
+        Me.txtP5.Location = New System.Drawing.Point(509, 122)
         Me.txtP5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP5.MaxLength = 1
         Me.txtP5.Name = "txtP5"
@@ -484,7 +487,7 @@ Partial Class FrmPrincipal
         Me.txtP10.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP10.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP10.HideSelection = False
-        Me.txtP10.Location = New System.Drawing.Point(509, 154)
+        Me.txtP10.Location = New System.Drawing.Point(509, 187)
         Me.txtP10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP10.MaxLength = 1
         Me.txtP10.Name = "txtP10"
@@ -504,7 +507,7 @@ Partial Class FrmPrincipal
         Me.txtP9.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP9.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP9.HideSelection = False
-        Me.txtP9.Location = New System.Drawing.Point(433, 154)
+        Me.txtP9.Location = New System.Drawing.Point(433, 187)
         Me.txtP9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP9.MaxLength = 1
         Me.txtP9.Name = "txtP9"
@@ -524,7 +527,7 @@ Partial Class FrmPrincipal
         Me.txtP8.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP8.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP8.HideSelection = False
-        Me.txtP8.Location = New System.Drawing.Point(356, 154)
+        Me.txtP8.Location = New System.Drawing.Point(356, 187)
         Me.txtP8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP8.MaxLength = 1
         Me.txtP8.Name = "txtP8"
@@ -544,7 +547,7 @@ Partial Class FrmPrincipal
         Me.txtP7.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP7.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP7.HideSelection = False
-        Me.txtP7.Location = New System.Drawing.Point(279, 154)
+        Me.txtP7.Location = New System.Drawing.Point(279, 187)
         Me.txtP7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP7.MaxLength = 1
         Me.txtP7.Name = "txtP7"
@@ -564,7 +567,7 @@ Partial Class FrmPrincipal
         Me.txtP6.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP6.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP6.HideSelection = False
-        Me.txtP6.Location = New System.Drawing.Point(203, 154)
+        Me.txtP6.Location = New System.Drawing.Point(203, 187)
         Me.txtP6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP6.MaxLength = 1
         Me.txtP6.Name = "txtP6"
@@ -584,7 +587,7 @@ Partial Class FrmPrincipal
         Me.txtP15.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP15.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP15.HideSelection = False
-        Me.txtP15.Location = New System.Drawing.Point(509, 219)
+        Me.txtP15.Location = New System.Drawing.Point(509, 252)
         Me.txtP15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP15.MaxLength = 1
         Me.txtP15.Name = "txtP15"
@@ -604,7 +607,7 @@ Partial Class FrmPrincipal
         Me.txtP14.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP14.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP14.HideSelection = False
-        Me.txtP14.Location = New System.Drawing.Point(433, 219)
+        Me.txtP14.Location = New System.Drawing.Point(433, 252)
         Me.txtP14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP14.MaxLength = 1
         Me.txtP14.Name = "txtP14"
@@ -624,7 +627,7 @@ Partial Class FrmPrincipal
         Me.txtP13.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP13.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP13.HideSelection = False
-        Me.txtP13.Location = New System.Drawing.Point(356, 219)
+        Me.txtP13.Location = New System.Drawing.Point(356, 252)
         Me.txtP13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP13.MaxLength = 1
         Me.txtP13.Name = "txtP13"
@@ -644,7 +647,7 @@ Partial Class FrmPrincipal
         Me.txtP12.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP12.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP12.HideSelection = False
-        Me.txtP12.Location = New System.Drawing.Point(279, 219)
+        Me.txtP12.Location = New System.Drawing.Point(279, 252)
         Me.txtP12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP12.MaxLength = 1
         Me.txtP12.Name = "txtP12"
@@ -664,7 +667,7 @@ Partial Class FrmPrincipal
         Me.txtP11.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP11.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP11.HideSelection = False
-        Me.txtP11.Location = New System.Drawing.Point(203, 219)
+        Me.txtP11.Location = New System.Drawing.Point(203, 252)
         Me.txtP11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP11.MaxLength = 1
         Me.txtP11.Name = "txtP11"
@@ -684,7 +687,7 @@ Partial Class FrmPrincipal
         Me.txtP20.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP20.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP20.HideSelection = False
-        Me.txtP20.Location = New System.Drawing.Point(509, 284)
+        Me.txtP20.Location = New System.Drawing.Point(509, 317)
         Me.txtP20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP20.MaxLength = 1
         Me.txtP20.Name = "txtP20"
@@ -704,7 +707,7 @@ Partial Class FrmPrincipal
         Me.txtP19.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP19.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP19.HideSelection = False
-        Me.txtP19.Location = New System.Drawing.Point(433, 284)
+        Me.txtP19.Location = New System.Drawing.Point(433, 317)
         Me.txtP19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP19.MaxLength = 1
         Me.txtP19.Name = "txtP19"
@@ -724,7 +727,7 @@ Partial Class FrmPrincipal
         Me.txtP18.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP18.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP18.HideSelection = False
-        Me.txtP18.Location = New System.Drawing.Point(356, 284)
+        Me.txtP18.Location = New System.Drawing.Point(356, 317)
         Me.txtP18.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP18.MaxLength = 1
         Me.txtP18.Name = "txtP18"
@@ -744,7 +747,7 @@ Partial Class FrmPrincipal
         Me.txtP17.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP17.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP17.HideSelection = False
-        Me.txtP17.Location = New System.Drawing.Point(279, 284)
+        Me.txtP17.Location = New System.Drawing.Point(279, 317)
         Me.txtP17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP17.MaxLength = 1
         Me.txtP17.Name = "txtP17"
@@ -764,7 +767,7 @@ Partial Class FrmPrincipal
         Me.txtP16.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP16.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP16.HideSelection = False
-        Me.txtP16.Location = New System.Drawing.Point(203, 284)
+        Me.txtP16.Location = New System.Drawing.Point(203, 317)
         Me.txtP16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP16.MaxLength = 1
         Me.txtP16.Name = "txtP16"
@@ -784,7 +787,7 @@ Partial Class FrmPrincipal
         Me.txtP25.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP25.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP25.HideSelection = False
-        Me.txtP25.Location = New System.Drawing.Point(509, 350)
+        Me.txtP25.Location = New System.Drawing.Point(509, 383)
         Me.txtP25.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP25.MaxLength = 1
         Me.txtP25.Name = "txtP25"
@@ -804,7 +807,7 @@ Partial Class FrmPrincipal
         Me.txtP24.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP24.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP24.HideSelection = False
-        Me.txtP24.Location = New System.Drawing.Point(433, 350)
+        Me.txtP24.Location = New System.Drawing.Point(433, 383)
         Me.txtP24.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP24.MaxLength = 1
         Me.txtP24.Name = "txtP24"
@@ -824,7 +827,7 @@ Partial Class FrmPrincipal
         Me.txtP23.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP23.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP23.HideSelection = False
-        Me.txtP23.Location = New System.Drawing.Point(356, 350)
+        Me.txtP23.Location = New System.Drawing.Point(356, 383)
         Me.txtP23.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP23.MaxLength = 1
         Me.txtP23.Name = "txtP23"
@@ -844,7 +847,7 @@ Partial Class FrmPrincipal
         Me.txtP22.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP22.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP22.HideSelection = False
-        Me.txtP22.Location = New System.Drawing.Point(279, 350)
+        Me.txtP22.Location = New System.Drawing.Point(279, 383)
         Me.txtP22.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP22.MaxLength = 1
         Me.txtP22.Name = "txtP22"
@@ -864,7 +867,7 @@ Partial Class FrmPrincipal
         Me.txtP21.Font = New System.Drawing.Font("Microsoft Sans Serif", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtP21.ForeColor = System.Drawing.SystemColors.Window
         Me.txtP21.HideSelection = False
-        Me.txtP21.Location = New System.Drawing.Point(203, 350)
+        Me.txtP21.Location = New System.Drawing.Point(203, 383)
         Me.txtP21.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txtP21.MaxLength = 1
         Me.txtP21.Name = "txtP21"
@@ -877,8 +880,11 @@ Partial Class FrmPrincipal
         '
         Me.btnModoOscuro.BackColor = System.Drawing.Color.Transparent
         Me.btnModoOscuro.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnModoOscuro.FlatAppearance.BorderSize = 0
+        Me.btnModoOscuro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnModoOscuro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnModoOscuro.Image = Global.Forms.My.Resources.Resources.LunaNegro
-        Me.btnModoOscuro.Location = New System.Drawing.Point(639, 44)
+        Me.btnModoOscuro.Location = New System.Drawing.Point(639, 124)
         Me.btnModoOscuro.Margin = New System.Windows.Forms.Padding(4)
         Me.btnModoOscuro.Name = "btnModoOscuro"
         Me.btnModoOscuro.Size = New System.Drawing.Size(99, 74)
@@ -888,22 +894,37 @@ Partial Class FrmPrincipal
         'btnReinicio
         '
         Me.btnReinicio.BackColor = System.Drawing.Color.Transparent
+        Me.btnReinicio.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnReinicio.FlatAppearance.BorderSize = 0
         Me.btnReinicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
-        Me.btnReinicio.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnReinicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReinicio.ForeColor = System.Drawing.Color.Transparent
         Me.btnReinicio.Image = Global.Forms.My.Resources.Resources.ReinicioNegro
-        Me.btnReinicio.Location = New System.Drawing.Point(639, 417)
+        Me.btnReinicio.Location = New System.Drawing.Point(639, 206)
         Me.btnReinicio.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReinicio.Name = "btnReinicio"
-        Me.btnReinicio.Size = New System.Drawing.Size(87, 65)
+        Me.btnReinicio.Size = New System.Drawing.Size(99, 74)
         Me.btnReinicio.TabIndex = 58
         Me.btnReinicio.UseVisualStyleBackColor = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(26, -33)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(726, 150)
+        Me.PictureBox1.TabIndex = 59
+        Me.PictureBox1.TabStop = False
         '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(779, 706)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnReinicio)
         Me.Controls.Add(Me.btnModoOscuro)
         Me.Controls.Add(Me.txtP25)
@@ -966,6 +987,7 @@ Partial Class FrmPrincipal
         Me.Name = "FrmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "WORDLE"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1027,4 +1049,5 @@ Partial Class FrmPrincipal
     Friend WithEvents txtP21 As TextBox
     Friend WithEvents btnModoOscuro As Button
     Friend WithEvents btnReinicio As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

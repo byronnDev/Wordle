@@ -1,10 +1,12 @@
 ﻿Imports Clases
 Public Class FrmPrincipal
+    'Cambiar max pos
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
         If palabra.Length <> LONGITUDPALABRA Then
             Exit Sub
         End If
         ' Validacion
+        ColorearPalabras()
         If palabraAdivinar.Equals(palabra.ToUpper) Then
             manage.AnadirWin(usuarioActual)
             FrmVictoria.Show()
@@ -23,11 +25,13 @@ Public Class FrmPrincipal
         TextBoxActual().Text += TryCast(sender, Button).Text
         palabra += TryCast(sender, Button).Text
     End Sub
-    'Dim oscuroOno As Boolean
+
+
     'Dim cuadroTexto As TextBox
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25} ' Array de TextBox
+        Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25}
+        ' Array de TextBox (pospuesto para hidalgo)
         '============================Crear los textBox en tiempo de ejecucion==============================
         'Dim posicion As Integer = 1
         'Dim x As Integer = 152
@@ -40,6 +44,7 @@ Public Class FrmPrincipal
         '        'les damos las propiedades a los botones
         '        cuadroTexto = New TextBox
         '        cuadroTexto.Text = ""
+        '        cuadroTexto.Name = "txtP" & posicion
         '        cuadroTexto.Tag = posicion
         '        posicion += 1
         '        cuadroTexto.Location = New Point(x, y)
@@ -56,7 +61,9 @@ Public Class FrmPrincipal
         '    Next
 
         'Next
+
         '===================crear botones en tiempo de ejecucion=====================(Pospuesto)
+
         'Dim x As Integer = 50
         'Dim y As Integer = 364
         'Dim posicion As Integer = 0
@@ -97,6 +104,7 @@ Public Class FrmPrincipal
         btnReinicio.FlatAppearance.BorderSize = 0
         btnModoOscuro.FlatStyle = FlatStyle.Flat
         btnModoOscuro.FlatAppearance.BorderSize = 0
+        palabra = ""
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
@@ -118,16 +126,7 @@ Public Class FrmPrincipal
         If e.KeyChar = ControlChars.Cr Then ' Si se pulsa enter
             intentosTotales += 1
             ' Colorear palabra
-            For i = 0 To LONGITUDPALABRA - 1
-                If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then
-                    DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
-                    manage.SumarPunto(usuarioActual, 50)
-                ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then
-                    DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
-                    manage.SumarPunto(usuarioActual, 10)
-                End If
-            Next
-
+            ColorearPalabras()
             ' Si se acaban los intentos
             If intentosTotales >= 5 Then
                 MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
@@ -183,19 +182,22 @@ Public Class FrmPrincipal
     'Modo Oscuro TERMINADO
     Private Sub btnModoOscuro_Click(sender As Object, e As EventArgs) Handles btnModoOscuro.Click
         Dim conntrol As Control
+        ' Si el fondo es blanco
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
-
+            modoOscuro = False
             btnReinicio.Image = My.Resources.ReinicioNegro
             btnModoOscuro.Image = My.Resources.LunaNegro
             btnModoOscuro.BackColor = Color.Transparent
             Me.BackColor = Color.White
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
+
                     conntrol.BackColor = Color.White
                     conntrol.ForeColor = Color.Black
                 End If
             Next
         Else
+            modoOscuro = True
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
                     conntrol.BackColor = Color.FromArgb(30, 30, 30)
@@ -213,5 +215,16 @@ Public Class FrmPrincipal
     Private Sub btnReinicio_Click(sender As Object, e As EventArgs) Handles btnReinicio.Click
         Limpieza()
         NuevaPalabra()
+    End Sub
+    Private Sub ColorearPalabras()
+        For i = 0 To LONGITUDPALABRA - 1
+            If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then
+                DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
+                manage.SumarPunto(usuarioActual, 50)
+            ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then
+                DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
+                manage.SumarPunto(usuarioActual, 10)
+            End If
+        Next
     End Sub
 End Class

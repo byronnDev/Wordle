@@ -177,6 +177,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bin\Debug\datos\palabras.txt" />
+    <Content Include="datos\palabras.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="datos\usuarios.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\LOGO WORDLE SMALL.png" />
+    <None Include="Resources\LOGO WORDLE.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -63,6 +63,26 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property LOGO_WORDLE() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LOGO_WORDLE", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property LOGO_WORDLE_SMALL() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("LOGO_WORDLE_SMALL", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property LunaBlanco() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("LunaBlanco", resourceCulture)
@@ -121,7 +141,9 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a admin*admin*0*0.
+        '''  Busca una cadena traducida similar a admin*bee653b9f5fe510186bbb6a8973cdcacd6ec2ec15417be10cc25e1d59497fdb3*22580*71
+        '''piter*550916dca6b9f2b8199532a4000f1dd650bfdc86aeeef481f5a34c53c0a95d43*260*1
+        '''.
         '''</summary>
         Friend ReadOnly Property usuarios() As String
             Get
