@@ -7,7 +7,7 @@ Wordle es un juego de palabras que consiste en adivinar una palabra secreta de c
 
 Para instalar el repositorio y la aplicación de Wordle, se necesita tener instalado Git y el sistema operativo Windows. Luego, se debe seguir los siguientes pasos:
 
-- Clonar el repositorio con el comando `git clone https://github.com/byronnYT/Wordle.git`.
+- Clonar el repositorio con el comando `git clone https://github.com/byronnYT/Wordle`.
 - Entrar en la carpeta del repositorio con el comando `cd Wordle`.
 - Entras a la carpeta Forms y dentro en bin y dentro en Debug con el siguiente comando `cd Forms/bin/Debug/`.
 - Ejecutas el `Forms.exe` con el comando `./Forms.exe` y listo.

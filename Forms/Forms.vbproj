@@ -73,11 +73,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Principal.vb">
+    <Compile Include="FrmClasificacion.Designer.vb">
+      <DependentUpon>FrmClasificacion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClasificacion.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.Designer.vb">
-      <DependentUpon>Principal.vb</DependentUpon>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.Designer.vb">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -97,16 +109,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Victoria.Designer.vb">
-      <DependentUpon>Victoria.vb</DependentUpon>
+    <Compile Include="FrmVictoria.Designer.vb">
+      <DependentUpon>FrmVictoria.vb</DependentUpon>
     </Compile>
-    <Compile Include="Victoria.vb">
+    <Compile Include="FrmVictoria.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Principal.resx">
-      <DependentUpon>Principal.vb</DependentUpon>
+    <EmbeddedResource Include="FrmClasificacion.resx">
+      <DependentUpon>FrmClasificacion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -114,8 +132,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Victoria.resx">
-      <DependentUpon>Victoria.vb</DependentUpon>
+    <EmbeddedResource Include="FrmVictoria.resx">
+      <DependentUpon>FrmVictoria.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -130,5 +148,44 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Clases\Clases.vbproj">
+      <Project>{4e1da14a-990b-4719-80bf-350c405640be}</Project>
+      <Name>Clases</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReinicioNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReinicioBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LunaBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LunaNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SolNegro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\datos\usuarios.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\datos\palabras.txt" />
+    <Content Include="datos\palabras.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="datos\usuarios.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\LOGO WORDLE SMALL.png" />
+    <None Include="Resources\LOGO WORDLE.png" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
