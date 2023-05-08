@@ -1,16 +1,34 @@
-﻿Imports Clases
+﻿Imports System.Reflection.Emit
+Imports Clases
 Public Class FrmPrincipal
-    'Cambiar max pos
+    Private Sub timerParpadeo_Tick(sender As Object, e As EventArgs) Handles timerParpadeo.Tick
+        ' Que parpadee el mensaje de enter con 750ms de intervalo
+        If lblMensajeEnter.Visible Then
+            lblMensajeEnter.Visible = False
+        Else
+            lblMensajeEnter.Visible = True
+        End If
+    End Sub
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
+        intentosTotales += 1
+        If intentosTotales >= 5 Then
+            MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            usuarioActual.Puntos -= 50
+            NuevaPalabra()
+            Limpieza() ' Limpiar los TextBox
+        End If
+        timerParpadeo.Stop()
+        lblMensajeEnter.Visible = False
         If palabra.Length <> LONGITUDPALABRA Then
             Exit Sub
         End If
         ' Validacion
         ColorearPalabras()
+        DevuelveTextbox(posRecuadro).BackColor = Color.Silver ' Poner el textbox en gris
         If palabraAdivinar.Equals(palabra.ToUpper) Then
             manage.AnadirWin(usuarioActual)
             FrmVictoria.Show()
-            Me.Close()
+            Me.Enabled = False
             Exit Sub
         End If
         maxPos += 5
@@ -18,6 +36,9 @@ Public Class FrmPrincipal
     End Sub
 
     Private Sub teclado(sender As Object, e As EventArgs) Handles btnZ.Click, btnY.Click, btnX.Click, btnW.Click, btnV.Click, btnU.Click, btnT.Click, btnS.Click, btnR.Click, btnQ.Click, btnP.Click, btnO.Click, btnÑ.Click, btnN.Click, btnM.Click, btnL.Click, btnK.Click, btnJ.Click, btnI.Click, btnH.Click, btnG.Click, btnF.Click, btnE.Click, btnD.Click, btnC.Click, btnB.Click, btnA.Click
+        If palabra.Length = 4 Then
+            timerParpadeo.Start() ' Para que parpadee el mensaje de enter
+        End If
         If posRecuadro > maxPos Then
             Exit Sub
         End If
@@ -105,6 +126,8 @@ Public Class FrmPrincipal
         btnModoOscuro.FlatStyle = FlatStyle.Flat
         btnModoOscuro.FlatAppearance.BorderSize = 0
         palabra = ""
+        maxPos = 4
+        posRecuadro = 0
     End Sub
 
     Private Sub btnBorrar_Click(sender As Object, e As EventArgs) Handles btnBorrar.Click
@@ -122,17 +145,15 @@ Public Class FrmPrincipal
         If e.KeyChar = ControlChars.Cr AndAlso palabra.Length <> 5 Then
             Exit Sub
         End If
-
+        If palabra.Length = 4 Then
+            timerParpadeo.Start()
+        End If
         If e.KeyChar = ControlChars.Cr Then ' Si se pulsa enter
-            intentosTotales += 1
+            timerParpadeo.Stop()
+            lblMensajeEnter.Visible = False
             ' Colorear palabra
             ColorearPalabras()
             ' Si se acaban los intentos
-            If intentosTotales >= 5 Then
-                MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                NuevaPalabra()
-                Limpieza() ' Limpiar los TextBox
-            End If
             btnEnviar_Click(sender, e)
             Exit Sub
         End If
@@ -143,6 +164,10 @@ Public Class FrmPrincipal
         If posRecuadro > maxPos Then
             Exit Sub
         End If
+        If posRecuadro <> 0 Then
+            ' Cambiar el color del recuadro anterior a gris claro
+            DevuelveTextbox(posRecuadro).BackColor = Color.Silver
+        End If
         posRecuadro += 1 ' Avanza una posicion en el recuadro
         TextBoxActual().Text += e.KeyChar ' Añade la letra al recuadro
         palabra += e.KeyChar ' Añade la letra al string palabra
@@ -152,6 +177,8 @@ Public Class FrmPrincipal
     Public Function TextBoxActual() As TextBox
         For Each textBox In listaRecuadros
             If textBox.Tag = posRecuadro Then
+                'Que cambie el color del borde del textbox
+                textBox.BackColor = Color.DarkGray
                 Return textBox
             End If
         Next
@@ -226,5 +253,22 @@ Public Class FrmPrincipal
                 manage.SumarPunto(usuarioActual, 10)
             End If
         Next
+    End Sub
+
+    Private Sub btnCerrarSesion_Click(sender As Object, e As EventArgs) Handles btnCerrarSesion.Click
+        Me.Visible = False
+        Me.Limpieza()
+        timerParpadeo.Stop()
+        lblMensajeEnter.Visible = False
+        FrmUsuarios.Show()
+    End Sub
+
+    Private Sub lblAyuda_Click(sender As Object, e As EventArgs) Handles lblAyuda.Click
+
+    End Sub
+
+    Private Sub lblAyuda_MouseHover(sender As Object, e As EventArgs) Handles lblAyuda.MouseHover
+        Dim descripcionDelBoton As New ToolTip()
+        descripcionDelBoton.SetToolTip(lblAyuda, "Pincháme para las Instrucciones. (Sin acabar)")
     End Sub
 End Class

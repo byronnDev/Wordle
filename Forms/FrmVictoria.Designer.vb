@@ -114,6 +114,7 @@ Partial Class FrmVictoria
         Me.Controls.Add(Me.lblTxtPuntuacion)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
         Me.Name = "FrmVictoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Victoria"

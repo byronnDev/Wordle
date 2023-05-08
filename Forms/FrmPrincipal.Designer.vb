@@ -22,6 +22,7 @@ Partial Class FrmPrincipal
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmPrincipal))
         Me.btnA = New System.Windows.Forms.Button()
         Me.btnB = New System.Windows.Forms.Button()
@@ -80,6 +81,10 @@ Partial Class FrmPrincipal
         Me.btnModoOscuro = New System.Windows.Forms.Button()
         Me.btnReinicio = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnCerrarSesion = New System.Windows.Forms.Button()
+        Me.lblMensajeEnter = New System.Windows.Forms.Label()
+        Me.timerParpadeo = New System.Windows.Forms.Timer(Me.components)
+        Me.lblAyuda = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -919,11 +924,51 @@ Partial Class FrmPrincipal
         Me.PictureBox1.TabIndex = 59
         Me.PictureBox1.TabStop = False
         '
+        'btnCerrarSesion
+        '
+        Me.btnCerrarSesion.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCerrarSesion.Location = New System.Drawing.Point(589, 464)
+        Me.btnCerrarSesion.Name = "btnCerrarSesion"
+        Me.btnCerrarSesion.Size = New System.Drawing.Size(129, 32)
+        Me.btnCerrarSesion.TabIndex = 60
+        Me.btnCerrarSesion.Text = "Cerrar Sesión"
+        Me.btnCerrarSesion.UseVisualStyleBackColor = True
+        '
+        'lblMensajeEnter
+        '
+        Me.lblMensajeEnter.AutoSize = True
+        Me.lblMensajeEnter.Location = New System.Drawing.Point(316, 451)
+        Me.lblMensajeEnter.Name = "lblMensajeEnter"
+        Me.lblMensajeEnter.Size = New System.Drawing.Size(185, 16)
+        Me.lblMensajeEnter.TabIndex = 61
+        Me.lblMensajeEnter.Text = "Pulsa 'ENTER' para continúar"
+        Me.lblMensajeEnter.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.lblMensajeEnter.Visible = False
+        '
+        'timerParpadeo
+        '
+        Me.timerParpadeo.Interval = 750
+        '
+        'lblAyuda
+        '
+        Me.lblAyuda.AutoSize = True
+        Me.lblAyuda.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.lblAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAyuda.ForeColor = System.Drawing.Color.White
+        Me.lblAyuda.Location = New System.Drawing.Point(26, 122)
+        Me.lblAyuda.Name = "lblAyuda"
+        Me.lblAyuda.Size = New System.Drawing.Size(63, 46)
+        Me.lblAyuda.TabIndex = 62
+        Me.lblAyuda.Text = "💡"
+        '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(779, 706)
+        Me.Controls.Add(Me.lblAyuda)
+        Me.Controls.Add(Me.lblMensajeEnter)
+        Me.Controls.Add(Me.btnCerrarSesion)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btnReinicio)
         Me.Controls.Add(Me.btnModoOscuro)
@@ -984,6 +1029,7 @@ Partial Class FrmPrincipal
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximizeBox = False
         Me.Name = "FrmPrincipal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "WORDLE"
@@ -1050,4 +1096,8 @@ Partial Class FrmPrincipal
     Friend WithEvents btnModoOscuro As Button
     Friend WithEvents btnReinicio As Button
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents btnCerrarSesion As Button
+    Friend WithEvents lblMensajeEnter As Label
+    Friend WithEvents timerParpadeo As Timer
+    Friend WithEvents lblAyuda As Label
 End Class

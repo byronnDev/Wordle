@@ -3,7 +3,7 @@ Imports Clases
 Public Class FrmUsuarios
 
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        AcceptButton = btnLoginRegister ' Enter en el botón de login
         btnLoginRegister.Focus()
         manage = New GestionUsuarios
         rbtIniciarSesion.Checked = True

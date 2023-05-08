@@ -55,19 +55,32 @@ Public Class GestionUsuarios
         users(posicion).Wins += 1
         File.WriteAllLines(pathUsers, users.Select(Function(x) x.ToString)) ' Guardamos los cambios en el fichero
     End Sub
-    Public Function Clasificados() As List(Of Usuario)
+    ' Devuelve una lista con los 10 usuarios con mas puntos/wins ordenados de mayor a menor
+    Public Function Clasificados(puntos As Boolean) As List(Of Usuario)
         Dim tempArray As New List(Of Usuario)
-        Dim maxPuntos As Integer
+        Dim maxNum As Integer
         Dim maxUser As Usuario
-        Do Until tempArray.ToArray.Length = 10 OrElse tempArray.ToArray.Length = users.ToArray.Length
-            maxPuntos = Integer.MinValue
+        Dim cantidadUsuarios As Integer = 10
+        ' Repetimos el bucle hasta que la lista tenga 10 usuarios o hasta que no queden mas usuarios
+        Do Until tempArray.ToArray.Length = cantidadUsuarios OrElse tempArray.ToArray.Length = users.ToArray.Length
+            maxNum = Integer.MinValue
+            ' Buscamos el usuario con mas puntos/wins
             For Each user In users
-                If user.Puntos > maxPuntos AndAlso Not tempArray.Contains(user) Then
-                    maxPuntos = user.Puntos
-                    maxUser = user
+                If puntos Then
+                    ' Si el usuario tiene mas puntos que el maximo y no está en la lista, se convierte en el maximo
+                    If user.Puntos > maxNum AndAlso Not tempArray.Contains(user) Then
+                        maxNum = user.Puntos
+                        maxUser = user
+                    End If
+                Else
+                    ' Si el usuario tiene mas wins que el maximo y no está en la lista, se convierte en el maximo
+                    If user.Wins > maxNum AndAlso Not tempArray.Contains(user) Then
+                        maxNum = user.Wins
+                        maxUser = user
+                    End If
                 End If
             Next
-            tempArray.Add(maxUser)
+            tempArray.Add(maxUser) ' Añadimos el usuario con mas puntos/wins a la lista
         Loop
         Return tempArray
     End Function

@@ -11,12 +11,15 @@ Public Class FrmVictoria
         If resultado = DialogResult.Yes Then
             ReiniciarJuego()
         ElseIf resultado = DialogResult.No Then
+            FrmPrincipal.Close()
             Exit Sub
         End If
     End Sub
 
     Public Sub ReiniciarJuego()
-        FrmPrincipal.Show()
+        FrmPrincipal.Enabled = True
+        FrmPrincipal.Limpieza()
+        NuevaPalabra()
     End Sub
 
     Private Sub FrmVictoria_Load(sender As Object, e As EventArgs) Handles MyBase.Load
