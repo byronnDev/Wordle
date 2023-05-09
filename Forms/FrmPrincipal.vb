@@ -135,8 +135,15 @@ Public Class FrmPrincipal
         If posRecuadro <= maxPos - 4 Then
             Exit Sub
         End If
+        timerParpadeo.Stop()
+        lblMensajeEnter.Visible = False
         TextBoxActual().Text = "" ' Borra el texto del recuadro en le que estamos
+        DevuelveTextbox(posRecuadro).BackColor = Color.Silver
         posRecuadro -= 1 ' Retrocede una posicion en el recuadro
+        If posRecuadro <> 0 Then
+            ' Cambiar el color del recuadro anterior a gris claro
+            DevuelveTextbox(posRecuadro).BackColor = Color.DarkGray
+        End If
         palabra = palabra.Substring(0, palabra.Length - 1) ' Elimina el ultimo caracter del string palabra
     End Sub
     ' Cuando se pulsa una tecla
@@ -211,7 +218,7 @@ Public Class FrmPrincipal
         Dim conntrol As Control
         ' Si el fondo es blanco
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
-            modoOscuro = False
+            modoOscuroSino = False
             btnReinicio.Image = My.Resources.ReinicioNegro
             btnModoOscuro.Image = My.Resources.LunaNegro
             btnModoOscuro.BackColor = Color.Transparent
@@ -224,7 +231,7 @@ Public Class FrmPrincipal
                 End If
             Next
         Else
-            modoOscuro = True
+            modoOscuroSino = True
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
                     conntrol.BackColor = Color.FromArgb(30, 30, 30)
@@ -263,12 +270,13 @@ Public Class FrmPrincipal
         FrmUsuarios.Show()
     End Sub
 
-    Private Sub lblAyuda_Click(sender As Object, e As EventArgs) Handles lblAyuda.Click
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        Dim descripcionDelBoton As New ToolTip()
+        descripcionDelBoton.SetToolTip(btnAyuda, "Pincháme para las Instrucciones.")
 
     End Sub
 
-    Private Sub lblAyuda_MouseHover(sender As Object, e As EventArgs) Handles lblAyuda.MouseHover
-        Dim descripcionDelBoton As New ToolTip()
-        descripcionDelBoton.SetToolTip(lblAyuda, "Pincháme para las Instrucciones. (Sin acabar)")
+    Private Sub btnAyuda_MouseCaptureChanged(sender As Object, e As EventArgs) Handles btnAyuda.MouseCaptureChanged
+        btnAyuda.BackColor = Color.Red
     End Sub
 End Class

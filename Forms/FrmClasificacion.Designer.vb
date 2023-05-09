@@ -65,11 +65,11 @@ Partial Class FrmClasificacion
         '
         Me.lblTitulo.AutoSize = True
         Me.lblTitulo.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTitulo.Location = New System.Drawing.Point(178, 149)
+        Me.lblTitulo.Location = New System.Drawing.Point(239, 157)
         Me.lblTitulo.Name = "lblTitulo"
-        Me.lblTitulo.Size = New System.Drawing.Size(423, 76)
+        Me.lblTitulo.Size = New System.Drawing.Size(336, 38)
         Me.lblTitulo.TabIndex = 5
-        Me.lblTitulo.Text = "TOP 10 USUARIOS CON " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "MAYOR PUNTUACIÓN"
+        Me.lblTitulo.Text = "TOP 10 USUARIOS "
         Me.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'lblUsuarios
@@ -78,7 +78,7 @@ Partial Class FrmClasificacion
         Me.lblUsuarios.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold)
         Me.lblUsuarios.Location = New System.Drawing.Point(135, 238)
         Me.lblUsuarios.Name = "lblUsuarios"
-        Me.lblUsuarios.Size = New System.Drawing.Size(519, 25)
+        Me.lblUsuarios.Size = New System.Drawing.Size(502, 25)
         Me.lblUsuarios.TabIndex = 6
         Me.lblUsuarios.Text = "Usuarios"
         '

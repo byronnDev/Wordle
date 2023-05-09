@@ -84,7 +84,7 @@ Partial Class FrmPrincipal
         Me.btnCerrarSesion = New System.Windows.Forms.Button()
         Me.lblMensajeEnter = New System.Windows.Forms.Label()
         Me.timerParpadeo = New System.Windows.Forms.Timer(Me.components)
-        Me.lblAyuda = New System.Windows.Forms.Label()
+        Me.btnAyuda = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -888,7 +888,7 @@ Partial Class FrmPrincipal
         Me.btnModoOscuro.FlatAppearance.BorderSize = 0
         Me.btnModoOscuro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnModoOscuro.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnModoOscuro.Image = Global.Forms.My.Resources.Resources.LunaNegro
+        Me.btnModoOscuro.Image = Global.Wordle.My.Resources.Resources.LunaNegro
         Me.btnModoOscuro.Location = New System.Drawing.Point(639, 124)
         Me.btnModoOscuro.Margin = New System.Windows.Forms.Padding(4)
         Me.btnModoOscuro.Name = "btnModoOscuro"
@@ -904,7 +904,7 @@ Partial Class FrmPrincipal
         Me.btnReinicio.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnReinicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnReinicio.ForeColor = System.Drawing.Color.Transparent
-        Me.btnReinicio.Image = Global.Forms.My.Resources.Resources.ReinicioNegro
+        Me.btnReinicio.Image = Global.Wordle.My.Resources.Resources.ReinicioNegro
         Me.btnReinicio.Location = New System.Drawing.Point(639, 206)
         Me.btnReinicio.Margin = New System.Windows.Forms.Padding(4)
         Me.btnReinicio.Name = "btnReinicio"
@@ -949,24 +949,26 @@ Partial Class FrmPrincipal
         '
         Me.timerParpadeo.Interval = 750
         '
-        'lblAyuda
+        'btnAyuda
         '
-        Me.lblAyuda.AutoSize = True
-        Me.lblAyuda.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.lblAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblAyuda.ForeColor = System.Drawing.Color.White
-        Me.lblAyuda.Location = New System.Drawing.Point(26, 122)
-        Me.lblAyuda.Name = "lblAyuda"
-        Me.lblAyuda.Size = New System.Drawing.Size(63, 46)
-        Me.lblAyuda.TabIndex = 62
-        Me.lblAyuda.Text = "💡"
+        Me.btnAyuda.BackColor = System.Drawing.Color.Transparent
+        Me.btnAyuda.FlatAppearance.BorderSize = 0
+        Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!)
+        Me.btnAyuda.ForeColor = System.Drawing.Color.Black
+        Me.btnAyuda.Location = New System.Drawing.Point(43, 122)
+        Me.btnAyuda.Name = "btnAyuda"
+        Me.btnAyuda.Size = New System.Drawing.Size(72, 54)
+        Me.btnAyuda.TabIndex = 63
+        Me.btnAyuda.Text = "💡"
+        Me.btnAyuda.UseVisualStyleBackColor = False
         '
         'FrmPrincipal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(779, 706)
-        Me.Controls.Add(Me.lblAyuda)
+        Me.Controls.Add(Me.btnAyuda)
         Me.Controls.Add(Me.lblMensajeEnter)
         Me.Controls.Add(Me.btnCerrarSesion)
         Me.Controls.Add(Me.PictureBox1)
@@ -1099,5 +1101,5 @@ Partial Class FrmPrincipal
     Friend WithEvents btnCerrarSesion As Button
     Friend WithEvents lblMensajeEnter As Label
     Friend WithEvents timerParpadeo As Timer
-    Friend WithEvents lblAyuda As Label
+    Friend WithEvents btnAyuda As Button
 End Class

@@ -6,28 +6,38 @@ Module Module1
     'toDo Avanzado: Añadir o quitar un boton de tecla en la interfaz grafica y que sin tocar codigo siga funcionando
     'toDo Avanzado: Hacer que a la hora de cambiar en la interfaz grafica la cantidad de recuadros de 5 a 6 no afecte al codigo
 
-    Public modoOscuro As Boolean
-    'Public function ModoOscuro(nombre as string)
-    '    If modoOscuro() Then
-    '        BackColor = Color.FromArgb(15, 15, 15)
-    '        For Each conntrol In Me.Controls
-    '            If TypeOf conntrol Is Button And TypeOf conntrol Is TextBox And TypeOf conntrol Is Label Then
-    '                conntrol.BackColor = Color.FromArgb(30, 30, 30)
-    '                conntrol.ForeColor = Color.White
-    '            ElseIf TypeOf conntrol Is Label Then
-
-    '            End If
-    '        Next
-    '    Else
-    '        Me.BackColor = Color.White
-    '        For Each conntrol In Me.Controls
-    '            If TypeOf conntrol Is Button And TypeOf conntrol Is TextBox And TypeOf conntrol Is Label Then
-    '                conntrol.BackColor = Color.White
-    '                conntrol.ForeColor = Color.Black
-    '            End If
-    '        Next
-    '    End If
-    'End Sub
+    Public modoOscuroSino As Boolean
+    Public Function ModoOscuro(nombre As Form)
+        If modoOscuroSino Then
+            nombre.BackColor = Color.FromArgb(15, 15, 15)
+            For Each control In nombre.Controls
+                If TypeOf control Is TextBox Then
+                    PasarAoscuro(control)
+                ElseIf TypeOf control Is Label Then
+                    PasarAoscuro(control)
+                ElseIf TypeOf control Is Button Then
+                    PasarAoscuro(control)
+                End If
+            Next
+        Else
+            nombre.BackColor = Color.White
+            For Each control In nombre.Controls
+                If TypeOf control Is Button And TypeOf control Is TextBox Then
+                    PasarAclaro(control)
+                ElseIf TypeOf control Is Label Then
+                    PasarAclaro(control)
+                End If
+            Next
+        End If
+    End Function
+    Public Sub PasarAoscuro(control As Control)
+        control.BackColor = Color.FromArgb(30, 30, 30)
+        control.ForeColor = Color.White
+    End Sub
+    Public Sub PasarAclaro(control As Control)
+        control.BackColor = Color.White
+        control.ForeColor = Color.Black
+    End Sub
     Public manage As GestionUsuarios 'Plataforma para gestionar los datos de los usuarios y para agregar estos mismos
     Public palabrasDisponibles As String() = File.ReadAllLines("./datos/palabras.txt") ' Palabra la cual tienen que adivinar
     Public rnd As New Random()
