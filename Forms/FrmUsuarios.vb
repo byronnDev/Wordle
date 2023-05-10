@@ -3,6 +3,9 @@ Imports Clases
 Public Class FrmUsuarios
 
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If modoOscuroSino Then
+            ModoOscuro(Me)
+        End If
         AcceptButton = btnLoginRegister ' Enter en el botón de login
         btnLoginRegister.Focus()
         manage = New GestionUsuarios

@@ -1,7 +1,6 @@
 ﻿Imports Clases
 Imports System.IO
 Module Module1
-    'toDo hacer que cuando le de al boton tambien cambien los colores
     'toDo Cambiar los controles a tiempo de ejecucion -> Hidalgo(Pospuesto)
     'toDo Avanzado: Añadir o quitar un boton de tecla en la interfaz grafica y que sin tocar codigo siga funcionando
     'toDo Avanzado: Hacer que a la hora de cambiar en la interfaz grafica la cantidad de recuadros de 5 a 6 no afecte al codigo
@@ -31,7 +30,7 @@ Module Module1
         End If
     End Function
     Public Sub PasarAoscuro(control As Control)
-        control.BackColor = Color.FromArgb(30, 30, 30)
+        control.BackColor = Color.FromArgb(15, 15, 15)
         control.ForeColor = Color.White
     End Sub
     Public Sub PasarAclaro(control As Control)
@@ -54,6 +53,6 @@ Module Module1
         Dim tempPalabra As String = palabraAdivinar
         Do
             palabraAdivinar = palabrasDisponibles(rnd.Next(palabrasDisponibles.Length))
-        Loop Until palabraAdivinar <> tempPalabra ' Comprueba que la palabra no sea la misma que la anterior
+        Loop Until palabraAdivinar <> tempPalabra  ' Comprueba que la palabra no sea la misma que la anterior
     End Sub
 End Module

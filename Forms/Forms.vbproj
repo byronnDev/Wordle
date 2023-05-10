@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAyuda.Designer.vb">
+      <DependentUpon>FrmAyuda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAyuda.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="FrmClasificacion.Designer.vb">
       <DependentUpon>FrmClasificacion.vb</DependentUpon>
     </Compile>
@@ -117,6 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmAyuda.resx">
+      <DependentUpon>FrmAyuda.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmClasificacion.resx">
       <DependentUpon>FrmClasificacion.vb</DependentUpon>
     </EmbeddedResource>

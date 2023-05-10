@@ -94,7 +94,7 @@ Partial Class FrmPrincipal
         Me.btnA.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnA.Name = "btnA"
         Me.btnA.Size = New System.Drawing.Size(59, 43)
-        Me.btnA.TabIndex = 0
+        Me.btnA.TabIndex = 10
         Me.btnA.Text = "A"
         Me.btnA.UseVisualStyleBackColor = True
         '
@@ -104,7 +104,7 @@ Partial Class FrmPrincipal
         Me.btnB.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnB.Name = "btnB"
         Me.btnB.Size = New System.Drawing.Size(59, 43)
-        Me.btnB.TabIndex = 1
+        Me.btnB.TabIndex = 25
         Me.btnB.Text = "B"
         Me.btnB.UseVisualStyleBackColor = True
         '
@@ -114,7 +114,7 @@ Partial Class FrmPrincipal
         Me.btnC.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnC.Name = "btnC"
         Me.btnC.Size = New System.Drawing.Size(59, 43)
-        Me.btnC.TabIndex = 2
+        Me.btnC.TabIndex = 23
         Me.btnC.Text = "C"
         Me.btnC.UseVisualStyleBackColor = True
         '
@@ -124,7 +124,7 @@ Partial Class FrmPrincipal
         Me.btnD.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnD.Name = "btnD"
         Me.btnD.Size = New System.Drawing.Size(59, 43)
-        Me.btnD.TabIndex = 3
+        Me.btnD.TabIndex = 12
         Me.btnD.Text = "D"
         Me.btnD.UseVisualStyleBackColor = True
         '
@@ -134,7 +134,7 @@ Partial Class FrmPrincipal
         Me.btnE.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnE.Name = "btnE"
         Me.btnE.Size = New System.Drawing.Size(59, 43)
-        Me.btnE.TabIndex = 4
+        Me.btnE.TabIndex = 2
         Me.btnE.Text = "E"
         Me.btnE.UseVisualStyleBackColor = True
         '
@@ -144,7 +144,7 @@ Partial Class FrmPrincipal
         Me.btnF.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnF.Name = "btnF"
         Me.btnF.Size = New System.Drawing.Size(59, 43)
-        Me.btnF.TabIndex = 5
+        Me.btnF.TabIndex = 13
         Me.btnF.Text = "F"
         Me.btnF.UseVisualStyleBackColor = True
         '
@@ -154,7 +154,7 @@ Partial Class FrmPrincipal
         Me.btnG.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnG.Name = "btnG"
         Me.btnG.Size = New System.Drawing.Size(59, 43)
-        Me.btnG.TabIndex = 6
+        Me.btnG.TabIndex = 14
         Me.btnG.Text = "G"
         Me.btnG.UseVisualStyleBackColor = True
         '
@@ -164,7 +164,7 @@ Partial Class FrmPrincipal
         Me.btnH.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnH.Name = "btnH"
         Me.btnH.Size = New System.Drawing.Size(59, 43)
-        Me.btnH.TabIndex = 7
+        Me.btnH.TabIndex = 15
         Me.btnH.Text = "H"
         Me.btnH.UseVisualStyleBackColor = True
         '
@@ -174,7 +174,7 @@ Partial Class FrmPrincipal
         Me.btnI.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnI.Name = "btnI"
         Me.btnI.Size = New System.Drawing.Size(59, 43)
-        Me.btnI.TabIndex = 8
+        Me.btnI.TabIndex = 7
         Me.btnI.Text = "I"
         Me.btnI.UseVisualStyleBackColor = True
         '
@@ -184,7 +184,7 @@ Partial Class FrmPrincipal
         Me.btnJ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnJ.Name = "btnJ"
         Me.btnJ.Size = New System.Drawing.Size(59, 43)
-        Me.btnJ.TabIndex = 9
+        Me.btnJ.TabIndex = 16
         Me.btnJ.Text = "J"
         Me.btnJ.UseVisualStyleBackColor = True
         '
@@ -194,7 +194,7 @@ Partial Class FrmPrincipal
         Me.btnK.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnK.Name = "btnK"
         Me.btnK.Size = New System.Drawing.Size(59, 43)
-        Me.btnK.TabIndex = 10
+        Me.btnK.TabIndex = 17
         Me.btnK.Text = "K"
         Me.btnK.UseVisualStyleBackColor = True
         '
@@ -204,7 +204,7 @@ Partial Class FrmPrincipal
         Me.btnL.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnL.Name = "btnL"
         Me.btnL.Size = New System.Drawing.Size(59, 43)
-        Me.btnL.TabIndex = 11
+        Me.btnL.TabIndex = 18
         Me.btnL.Text = "L"
         Me.btnL.UseVisualStyleBackColor = True
         '
@@ -214,7 +214,7 @@ Partial Class FrmPrincipal
         Me.btnM.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnM.Name = "btnM"
         Me.btnM.Size = New System.Drawing.Size(59, 43)
-        Me.btnM.TabIndex = 12
+        Me.btnM.TabIndex = 27
         Me.btnM.Text = "M"
         Me.btnM.UseVisualStyleBackColor = True
         '
@@ -224,7 +224,7 @@ Partial Class FrmPrincipal
         Me.btnN.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnN.Name = "btnN"
         Me.btnN.Size = New System.Drawing.Size(59, 43)
-        Me.btnN.TabIndex = 13
+        Me.btnN.TabIndex = 26
         Me.btnN.Text = "N"
         Me.btnN.UseVisualStyleBackColor = True
         '
@@ -234,7 +234,7 @@ Partial Class FrmPrincipal
         Me.btnÑ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnÑ.Name = "btnÑ"
         Me.btnÑ.Size = New System.Drawing.Size(59, 43)
-        Me.btnÑ.TabIndex = 14
+        Me.btnÑ.TabIndex = 19
         Me.btnÑ.Text = "Ñ"
         Me.btnÑ.UseVisualStyleBackColor = True
         '
@@ -244,7 +244,7 @@ Partial Class FrmPrincipal
         Me.btnO.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnO.Name = "btnO"
         Me.btnO.Size = New System.Drawing.Size(59, 43)
-        Me.btnO.TabIndex = 15
+        Me.btnO.TabIndex = 8
         Me.btnO.Text = "O"
         Me.btnO.UseVisualStyleBackColor = True
         '
@@ -254,7 +254,7 @@ Partial Class FrmPrincipal
         Me.btnP.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnP.Name = "btnP"
         Me.btnP.Size = New System.Drawing.Size(59, 43)
-        Me.btnP.TabIndex = 16
+        Me.btnP.TabIndex = 9
         Me.btnP.Text = "P"
         Me.btnP.UseVisualStyleBackColor = True
         '
@@ -264,7 +264,7 @@ Partial Class FrmPrincipal
         Me.btnQ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnQ.Name = "btnQ"
         Me.btnQ.Size = New System.Drawing.Size(59, 43)
-        Me.btnQ.TabIndex = 17
+        Me.btnQ.TabIndex = 0
         Me.btnQ.Text = "Q"
         Me.btnQ.UseVisualStyleBackColor = True
         '
@@ -274,7 +274,7 @@ Partial Class FrmPrincipal
         Me.btnR.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnR.Name = "btnR"
         Me.btnR.Size = New System.Drawing.Size(59, 43)
-        Me.btnR.TabIndex = 18
+        Me.btnR.TabIndex = 3
         Me.btnR.Text = "R"
         Me.btnR.UseVisualStyleBackColor = True
         '
@@ -284,7 +284,7 @@ Partial Class FrmPrincipal
         Me.btnS.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnS.Name = "btnS"
         Me.btnS.Size = New System.Drawing.Size(59, 43)
-        Me.btnS.TabIndex = 19
+        Me.btnS.TabIndex = 11
         Me.btnS.Text = "S"
         Me.btnS.UseVisualStyleBackColor = True
         '
@@ -294,7 +294,7 @@ Partial Class FrmPrincipal
         Me.btnT.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnT.Name = "btnT"
         Me.btnT.Size = New System.Drawing.Size(59, 43)
-        Me.btnT.TabIndex = 20
+        Me.btnT.TabIndex = 4
         Me.btnT.Text = "T"
         Me.btnT.UseVisualStyleBackColor = True
         '
@@ -304,7 +304,7 @@ Partial Class FrmPrincipal
         Me.btnU.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnU.Name = "btnU"
         Me.btnU.Size = New System.Drawing.Size(59, 43)
-        Me.btnU.TabIndex = 21
+        Me.btnU.TabIndex = 6
         Me.btnU.Text = "U"
         Me.btnU.UseVisualStyleBackColor = True
         '
@@ -314,7 +314,7 @@ Partial Class FrmPrincipal
         Me.btnV.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnV.Name = "btnV"
         Me.btnV.Size = New System.Drawing.Size(59, 43)
-        Me.btnV.TabIndex = 22
+        Me.btnV.TabIndex = 24
         Me.btnV.Text = "V"
         Me.btnV.UseVisualStyleBackColor = True
         '
@@ -324,7 +324,7 @@ Partial Class FrmPrincipal
         Me.btnW.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnW.Name = "btnW"
         Me.btnW.Size = New System.Drawing.Size(59, 43)
-        Me.btnW.TabIndex = 23
+        Me.btnW.TabIndex = 1
         Me.btnW.Text = "W"
         Me.btnW.UseVisualStyleBackColor = True
         '
@@ -334,7 +334,7 @@ Partial Class FrmPrincipal
         Me.btnX.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnX.Name = "btnX"
         Me.btnX.Size = New System.Drawing.Size(59, 43)
-        Me.btnX.TabIndex = 24
+        Me.btnX.TabIndex = 22
         Me.btnX.Text = "X"
         Me.btnX.UseVisualStyleBackColor = True
         '
@@ -344,7 +344,7 @@ Partial Class FrmPrincipal
         Me.btnY.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnY.Name = "btnY"
         Me.btnY.Size = New System.Drawing.Size(59, 43)
-        Me.btnY.TabIndex = 25
+        Me.btnY.TabIndex = 5
         Me.btnY.Text = "Y"
         Me.btnY.UseVisualStyleBackColor = True
         '
@@ -354,7 +354,7 @@ Partial Class FrmPrincipal
         Me.btnZ.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnZ.Name = "btnZ"
         Me.btnZ.Size = New System.Drawing.Size(59, 43)
-        Me.btnZ.TabIndex = 26
+        Me.btnZ.TabIndex = 21
         Me.btnZ.Text = "Z"
         Me.btnZ.UseVisualStyleBackColor = True
         '
@@ -465,7 +465,7 @@ Partial Class FrmPrincipal
         Me.btnEnviar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnEnviar.Name = "btnEnviar"
         Me.btnEnviar.Size = New System.Drawing.Size(108, 43)
-        Me.btnEnviar.TabIndex = 33
+        Me.btnEnviar.TabIndex = 20
         Me.btnEnviar.Text = "✓"
         Me.btnEnviar.UseVisualStyleBackColor = True
         '
@@ -476,7 +476,7 @@ Partial Class FrmPrincipal
         Me.btnBorrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btnBorrar.Name = "btnBorrar"
         Me.btnBorrar.Size = New System.Drawing.Size(72, 43)
-        Me.btnBorrar.TabIndex = 34
+        Me.btnBorrar.TabIndex = 28
         Me.btnBorrar.Text = "⬅️"
         Me.btnBorrar.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.btnBorrar.UseVisualStyleBackColor = True
@@ -952,14 +952,16 @@ Partial Class FrmPrincipal
         'btnAyuda
         '
         Me.btnAyuda.BackColor = System.Drawing.Color.Transparent
+        Me.btnAyuda.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnAyuda.FlatAppearance.BorderSize = 0
+        Me.btnAyuda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnAyuda.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!)
-        Me.btnAyuda.ForeColor = System.Drawing.Color.Black
-        Me.btnAyuda.Location = New System.Drawing.Point(43, 122)
+        Me.btnAyuda.Font = New System.Drawing.Font("Microsoft Sans Serif", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAyuda.Location = New System.Drawing.Point(26, 124)
+        Me.btnAyuda.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAyuda.Name = "btnAyuda"
-        Me.btnAyuda.Size = New System.Drawing.Size(72, 54)
-        Me.btnAyuda.TabIndex = 63
+        Me.btnAyuda.Size = New System.Drawing.Size(99, 74)
+        Me.btnAyuda.TabIndex = 62
         Me.btnAyuda.Text = "💡"
         Me.btnAyuda.UseVisualStyleBackColor = False
         '
