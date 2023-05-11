@@ -151,9 +151,10 @@ Partial Class FrmUsuarios
         Me.lblLoginError.Location = New System.Drawing.Point(300, 261)
         Me.lblLoginError.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLoginError.Name = "lblLoginError"
-        Me.lblLoginError.Size = New System.Drawing.Size(173, 28)
+        Me.lblLoginError.Size = New System.Drawing.Size(241, 35)
         Me.lblLoginError.TabIndex = 12
         Me.lblLoginError.Text = "EL ususario mo existe"
+        Me.lblLoginError.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.lblLoginError.Visible = False
         '
         'PictureBox1

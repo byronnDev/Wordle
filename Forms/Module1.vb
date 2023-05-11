@@ -6,34 +6,38 @@ Module Module1
     'toDo Avanzado: Hacer que a la hora de cambiar en la interfaz grafica la cantidad de recuadros de 5 a 6 no afecte al codigo
 
     Public modoOscuroSino As Boolean
-    Public Function ModoOscuro(nombre As Form)
+    Public Function ModoOscuro(nombreForm As Form)
         If modoOscuroSino Then
-            nombre.BackColor = Color.FromArgb(15, 15, 15)
-            For Each control In nombre.Controls
+            nombreForm.BackColor = Color.FromArgb(15, 15, 15)
+            For Each control In nombreForm.Controls
                 If TypeOf control Is TextBox Then
-                    PasarAoscuro(control)
+                    PasarAOscuro(control)
                 ElseIf TypeOf control Is Label Then
-                    PasarAoscuro(control)
+                    PasarAOscuro(control)
                 ElseIf TypeOf control Is Button Then
-                    PasarAoscuro(control)
+                    PasarAOscuro(control)
+                ElseIf TypeOf control Is ListBox Then
+                    PasarAOscuro(control)
+                ElseIf TypeOf control Is RadioButton Then
+                    PasarAOscuro(control)
                 End If
             Next
         Else
-            nombre.BackColor = Color.White
-            For Each control In nombre.Controls
+            nombreForm.BackColor = Color.White
+            For Each control In nombreForm.Controls
                 If TypeOf control Is Button And TypeOf control Is TextBox Then
-                    PasarAclaro(control)
+                    PasarAClaro(control)
                 ElseIf TypeOf control Is Label Then
-                    PasarAclaro(control)
+                    PasarAClaro(control)
                 End If
             Next
         End If
     End Function
-    Public Sub PasarAoscuro(control As Control)
+    Public Sub PasarAOscuro(control As Control)
         control.BackColor = Color.FromArgb(15, 15, 15)
         control.ForeColor = Color.White
     End Sub
-    Public Sub PasarAclaro(control As Control)
+    Public Sub PasarAClaro(control As Control)
         control.BackColor = Color.White
         control.ForeColor = Color.Black
     End Sub
