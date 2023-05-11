@@ -39,7 +39,7 @@ Namespace My.Resources
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Forms.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Wordle.Resources", GetType(Resources).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -141,8 +141,8 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Busca una cadena traducida similar a admin*bee653b9f5fe510186bbb6a8973cdcacd6ec2ec15417be10cc25e1d59497fdb3*22580*71
-        '''piter*550916dca6b9f2b8199532a4000f1dd650bfdc86aeeef481f5a34c53c0a95d43*260*1
+        '''  Busca una cadena traducida similar a admin*dab7af94584422fbcec435f8b3a44999df546f84a1307185d959113103aa52e7*58750*100
+        '''piter*193ff9006f3a342c93dbb522a9eee1cd5aa86a2d7e853124b0e0ad349cf0b2fb*880*2
         '''.
         '''</summary>
         Friend ReadOnly Property usuarios() As String

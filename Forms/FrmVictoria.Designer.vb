@@ -103,6 +103,7 @@ Partial Class FrmVictoria
         '
         'FrmVictoria
         '
+        Me.AcceptButton = Me.btnClasificacion
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
@@ -113,8 +114,10 @@ Partial Class FrmVictoria
         Me.Controls.Add(Me.lblVictorias)
         Me.Controls.Add(Me.lblTxtPuntuacion)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "FrmVictoria"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Victoria"

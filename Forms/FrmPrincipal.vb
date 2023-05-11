@@ -10,21 +10,15 @@ Public Class FrmPrincipal
         End If
     End Sub
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
-        intentosTotales += 1
-        If intentosTotales >= 5 Then
-            MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-            usuarioActual.Puntos -= 50
-            NuevaPalabra()
-            Limpieza() ' Limpiar los TextBox
-        End If
         timerParpadeo.Stop()
         lblMensajeEnter.Visible = False
         If palabra.Length <> LONGITUDPALABRA Then
             Exit Sub
         End If
+        intentosTotales += 1
         ' Validacion
-        ColorearPalabras()
         DevuelveTextbox(posRecuadro).BackColor = Color.Silver ' Poner el textbox en gris
+        ColorearPalabras()
         If palabraAdivinar.Equals(palabra.ToUpper) Then
             manage.AnadirWin(usuarioActual)
             FrmVictoria.Show()
@@ -33,20 +27,35 @@ Public Class FrmPrincipal
         End If
         maxPos += 5
         palabra = ""
+        txtP1.Select()
+        If intentosTotales >= 5 Then
+            MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            usuarioActual.Puntos -= 50
+            NuevaPalabra()
+            Limpieza() ' Limpiar los TextBox
+        End If
     End Sub
 
     Private Sub teclado(sender As Object, e As EventArgs) Handles btnZ.Click, btnY.Click, btnX.Click, btnW.Click, btnV.Click, btnU.Click, btnT.Click, btnS.Click, btnR.Click, btnQ.Click, btnP.Click, btnO.Click, btnÑ.Click, btnN.Click, btnM.Click, btnL.Click, btnK.Click, btnJ.Click, btnI.Click, btnH.Click, btnG.Click, btnF.Click, btnE.Click, btnD.Click, btnC.Click, btnB.Click, btnA.Click
+        letraElegida(TryCast(sender, Button).Text)
+        txtP1.Select()
+    End Sub
+    ' Funcion que recoge la letra elegida y la pone en el textbox
+    Private Function letraElegida(letra As String)
         If palabra.Length = 4 Then
             timerParpadeo.Start() ' Para que parpadee el mensaje de enter
         End If
-        If posRecuadro > maxPos Then
-            Exit Sub
+        If posRecuadro <> maxPos - 4 AndAlso posRecuadro <= maxPos Then
+            ' Cambiar el color del recuadro anterior a gris claro
+            DevuelveTextbox(posRecuadro).BackColor = Color.Silver
         End If
-        posRecuadro += 1
-        TextBoxActual().Text += TryCast(sender, Button).Text
-        palabra += TryCast(sender, Button).Text
-    End Sub
-
+        If posRecuadro <= maxPos Then
+            posRecuadro += 1 ' Avanza una posicion en el recuadro
+            TextBoxActual().Text += letra ' Añade la letra al recuadro
+            palabra += letra ' Añade la letra al string palabra
+        End If
+        txtP1.Select()
+    End Function
 
     'Dim cuadroTexto As TextBox
 
@@ -135,24 +144,32 @@ Public Class FrmPrincipal
         If posRecuadro <= maxPos - 4 Then
             Exit Sub
         End If
+        timerParpadeo.Stop()
+        lblMensajeEnter.Visible = False
         TextBoxActual().Text = "" ' Borra el texto del recuadro en le que estamos
+        DevuelveTextbox(posRecuadro).BackColor = Color.Silver
         posRecuadro -= 1 ' Retrocede una posicion en el recuadro
+        If posRecuadro <> maxPos - 4 Then
+            ' Cambiar el color del recuadro anterior a gris claro
+            DevuelveTextbox(posRecuadro).BackColor = Color.DarkGray
+        End If
         palabra = palabra.Substring(0, palabra.Length - 1) ' Elimina el ultimo caracter del string palabra
     End Sub
     ' Cuando se pulsa una tecla
     Private Sub pulsarTecla(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
+        'TODO hacer que no pueda pulsar numeros o teclas que no estén en el teclado
+        If palabra.Length = 4 Then
+            timerParpadeo.Start()
+        End If
+        Dim validos As Char() = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "Ñ", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", “a”, “b”, “c”, “d”, “e”, “f”, “g”, “h”, “i”, “j”, “k”, “l”, “m”, “n”, “ñ”, “o”, “p”, “q”, “r”, “s”, “t”, “u”, “v”, “w”, “x”, “y”, “z”}
+
         ' Si se pulsa enter y la palabra no tiene 5 caracteres
         If e.KeyChar = ControlChars.Cr AndAlso palabra.Length <> 5 Then
             Exit Sub
         End If
-        If palabra.Length = 4 Then
-            timerParpadeo.Start()
-        End If
         If e.KeyChar = ControlChars.Cr Then ' Si se pulsa enter
             timerParpadeo.Stop()
             lblMensajeEnter.Visible = False
-            ' Colorear palabra
-            ColorearPalabras()
             ' Si se acaban los intentos
             btnEnviar_Click(sender, e)
             Exit Sub
@@ -161,17 +178,11 @@ Public Class FrmPrincipal
             btnBorrar_Click(sender, e)
             Exit Sub
         End If
-        If posRecuadro > maxPos Then
+        ' Si se pulsa una tecla que no sea una letra o sea el enter
+        If Not validos.Contains(e.KeyChar) Then
             Exit Sub
         End If
-        If posRecuadro <> 0 Then
-            ' Cambiar el color del recuadro anterior a gris claro
-            DevuelveTextbox(posRecuadro).BackColor = Color.Silver
-        End If
-        posRecuadro += 1 ' Avanza una posicion en el recuadro
-        TextBoxActual().Text += e.KeyChar ' Añade la letra al recuadro
-        palabra += e.KeyChar ' Añade la letra al string palabra
-        e.KeyChar = "" ' Elimina la letra que se ha pulsado
+        letraElegida(e.KeyChar)
     End Sub
     ' Devuelve el TextBox en el que estamos
     Public Function TextBoxActual() As TextBox
@@ -205,13 +216,14 @@ Public Class FrmPrincipal
         maxPos = 4
         intentosTotales = 0
         txtP1.Select()
+
     End Sub
     'Modo Oscuro TERMINADO
     Private Sub btnModoOscuro_Click(sender As Object, e As EventArgs) Handles btnModoOscuro.Click
         Dim conntrol As Control
         ' Si el fondo es blanco
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
-            modoOscuro = False
+            modoOscuroSino = False
             btnReinicio.Image = My.Resources.ReinicioNegro
             btnModoOscuro.Image = My.Resources.LunaNegro
             btnModoOscuro.BackColor = Color.Transparent
@@ -224,7 +236,7 @@ Public Class FrmPrincipal
                 End If
             Next
         Else
-            modoOscuro = True
+            modoOscuroSino = True
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
                     conntrol.BackColor = Color.FromArgb(30, 30, 30)
@@ -242,13 +254,33 @@ Public Class FrmPrincipal
     Private Sub btnReinicio_Click(sender As Object, e As EventArgs) Handles btnReinicio.Click
         Limpieza()
         NuevaPalabra()
+        timerParpadeo.Stop()
+        lblMensajeEnter.Visible = False
     End Sub
     Private Sub ColorearPalabras()
+        'TODO Colorear letras que estén en la palabra y en la posición correcta
+        ' Si la letra está en la palabra
+        'For i = 0 To palabra.Length - 1
+        '    For y = 0 To palabraAdivinar.Length - 1
+        '        If palabra.ToUpper.ToArray(i).Equals(palabraAdivinar.ToUpper.ToArray(y)) Then
+        '            DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
+        '            manage.SumarPunto(usuarioActual, 50)
+        '        End If
+        '    Next
+        '    Dim posicion As Integer
+        '    Do
+        '        posicion = Array.IndexOf(palabraAdivinar.ToArray, palabra.ToArray(i), posicion + 1) ' Busca la letra en la palabra 
+        '        If posicion <> -1 Then
+        '            DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
+        '            manage.SumarPunto(usuarioActual, 10)
+        '        End If
+        '    Loop Until posicion = -1
+        'Next
         For i = 0 To LONGITUDPALABRA - 1
-            If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then
+            If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then ' Si la letra esta en la posicion correcta
                 DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
                 manage.SumarPunto(usuarioActual, 50)
-            ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then
+            ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then ' Si la palabra contiene la letra
                 DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
                 manage.SumarPunto(usuarioActual, 10)
             End If
@@ -263,12 +295,10 @@ Public Class FrmPrincipal
         FrmUsuarios.Show()
     End Sub
 
-    Private Sub lblAyuda_Click(sender As Object, e As EventArgs) Handles lblAyuda.Click
-
-    End Sub
-
-    Private Sub lblAyuda_MouseHover(sender As Object, e As EventArgs) Handles lblAyuda.MouseHover
+    Private Sub btnAyuda_Click(sender As Object, e As EventArgs) Handles btnAyuda.Click
+        txtP1.Select()
         Dim descripcionDelBoton As New ToolTip()
-        descripcionDelBoton.SetToolTip(lblAyuda, "Pincháme para las Instrucciones. (Sin acabar)")
+        descripcionDelBoton.SetToolTip(btnAyuda, "Pincháme para las Instrucciones.")
+        FrmAyuda.ShowDialog()
     End Sub
 End Class

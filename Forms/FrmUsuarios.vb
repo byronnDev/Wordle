@@ -1,8 +1,14 @@
-﻿Imports System.Net
+﻿Imports System.IO
+Imports System.Net
 Imports Clases
 Public Class FrmUsuarios
-
     Private Sub FrmUsuarios_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not File.Exists("./datos/usuarios.txt") OrElse Not File.Exists("./datos/palabras.txt") Then
+            MessageBox.Show("Faltan ficheros, el programa no puede continuar", "ERR00R 001", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+        If modoOscuroSino Then
+            ModoOscuro(Me)
+        End If
         AcceptButton = btnLoginRegister ' Enter en el botón de login
         btnLoginRegister.Focus()
         manage = New GestionUsuarios
@@ -38,6 +44,12 @@ Public Class FrmUsuarios
                     lblLoginError.Text = $"Contraseña no coincide"
                     lblLoginError.Visible = Enabled
                 Else
+                    If txtUsuarioNombre.Text.Contains(" ") Then
+                        lblLoginError.Visible = True
+                        lblLoginError.ForeColor = Color.Red
+                        lblLoginError.Text = "El nombre no puede contener espacios"
+                        Exit Sub
+                    End If
                     If manage.RegistrarUsuario(txtUsuarioNombre.Text, txtContrasena.Text) = Nothing Then
                         'usuario no existe
                         lblLoginError.Visible = True
