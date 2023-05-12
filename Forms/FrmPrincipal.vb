@@ -63,6 +63,11 @@ Public Class FrmPrincipal
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25}
         ' Array de TextBox (pospuesto para hidalgo)
         '============================Crear los textBox en tiempo de ejecucion==============================
+        'For Each control In arrayDeTextBox
+        '    If TypeOf control Is TextBox Then
+        '        Controls.Remove(control)
+        '    End If
+        'Next
         'Dim posicion As Integer = 1
         'Dim x As Integer = 152
         'Dim y As Integer = 72
@@ -73,59 +78,27 @@ Public Class FrmPrincipal
         '        End If
         '        'les damos las propiedades a los botones
         '        cuadroTexto = New TextBox
+        '        cuadroTexto.MaxLength = 1
         '        cuadroTexto.Text = ""
         '        cuadroTexto.Name = "txtP" & posicion
         '        cuadroTexto.Tag = posicion
         '        posicion += 1
         '        cuadroTexto.Location = New Point(x, y)
         '        x += 57
-        '        cuadroTexto.Size = New Size(53, 53)
+        '        cuadroTexto.Size = New Size(53, 70)
         '        cuadroTexto.BackColor = Color.LightGray
         '        'agregamos el control a la lista interna de controles del formulario
         '        Controls.Add(cuadroTexto)
         '        'reseteamos poosicion al llegar a 9 y le damos un salto de linea
         '        If j = 4 Then
-        '            y += 40
+        '            y += 50
         '            x = 152
         '        End If
         '    Next
 
         'Next
+        '=======================================================================================
 
-        '===================crear botones en tiempo de ejecucion=====================(Pospuesto)
-
-        'Dim x As Integer = 50
-        'Dim y As Integer = 364
-        'Dim posicion As Integer = 0
-        'For i As Integer = 0 To 2
-        '    For j As Integer = 0 To 9
-        '        If i = 2 AndAlso j > 6 Then
-        '            Exit For
-        '        End If
-        '        'les damos las propiedades a los botones
-        '        boton = New Button
-        '        boton.Text = letras(posicion)
-        '        boton.Tag = posicion
-        '        posicion += 1
-        '        boton.Location = New Point(x, y)
-        '        x += 45
-        '        boton.Size = New Size(40, 40)
-        '        boton.BackColor = Color.LightGray
-        '        boton.ForeColor = Color.Black
-        '        boton.Font = New Font("Arial", 20, FontStyle.Bold)
-        '        AddHandler boton.Click, AddressOf TeclaPulsada 'le decimos con que funcion se ejecutara el evento click
-        '        'agregamos el control a la lista interna de controles del formulario
-        '        Controls.Add(boton)
-        '        'reseteamos poosicion al llegar a 9 y le damos un salto de linea
-        '        If j = 9 Then
-        '            y += 5
-        '            x = 40
-        '        End If
-        '    Next
-        '    x = 50
-        '    y += 50
-        'Next
-        '===========================================================================
         NuevaPalabra()
         ' Añadimos la palabra elegida aleatoriamente del array
         listaRecuadros.AddRange(arrayDeTextBox) ' Agregar los TextBox a la lista
@@ -258,31 +231,18 @@ Public Class FrmPrincipal
         lblMensajeEnter.Visible = False
     End Sub
     Private Sub ColorearPalabras()
-        'TODO Colorear letras que estén en la palabra y en la posición correcta
-        ' Si la letra está en la palabra
-        'For i = 0 To palabra.Length - 1
-        '    For y = 0 To palabraAdivinar.Length - 1
-        '        If palabra.ToUpper.ToArray(i).Equals(palabraAdivinar.ToUpper.ToArray(y)) Then
-        '            DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
-        '            manage.SumarPunto(usuarioActual, 50)
-        '        End If
-        '    Next
-        '    Dim posicion As Integer
-        '    Do
-        '        posicion = Array.IndexOf(palabraAdivinar.ToArray, palabra.ToArray(i), posicion + 1) ' Busca la letra en la palabra 
-        '        If posicion <> -1 Then
-        '            DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
-        '            manage.SumarPunto(usuarioActual, 10)
-        '        End If
-        '    Loop Until posicion = -1
-        'Next
+        Dim arrayChars As New List(Of Char)
+        arrayChars.AddRange(palabraAdivinar.ToCharArray)
         For i = 0 To LONGITUDPALABRA - 1
-            If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then ' Si la letra esta en la posicion correcta
-                DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
-                manage.SumarPunto(usuarioActual, 50)
-            ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then ' Si la palabra contiene la letra
-                DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
-                manage.SumarPunto(usuarioActual, 10)
+            If arrayChars.Contains(palabra.ToUpper.Chars(i)) Then
+                If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then ' Si la letra esta en la posicion correcta
+                    DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
+                    manage.SumarPunto(usuarioActual, 50)
+                ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then ' Si la palabra contiene la letra
+                    DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
+                    manage.SumarPunto(usuarioActual, 10)
+                End If
+                arrayChars.Remove(palabra.ToUpper.Chars(i))
             End If
         Next
     End Sub

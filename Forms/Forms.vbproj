@@ -192,6 +192,7 @@
     <Content Include="datos\usuarios.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\settings.png" />
     <None Include="Resources\LOGO WORDLE SMALL.png" />
     <None Include="Resources\LOGO WORDLE.png" />
   </ItemGroup>
