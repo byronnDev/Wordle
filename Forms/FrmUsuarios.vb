@@ -21,7 +21,9 @@ Public Class FrmUsuarios
         lblLoginError.Visible = False
         lblLoginError.ForeColor = Color.Red
         If String.IsNullOrWhiteSpace(txtUsuarioNombre.Text) OrElse String.IsNullOrWhiteSpace(txtContrasena.Text) Then
-            MessageBox.Show("Debe llenar todos los campos")
+            lblLoginError.Visible = True
+            lblLoginError.ForeColor = Color.Red
+            lblLoginError.Text = "Rellene todos los campos"
         Else
             If rbtIniciarSesion.Checked = True Then
                 txtRepetirContrasena.Hide()
@@ -32,12 +34,22 @@ Public Class FrmUsuarios
                 If usuarioActual = Nothing Then
                     'usuario no existe
                     lblLoginError.Visible = True
-                Else ' Si el usuario existe
+                    lblLoginError.ForeColor = Color.Red
+                    lblLoginError.Text = "Usuario no existe"
+                    Exit Sub
+                End If
+                ' Encripta la contraseña y la compara con la contraseña encriptada del usuario
+                If usuarioActual.Password = Usuario.Encrypt(txtContrasena.Text) Then
                     FrmPrincipal.Show()
                     Me.Close()
+                Else
+                    lblLoginError.Visible = True
+                    lblLoginError.ForeColor = Color.Red
+                    lblLoginError.Text = "Contraseña incorrecta"
+                    txtContrasena.Clear()
                 End If
             ElseIf rbtRegistrarse.Checked = True Then
-                txtRepetirContrasena.Show()
+                    txtRepetirContrasena.Show()
                 lblRepetirContrasena.Show()
                 If Not txtContrasena.Text.Equals(txtRepetirContrasena.Text) Then
                     lblLoginError.ForeColor = Color.Red

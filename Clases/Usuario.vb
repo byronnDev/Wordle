@@ -1,4 +1,6 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.IO
+Imports System.Security.Cryptography
+Imports System.Security.Policy
 Imports System.Text
 'toDo Solucionar error de inicio detecta la password la intenta castear a double
 Public Class Usuario
@@ -27,22 +29,59 @@ Public Class Usuario
     Public Sub New(username As String)
         Me._Username = username
     End Sub
+    ' TODO: Solucionar problema encriptado
+    Public Shared Function Encrypt(password As String) As String
+        ' Define la clave a usar para encriptar y desencriptar contraseñas
+        Dim key As String = "m1Cl4v3S3gur4d312345678901234567"
 
-    Public Function Encrypt(password As String) As String
-        ' Crea una instancia de la clase SHA256
-        Dim sha256 As SHA256 = sha256.Create()
-        ' Convierte la contraseña en un arreglo de bytes
-        Dim bytes As Byte() = Encoding.UTF8.GetBytes(password)
-        ' Calcula el hash de la contraseña
-        Dim hash As Byte() = sha256.ComputeHash(bytes)
-        ' Crea una instancia de la clase StringBuilder para construir el hash como una cadena de texto
-        Dim passwordEncrypted As New StringBuilder()
-        ' Recorre el arreglo de bytes del hash y agrega cada byte como un valor hexadecimal de dos dígitos a la cadena de texto
-        For i As Integer = 0 To hash.Length - 1
-            passwordEncrypted.Append(hash(i).ToString("x2"))
-        Next
-        ' Devuelve el hash como una cadena de texto
-        Return passwordEncrypted.ToString
+        ' Crea una instancia de la clase Aes
+        Using aes As Aes = Aes.Create()
+            ' Establece la clave y el vector de inicialización
+            aes.Key = Encoding.UTF8.GetBytes(key)
+            aes.IV = New Byte(15) {}
+
+            ' Crea una instancia de la clase MemoryStream para almacenar los datos cifrados
+            Using memoryStream As New MemoryStream()
+                ' Crea una instancia de la clase CryptoStream para cifrar los datos
+                Using cryptoStream As New CryptoStream(memoryStream, aes.CreateEncryptor(), CryptoStreamMode.Write)
+                    ' Convierte la contraseña en un arreglo de bytes
+                    Dim bytes As Byte() = Encoding.UTF8.GetBytes(password)
+                    ' Escribe los datos cifrados en el MemoryStream
+                    cryptoStream.Write(bytes, 0, bytes.Length)
+                End Using
+
+                ' Devuelve los datos cifrados como una cadena de texto en base64
+                Return Convert.ToBase64String(memoryStream.ToArray())
+            End Using
+        End Using
+    End Function
+
+    Public Shared Function Decrypt(encryptedPassword As String) As String
+        ' Define la clave a usar para encriptar y desencriptar contraseñas
+        Dim key As String = "m1Cl4v3S3gur4d312345678901234567"
+
+        ' Crea una instancia de la clase Aes
+        Using aes As Aes = Aes.Create()
+            ' Establece la clave y el vector de inicialización
+            aes.Key = Encoding.UTF8.GetBytes(key)
+            aes.IV = New Byte(15) {}
+
+            ' Convierte la contraseña encriptada en un arreglo de bytes
+            Dim bytes As Byte() = Convert.FromBase64String(encryptedPassword)
+
+            ' Crea una instancia de la clase MemoryStream para leer los datos cifrados
+            Using memoryStream As New MemoryStream(bytes)
+                ' Crea una instancia de la clase CryptoStream para descifrar los datos
+                Using cryptoStream As New CryptoStream(memoryStream, aes.CreateDecryptor(), CryptoStreamMode.Read)
+                    ' Crea un arreglo de bytes para almacenar los datos descifrados
+                    Dim decryptedBytes(bytes.Length - 1) As Byte
+                    ' Lee los datos descifrados del CryptoStream
+                    Dim count As Integer = cryptoStream.Read(decryptedBytes, 0, decryptedBytes.Length)
+                    ' Devuelve los datos descifrados como una cadena de texto
+                    Return Encoding.UTF8.GetString(decryptedBytes, 0, count)
+                End Using
+            End Using
+        End Using
     End Function
 
     Public Overrides Function ToString() As String
