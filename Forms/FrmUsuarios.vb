@@ -14,7 +14,6 @@ Public Class FrmUsuarios
         manage = New GestionUsuarios
         rbtIniciarSesion.Checked = True
     End Sub
-    'toDo arreglar inicio de sesion
     Private Sub btnLoginRegister_Click(sender As Object, e As EventArgs) Handles btnLoginRegister.Click
         ' Si existe
         lblLoginError.Text = "Usuario no existe"
@@ -39,7 +38,7 @@ Public Class FrmUsuarios
                     Exit Sub
                 End If
                 ' Encripta la contraseña y la compara con la contraseña encriptada del usuario
-                If usuarioActual.Password = Usuario.Encrypt(txtContrasena.Text) Then
+                If usuarioActual.Password = txtContrasena.Text Then
                     FrmPrincipal.Show()
                     Me.Close()
                 Else

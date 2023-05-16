@@ -85,7 +85,7 @@ Partial Class FrmAyuda
         Me.MinimizeBox = False
         Me.Name = "FrmAyuda"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmAyuda"
+        Me.Text = "Ayuda"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
