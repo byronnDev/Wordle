@@ -85,13 +85,7 @@ Partial Class FrmPrincipal
         Me.lblMensajeEnter = New System.Windows.Forms.Label()
         Me.timerParpadeo = New System.Windows.Forms.Timer(Me.components)
         Me.btnAyuda = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.CuentaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CerrarSesiónToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip3 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ContextMenuStrip2.SuspendLayout()
         Me.SuspendLayout()
         '
         'btnA
@@ -971,37 +965,6 @@ Partial Class FrmPrincipal
         Me.btnAyuda.Text = "💡"
         Me.btnAyuda.UseVisualStyleBackColor = False
         '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
-        '
-        'ContextMenuStrip2
-        '
-        Me.ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ContextMenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CuentaToolStripMenuItem, Me.CerrarSesiónToolStripMenuItem})
-        Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
-        Me.ContextMenuStrip2.Size = New System.Drawing.Size(164, 52)
-        '
-        'CuentaToolStripMenuItem
-        '
-        Me.CuentaToolStripMenuItem.Name = "CuentaToolStripMenuItem"
-        Me.CuentaToolStripMenuItem.Size = New System.Drawing.Size(163, 24)
-        Me.CuentaToolStripMenuItem.Text = "Cuenta"
-        '
-        'CerrarSesiónToolStripMenuItem
-        '
-        Me.CerrarSesiónToolStripMenuItem.Name = "CerrarSesiónToolStripMenuItem"
-        Me.CerrarSesiónToolStripMenuItem.Size = New System.Drawing.Size(163, 24)
-        Me.CerrarSesiónToolStripMenuItem.Text = "Cerrar sesión"
-        '
-        'ContextMenuStrip3
-        '
-        Me.ContextMenuStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ContextMenuStrip3.Name = "ContextMenuStrip3"
-        Me.ContextMenuStrip3.Size = New System.Drawing.Size(61, 4)
-        '
         'FrmPrincipal
         '
         Me.AcceptButton = Me.btnEnviar
@@ -1076,7 +1039,6 @@ Partial Class FrmPrincipal
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "WORDLE"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ContextMenuStrip2.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1143,9 +1105,4 @@ Partial Class FrmPrincipal
     Friend WithEvents lblMensajeEnter As Label
     Friend WithEvents timerParpadeo As Timer
     Friend WithEvents btnAyuda As Button
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents ContextMenuStrip2 As ContextMenuStrip
-    Friend WithEvents CuentaToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CerrarSesiónToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ContextMenuStrip3 As ContextMenuStrip
 End Class

@@ -1,4 +1,6 @@
-﻿Imports System.Security.Cryptography
+﻿Imports System.IO
+Imports System.Security.Cryptography
+Imports System.Security.Policy
 Imports System.Text
 'toDo Solucionar error de inicio detecta la password la intenta castear a double
 Public Class Usuario
@@ -14,36 +16,19 @@ Public Class Usuario
 
     Public Sub New(usernme As String, password As String, intentos As Integer, wins As Integer)
         Me._Username = usernme
-        Me._Password = Encrypt(password)
+        Me._Password = password
         Me._Puntos = intentos
         Me._Wins = wins
     End Sub
     Public Sub New(username As String, password As String)
         Me._Username = username
-        Me._Password = Encrypt(password)
+        Me._Password = password
         Me._Puntos = 0
         Me._Wins = 0
     End Sub
     Public Sub New(username As String)
         Me._Username = username
     End Sub
-
-    Public Function Encrypt(password As String) As String
-        ' Crea una instancia de la clase SHA256
-        Dim sha256 As SHA256 = sha256.Create()
-        ' Convierte la contraseña en un arreglo de bytes
-        Dim bytes As Byte() = Encoding.UTF8.GetBytes(password)
-        ' Calcula el hash de la contraseña
-        Dim hash As Byte() = sha256.ComputeHash(bytes)
-        ' Crea una instancia de la clase StringBuilder para construir el hash como una cadena de texto
-        Dim passwordEncrypted As New StringBuilder()
-        ' Recorre el arreglo de bytes del hash y agrega cada byte como un valor hexadecimal de dos dígitos a la cadena de texto
-        For i As Integer = 0 To hash.Length - 1
-            passwordEncrypted.Append(hash(i).ToString("x2"))
-        Next
-        ' Devuelve el hash como una cadena de texto
-        Return passwordEncrypted.ToString
-    End Function
 
     Public Overrides Function ToString() As String
         Return _Username & "*" & _Password & "*" & _Puntos & "*" & _Wins ' To String para luego utilizarlo a la hora de agregar al fichero

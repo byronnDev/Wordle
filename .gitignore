@@ -364,3 +364,6 @@ FodyWeavers.xsd
 
 # Ignora la carpeta obj
 ./Forms/obj
+
+# Ignora la carpeta bin
+./Forms/bin

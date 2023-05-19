@@ -123,16 +123,6 @@ Namespace My.Resources
         '''<summary>
         '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property settings() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("settings", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property SolBlanco() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("SolBlanco", resourceCulture)
@@ -147,18 +137,6 @@ Namespace My.Resources
             Get
                 Dim obj As Object = ResourceManager.GetObject("SolNegro", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Busca una cadena traducida similar a admin*ab0cf34452bb13523850d9811d6702275c5f0f43b029fa602723c923a7f251f1*79980*120
-        '''piter*b5f131102c66820908b880bd0d5dc0d6cdc5b5697ee53807984423c45552ed4e*880*2
-        '''alex*b87b9db45852a19131ce7c8aa4f63d100b1a3df4b00f20fa66a6c42f6c490a9e*550*4
-        '''.
-        '''</summary>
-        Friend ReadOnly Property usuarios() As String
-            Get
-                Return ResourceManager.GetString("usuarios", resourceCulture)
             End Get
         End Property
     End Module

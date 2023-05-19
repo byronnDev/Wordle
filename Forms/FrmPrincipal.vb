@@ -10,9 +10,21 @@ Public Class FrmPrincipal
         End If
     End Sub
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
+        If palabra.Length <> LONGITUDPALABRA Then
+            Exit Sub
+        End If
         timerParpadeo.Stop()
         lblMensajeEnter.Visible = False
-        If palabra.Length <> LONGITUDPALABRA Then
+        If Not palabrasDisponibles.Contains(palabra.ToUpper) Then
+            MessageBox.Show("Pon una palabra válida", "ERR00R 002", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            timerParpadeo.Stop()
+            lblMensajeEnter.Visible = False
+            For i = 0 To LONGITUDPALABRA - 1
+                TextBoxActual().Text = "" ' Borra el texto del recuadro en le que estamos
+                DevuelveTextbox(posRecuadro).BackColor = Color.Silver
+                posRecuadro -= 1 ' Retrocede una posicion en el recuadro
+            Next
+            palabra = ""
             Exit Sub
         End If
         intentosTotales += 1
@@ -29,7 +41,7 @@ Public Class FrmPrincipal
         palabra = ""
         txtP1.Select()
         If intentosTotales >= 5 Then
-            MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            MessageBox.Show("Se acabaron los intentos!" & vbCr & "La palabra era: " & palabraAdivinar, "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             usuarioActual.Puntos -= 50
             NuevaPalabra()
             Limpieza() ' Limpiar los TextBox
@@ -234,15 +246,13 @@ Public Class FrmPrincipal
         Dim arrayChars As New List(Of Char)
         arrayChars.AddRange(palabraAdivinar.ToCharArray)
         For i = 0 To LONGITUDPALABRA - 1
-            If arrayChars.Contains(palabra.ToUpper.Chars(i)) Then
-                If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then ' Si la letra esta en la posicion correcta
-                    DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
-                    manage.SumarPunto(usuarioActual, 50)
-                ElseIf palabraAdivinar.ToUpper.Contains(palabra.ToUpper.Chars(i)) Then ' Si la palabra contiene la letra
-                    DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
-                    manage.SumarPunto(usuarioActual, 10)
-                End If
-                arrayChars.Remove(palabra.ToUpper.Chars(i))
+            If palabra.ToUpper.Chars(i) = palabraAdivinar.ToUpper.Chars(i) Then ' Si la letra esta en la posicion correcta
+                DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(144, 197, 154)
+                manage.SumarPunto(usuarioActual, 50)
+            End If
+            If arrayChars.Contains(palabra.ToUpper.Chars(i)) AndAlso DevuelveTextbox(i + 1 + maxPos - 4).BackColor <> Color.FromArgb(144, 197, 154) Then ' Si la palabra contiene la letra
+                DevuelveTextbox(i + 1 + maxPos - 4).BackColor = Color.FromArgb(244, 180, 132)
+                manage.SumarPunto(usuarioActual, 10)
             End If
         Next
     End Sub

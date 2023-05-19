@@ -46,7 +46,6 @@ Partial Class FrmUsuarios
         Me.txtContrasena.Name = "txtContrasena"
         Me.txtContrasena.Size = New System.Drawing.Size(237, 22)
         Me.txtContrasena.TabIndex = 2
-        Me.txtContrasena.Text = "admin"
         Me.txtContrasena.UseSystemPasswordChar = True
         '
         'btnLoginRegister
@@ -68,7 +67,7 @@ Partial Class FrmUsuarios
         Me.rbtIniciarSesion.Size = New System.Drawing.Size(106, 20)
         Me.rbtIniciarSesion.TabIndex = 4
         Me.rbtIniciarSesion.TabStop = True
-        Me.rbtIniciarSesion.Text = "Iniciar sesion"
+        Me.rbtIniciarSesion.Text = "Iniciar sesión"
         Me.rbtIniciarSesion.UseVisualStyleBackColor = True
         '
         'rbtRegistrarse
@@ -80,7 +79,7 @@ Partial Class FrmUsuarios
         Me.rbtRegistrarse.Size = New System.Drawing.Size(94, 20)
         Me.rbtRegistrarse.TabIndex = 5
         Me.rbtRegistrarse.TabStop = True
-        Me.rbtRegistrarse.Text = "Registrarte"
+        Me.rbtRegistrarse.Text = "Regístrarte"
         Me.rbtRegistrarse.UseVisualStyleBackColor = True
         '
         'btnCancelar
@@ -132,7 +131,6 @@ Partial Class FrmUsuarios
         Me.txtUsuarioNombre.Name = "txtUsuarioNombre"
         Me.txtUsuarioNombre.Size = New System.Drawing.Size(237, 22)
         Me.txtUsuarioNombre.TabIndex = 0
-        Me.txtUsuarioNombre.Text = "admin"
         '
         'txtRepetirContrasena
         '
@@ -151,9 +149,9 @@ Partial Class FrmUsuarios
         Me.lblLoginError.Location = New System.Drawing.Point(300, 261)
         Me.lblLoginError.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblLoginError.Name = "lblLoginError"
-        Me.lblLoginError.Size = New System.Drawing.Size(241, 35)
+        Me.lblLoginError.Size = New System.Drawing.Size(241, 33)
         Me.lblLoginError.TabIndex = 12
-        Me.lblLoginError.Text = "EL ususario mo existe"
+        Me.lblLoginError.Text = "El usuario no existe"
         Me.lblLoginError.TextAlign = System.Drawing.ContentAlignment.TopCenter
         Me.lblLoginError.Visible = False
         '
@@ -191,7 +189,7 @@ Partial Class FrmUsuarios
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmUsuarios"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "FrmUsuarios"
+        Me.Text = "Iniciar Sesión / Registrarse"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
