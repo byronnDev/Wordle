@@ -10,6 +10,9 @@ Public Class FrmPrincipal
         End If
     End Sub
     Private Sub btnEnviar_Click(sender As Object, e As EventArgs) Handles btnEnviar.Click
+        If palabra.Length <> LONGITUDPALABRA Then
+            Exit Sub
+        End If
         timerParpadeo.Stop()
         lblMensajeEnter.Visible = False
         If Not palabrasDisponibles.Contains(palabra.ToUpper) Then
@@ -22,9 +25,6 @@ Public Class FrmPrincipal
                 posRecuadro -= 1 ' Retrocede una posicion en el recuadro
             Next
             palabra = ""
-            Exit Sub
-        End If
-        If palabra.Length <> LONGITUDPALABRA Then
             Exit Sub
         End If
         intentosTotales += 1
@@ -41,7 +41,7 @@ Public Class FrmPrincipal
         palabra = ""
         txtP1.Select()
         If intentosTotales >= 5 Then
-            MessageBox.Show("Se acabaron los intentos!", "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+            MessageBox.Show("Se acabaron los intentos!" & vbCr & "La palabra era: " & palabraAdivinar, "Fin", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
             usuarioActual.Puntos -= 50
             NuevaPalabra()
             Limpieza() ' Limpiar los TextBox
