@@ -13,6 +13,19 @@ Para instalar el repositorio y la aplicación de Wordle, se necesita tener insta
 - Ejecutas el `Forms.exe` con el comando `./Forms.exe` y listo.
 
 ## Cómo jugar
+Primero tienes que registrarte:
+
+![image](https://github.com/byronnDev/Wordle/assets/38868773/4b90d354-dc8d-441d-ad08-c46a23ab0018)
+
+Una vez registrado, iniciamos sesión:
+
+![image](https://github.com/byronnDev/Wordle/assets/38868773/869d0490-b7a1-4ba4-ab43-89dc0e2389d2)
+
+Ahora sólo tienes que escribir:
+
+![image](https://github.com/byronnDev/Wordle/assets/38868773/8ff15b4d-30b6-4fb7-a9b8-966635244474)
+
+Disfruta del juego!
 - 🎉 Por cada palabra que adivines correctamente, se te sumará una victoria. ¡Bien hecho!
 - 🔍 Por cada carácter en la posición correcta adivinado, se te sumarán 50 puntos. ¡Eres un detective!
 - 🤔 Por cada carácter adivinado pero no en la posición correcta, se te sumarán 10 puntos. ¡Sigue intentándolo!
