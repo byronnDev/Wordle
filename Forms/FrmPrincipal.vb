@@ -69,47 +69,8 @@ Public Class FrmPrincipal
         txtP1.Select()
     End Function
 
-    'Dim cuadroTexto As TextBox
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim arrayDeTextBox As TextBox() = {txtP1, txtP2, txtP3, txtP4, txtP5, txtP6, txtP7, txtP8, txtP9, txtP10, txtP11, txtP12, txtP13, txtP14, txtP15, txtP16, txtP17, txtP18, txtP19, txtP20, txtP21, txtP22, txtP23, txtP24, txtP25}
-        ' Array de TextBox (pospuesto para hidalgo)
-        '============================Crear los textBox en tiempo de ejecucion==============================
-        'For Each control In arrayDeTextBox
-        '    If TypeOf control Is TextBox Then
-        '        Controls.Remove(control)
-        '    End If
-        'Next
-        'Dim posicion As Integer = 1
-        'Dim x As Integer = 152
-        'Dim y As Integer = 72
-        'For i As Integer = 0 To 4
-        '    For j As Integer = 0 To 4
-        '        If i = 4 AndAlso j > 4 Then
-        '            Exit For
-        '        End If
-        '        'les damos las propiedades a los botones
-        '        cuadroTexto = New TextBox
-        '        cuadroTexto.MaxLength = 1
-        '        cuadroTexto.Text = ""
-        '        cuadroTexto.Name = "txtP" & posicion
-        '        cuadroTexto.Tag = posicion
-        '        posicion += 1
-        '        cuadroTexto.Location = New Point(x, y)
-        '        x += 57
-        '        cuadroTexto.Size = New Size(53, 70)
-        '        cuadroTexto.BackColor = Color.LightGray
-        '        'agregamos el control a la lista interna de controles del formulario
-        '        Controls.Add(cuadroTexto)
-        '        'reseteamos poosicion al llegar a 9 y le damos un salto de linea
-        '        If j = 4 Then
-        '            y += 50
-        '            x = 152
-        '        End If
-        '    Next
-
-        'Next
-        '=======================================================================================
 
         NuevaPalabra()
         ' Añadimos la palabra elegida aleatoriamente del array
@@ -142,7 +103,6 @@ Public Class FrmPrincipal
     End Sub
     ' Cuando se pulsa una tecla
     Private Sub pulsarTecla(sender As Object, e As KeyPressEventArgs) Handles Me.KeyPress
-        'TODO hacer que no pueda pulsar numeros o teclas que no estén en el teclado
         If palabra.Length = 4 Then
             timerParpadeo.Start()
         End If
