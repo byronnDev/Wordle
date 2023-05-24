@@ -2,8 +2,8 @@
 
 Public Class FrmClasificacion
     Private Sub FrmClasificacion_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If modoOscuroSino Then
-            ModoOscuro(Me)
+        If modoOscuro Then
+            PonerModoOscuro(Me)
             lblUsuarios.BackColor = Color.Cyan
             lblPuntos.BackColor = Color.Cyan
         End If

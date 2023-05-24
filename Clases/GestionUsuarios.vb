@@ -10,7 +10,10 @@ Public Class GestionUsuarios
             ' Creamos un Array con todos los datos de todos los usuarios
             Dim tempDatos As String() = File.ReadAllLines(pathUsers)
             For Each datos In tempDatos
-                users.Add(New Usuario(datos.Split("*")(0), datos.Split("*")(1), datos.Split("*")(2), datos.Split("*")(3) & vbCrLf))
+                Dim tempArray As String() = datos.Split("*")
+                If tempArray.Length = 4 Then
+                    users.Add(New Usuario(tempArray(0), tempArray(1), tempArray(2), tempArray(3) & vbCrLf))
+                End If
             Next
         End If
     End Sub
@@ -22,8 +25,16 @@ Public Class GestionUsuarios
         ' Agregamos el usuario a la lista de usuarios
         users.Add(tempUser)
         ' Agregamos el usuario al fichero donde estára su contraseña
-        File.AppendAllLines(pathUsers, {tempUser.ToString})
-        Return "Usuario registrado correctamente"
+
+        'TODO if exists
+
+        Try
+            File.AppendAllLines(pathUsers, {tempUser.ToString})
+            Return "Usuario registrado correctamente"
+        Catch ex As Exception
+            Return "Fichero corrupto"
+        End Try
+
     End Function
 
     Public Function ListarUsuarios() As List(Of Usuario) ' Devuelve la lista de usuarios actual
@@ -56,7 +67,7 @@ Public Class GestionUsuarios
         File.WriteAllLines(pathUsers, users.Select(Function(x) x.ToString)) ' Guardamos los cambios en el fichero
     End Sub
     ' Devuelve una lista con los 10 usuarios con mas puntos/wins ordenados de mayor a menor
-    Public Function Clasificados(puntos As Boolean) As List(Of Usuario)
+    Public Function Clasificados(mostrarPuntos As Boolean) As List(Of Usuario)
         Dim tempArray As New List(Of Usuario)
         Dim maxNum As Integer
         Dim maxUser As Usuario
@@ -66,7 +77,7 @@ Public Class GestionUsuarios
             maxNum = Integer.MinValue
             ' Buscamos el usuario con mas puntos/wins
             For Each user In users
-                If puntos Then
+                If mostrarPuntos Then
                     ' Si el usuario tiene mas puntos que el maximo y no está en la lista, se convierte en el maximo
                     If user.Puntos > maxNum AndAlso Not tempArray.Contains(user) Then
                         maxNum = user.Puntos

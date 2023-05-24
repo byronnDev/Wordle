@@ -6,8 +6,8 @@ Public Class FrmUsuarios
         If Not File.Exists("./datos/usuarios.txt") OrElse Not File.Exists("./datos/palabras.txt") Then
             MessageBox.Show("Faltan ficheros, el programa no puede continuar", "ERR00R 001", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
-        If modoOscuroSino Then
-            ModoOscuro(Me)
+        If modoOscuro Then
+            PonerModoOscuro(Me)
         End If
         AcceptButton = btnLoginRegister ' Enter en el botón de login
         btnLoginRegister.Focus()

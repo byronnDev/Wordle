@@ -23,8 +23,8 @@ Public Class FrmVictoria
     End Sub
 
     Private Sub FrmVictoria_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        If modoOscuroSino Then
-            ModoOscuro(Me)
+        If modoOscuro Then
+            PonerModoOscuro(Me)
         End If
         If usuarioActual.Wins > 5 Then
             ' Si el usuario ha ganado mas de 5 veces, se le suman 50 puntos por cada 5 victorias

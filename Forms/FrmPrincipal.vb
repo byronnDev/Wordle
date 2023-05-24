@@ -1,6 +1,11 @@
 ﻿Imports System.Reflection.Emit
 Imports Clases
 Public Class FrmPrincipal
+    Dim posRecuadro As Integer
+    Dim listaRecuadros As New List(Of TextBox)
+    Dim maxPos As Integer
+    Const LONGITUDPALABRA = 5 ' La longitud de la palabra
+
     Private Sub timerParpadeo_Tick(sender As Object, e As EventArgs) Handles timerParpadeo.Tick
         ' Que parpadee el mensaje de enter con 750ms de intervalo
         If lblMensajeEnter.Visible Then
@@ -208,7 +213,7 @@ Public Class FrmPrincipal
         Dim conntrol As Control
         ' Si el fondo es blanco
         If Me.BackColor = Color.FromArgb(15, 15, 15) Then
-            modoOscuroSino = False
+            modoOscuro = False
             btnReinicio.Image = My.Resources.ReinicioNegro
             btnModoOscuro.Image = My.Resources.LunaNegro
             btnModoOscuro.BackColor = Color.Transparent
@@ -221,7 +226,7 @@ Public Class FrmPrincipal
                 End If
             Next
         Else
-            modoOscuroSino = True
+            modoOscuro = True
             For Each conntrol In Me.Controls
                 If TypeOf conntrol Is Button Then
                     conntrol.BackColor = Color.FromArgb(30, 30, 30)
